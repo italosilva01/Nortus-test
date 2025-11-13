@@ -19,3 +19,6 @@ Optei pelo Kanban porque, analisando o contexto, ele é a melhor forma de acompa
 
 ### Eslint
 Além de ser uma das ferramentas obrigatórias, as configurações foram definidas para evitar erros comuns que costumo cometer no código, por exemplo, esquecer de usar o optional chaining.# Nortus-test
+
+### Shadcn
+Escolhi o shadcn/ui por ser uma biblioteca de componentes já prontos, de alta qualidade e com fácil integração ao Tailwind CSS. Essa escolha facilita a implementação e agiliza o processo de customização da interface, tornando o desenvolvimento mais rápido e padronizado.
