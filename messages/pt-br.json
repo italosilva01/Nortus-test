@@ -1,5 +1,14 @@
 {
     "HomePage": {
         "title": "Olá mundo!"
+    },
+    "LoginPage": {
+        "title": "Login",
+        "description": "Entre com suas credenciais para acessar a sua conta.",
+        "email": "Insira o seu e-mail, CPF ou passaporte.",
+        "password": "Senha",
+        "remember": "Lembrar meu usuário",
+        "forgot": "Esqueceu sua senha?",
+        "enter": "Entrar"
     }
 }

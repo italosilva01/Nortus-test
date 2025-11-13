@@ -48,6 +48,7 @@
   --color-app-secondary: var(--app-secondary);
   --color-app-accent: var(--app-accent);
   --color-app-bg-dark: var(--app-bg-dark);
+  --color-app-blue-100: var(--app-blue-100);
   --color-title: var(--title);
 }
 
@@ -90,6 +91,7 @@
   --app-secondary: #10B981;
   --app-accent: #F59E0B;
   --app-bg-dark: #0B1125;
+  --app-blue-100: #F6F8FC0A;
   --title: #E3E3E3;
 }
 
@@ -133,7 +135,8 @@
   --app-bg-dark: #0B1125;
   --title: #E3E3E3;
   --blue-300: #0B1125;
-  --blue-200: #1876D2
+  --blue-200: #1876D2;
+  --app-blue-100: #F6F8FC0A;
 }
 
 @layer base {
