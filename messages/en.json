@@ -1,5 +1,31 @@
 {
     "HomePage": {
-        "title": "Hello world!"
+        "title": "Dashboard"
+    },
+    "LoginPage": {
+        "title": "Login",
+        "description": "Enter your credentials to access your account.",
+        "email": "Enter your email, CPF or passport.",
+        "password": "Password",
+        "remember": "Remember my user",
+        "forgot": "Forgot your password?",
+        "enter": "Sign in",
+        "errorsScreen": {
+            "emailInvalid": "Invalid email",
+            "passwordRequired": "Password is required",
+            "CredenciaisInvalidas": "Invalid credentials. Check your email and password."
+        }
+    },
+    "Sidebar": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "users": "Users",
+        "reports": "Reports",
+        "settings": "Settings"
+    },
+    "Header": {
+        "searchPlaceholder": "Search...",
+        "notifications": "Notifications",
+        "logout": "Logout"
     }
 }

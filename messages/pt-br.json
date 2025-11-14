@@ -1,6 +1,6 @@
 {
     "HomePage": {
-        "title": "Olá mundo!"
+        "title": "Dashboard"
     },
     "LoginPage": {
         "title": "Login",
@@ -15,5 +15,17 @@
             "passwordRequired": "Senha é obrigatória",
             "CredenciaisInvalidas": "Credenciais inválidas. Verifique seu email e senha."
         }
+    },
+    "Sidebar": {
+        "home": "Início",
+        "dashboard": "Dashboard",
+        "users": "Usuários",
+        "reports": "Relatórios",
+        "settings": "Configurações"
+    },
+    "Header": {
+        "searchPlaceholder": "Buscar...",
+        "notifications": "Notificações",
+        "logout": "Sair"
     }
 }

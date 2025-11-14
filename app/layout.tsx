@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { Toaster } from "sonner";
 import { SessionProvider } from "next-auth/react";
 import { AuthSync } from "@/components/AuthSync";
+import { DashboardLayoutWrapper } from "@/components/layout/DashboardLayoutWrapper";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,7 +31,9 @@ export default function RootLayout({
         <SessionProvider>
           <AuthSync />
           <NextIntlClientProvider>
-            {children}
+            <DashboardLayoutWrapper>
+              {children}
+            </DashboardLayoutWrapper>
             <Toaster position="top-right" richColors />
           </NextIntlClientProvider>
         </SessionProvider>

@@ -26,6 +26,13 @@ Escolhi o shadcn/ui por ser uma biblioteca de componentes já prontos, de alta q
 ### IA
 Em relação ao uso de IA, utilizei o Cursor com o agente Claude Sonnet 4.5 para gerar trechos de código, esclarecer dúvidas e explorar diferentes abordagens de implementação.
 
+#### exemplo
+Como exemplo, usei o cursor para gerar o layout default da aplicação ( com o header e o menu lateral) com o seguinte comando no modo agent:
+
+`Quero que faça um layout padrão para toda a aplicação, menos para as rotas de auth. Esse layout vai ter um menu lateral e um header `
+
+O agent gerou alguns arquivos e depois avaliei o que estava de acordo com o pedido e o que não queria no projeto. Depois foi necessários alterar a estilização gerada pela IA, pois não estava nem próxima ao figma
+
 ### Feature-Sliced Design (FSD)
 Escolhi utilizar a arquitetura Feature-Sliced Design (FSD) por considerar que ela favorece a escalabilidade e se adapta bem a um projeto de médio a grande porte. Pensando na possibilidade de expansão futura, essa arquitetura já oferece uma estrutura robusta e organizada, facilitando tanto a evolução das funcionalidades quanto a manutenção do código.
 
