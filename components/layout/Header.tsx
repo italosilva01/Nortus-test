@@ -1,16 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { signOut } from "next-auth/react";
 import { Typography } from "@components/ui/Typography";
-
 export const Header = () => {
-  const t = useTranslations("Header");
-
-  const handleLogout = async () => {
-    await signOut({ callbackUrl: "/login" });
-  };
-
   return (
     <header className="flex h-16 xl:h-20 2xl:h-22 items-center justify-between bg-app-dark-blue-500 px-6">
       <Typography fontFamily="montserrat" fontWeight="semibold" className="text-[1.25rem]" fontColor="title">
