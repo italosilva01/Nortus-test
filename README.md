@@ -25,3 +25,12 @@ Escolhi o shadcn/ui por ser uma biblioteca de componentes já prontos, de alta q
 
 ### IA
 Em relação ao uso de IA, utilizei o Cursor com o agente Claude Sonnet 4.5 para gerar trechos de código, esclarecer dúvidas e explorar diferentes abordagens de implementação.
+
+
+## Desafios do projeto
+
+Um dos desafios do projeto foi o uso do Tailwind CSS para a estilização. A ferramenta em si não é um problema, porém alguns requisitos do projeto, por exemplo a largura mínima de 1000px, dificultaram o processo.
+
+Como o Tailwind segue a filosofia mobile-first, ele não fornece sugestões iniciais que facilitem a criação direta de uma interface fiel ao protótipo em breakpoints maiores. Isso tornou mais difícil começar pela resolução final desejada.
+
+Para contornar essa situação, iniciei a estilização direto na resolução 2XL, que corresponde ao breakpoint mais próximo do que foi definido no Figma. A partir disso, fui reduzindo os breakpoints e ajustando o layout para garantir responsividade com resultados satisfatórios.
