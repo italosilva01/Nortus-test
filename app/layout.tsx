@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
+import { Toaster } from "sonner";
+import { SessionProvider } from "next-auth/react";
+import { AuthSync } from "@/components/AuthSync";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -25,13 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased bg-app-bg-dark`}
       >
-        <NextIntlClientProvider>
-          {children}
-        </NextIntlClientProvider>
+        <SessionProvider>
+          <AuthSync />
+          <NextIntlClientProvider>
+            {children}
+            <Toaster position="top-right" richColors />
+          </NextIntlClientProvider>
+        </SessionProvider>
       </body>
     </html>
   );
