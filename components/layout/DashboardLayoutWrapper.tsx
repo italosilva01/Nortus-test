@@ -20,7 +20,7 @@ export const DashboardLayoutWrapper = ({
   }
 
   return (
-    <div className="flex h-screen w-full overflow-hidden">
+    <div className="flex h-screen w-full overflow-hidden bg-app-dark-blue-500">
       <Sidebar />
       <div className="flex flex-1 flex-col overflow-hidden">
         <Header />

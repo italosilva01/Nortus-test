@@ -28,7 +28,7 @@
         "./*"
       ],
       "@lib/*": [
-        "shared/lib/*"
+        "./shared/lib/*"
       ],
       "@components/*": [
         "./components/*"

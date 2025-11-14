@@ -23,10 +23,10 @@ export const Sidebar = () => {
 
   return (
     <aside
-      className="flex flex-col h-screen w-24 2xl:w-37.5 bg-app-dark-blue-500 rounded-tr-[23px] rounded-br-[26px]"
+      className="flex flex-col h-screen w-24 2xl:w-37.5 bg-app-dark-blue-500 rounded-tr-[23px] rounded-br-[26px] shadow-2xl shadow-black border-r border-app-bg-dark"
     >
 
-      <div className="flex h-16 items-center justify-center mt-5 2xl:mt-10 2xl:p-10">
+      <div className="flex h-16 items-center justify-center 2xl:p-10">
         <Image src={NortusIcon as string} alt="Nortus icon" width={40} height={40} />
       </div>
 
@@ -67,7 +67,7 @@ export const Sidebar = () => {
           </Avatar>
         </div>
       </div>
-    </aside>
+    </aside >
   );
 };
 
