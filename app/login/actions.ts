@@ -3,12 +3,14 @@
 import { signIn } from "@/auth"
 import { redirect } from "next/navigation"
 import { AuthError } from "next-auth"
+import { FormSchema } from "@/feature/auth/login/lib/schemeValidation"
 
-export const handleLogin = async (formData: FormData) => {
+export const handleLogin = async (data: FormSchema) => {
+  console.log("data",data)
   try {
     await signIn("credentials", {
-      username: formData.get("username"),
-      password: formData.get("password"),
+      username: data.email,
+      password: data.password,
       redirectTo: "/",
     })
   } catch (error) {

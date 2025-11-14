@@ -1,5 +1,6 @@
+"use client"
 import { handleLogin } from "@/app/login/actions"
-import { Input } from "@/components/ui/input"
+import { FormInput } from "@/components/ui/form-input"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import NortusLogo from "@/public/NortusLogo.svg"
@@ -8,9 +9,30 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
 import Link from "next/link"
 import { useTranslations } from "next-intl"
+import { FormSchema, getLoginSchema } from "../lib/schemeValidation"
+import { useForm } from "react-hook-form"
+import type { Resolver } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
 
 export const FormLogin = () => {
     const t = useTranslations('LoginPage')
+    const loginSchema = getLoginSchema(t)
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    const resolver = zodResolver(loginSchema) as Resolver<FormSchema>
+
+    const form = useForm<FormSchema>({
+        resolver,
+        defaultValues: {
+            email: '',
+            password: ''
+        }
+    });
+
+    const {
+        handleSubmit,
+        register,
+        formState: { errors }
+    } = form;
     return (
         <div className="flex flex-col gap-6 items-start bg-app-bg-dark h-max w-full xl:min-w-[1fr] 3xl:min-w-[805px] 3xl:max-w-[50.3125rem]">
             <Image
@@ -26,12 +48,20 @@ export const FormLogin = () => {
                     <Typography element="h1" fontColor="title" fontSize="4xl">{t('title')}</Typography>
                     <Typography element="p" fontFamily="inter" className="text-[1.25rem]" fontWeight="normal" fontColor="title">{t('description')}</Typography>
                 </div>
-                <form action={handleLogin} className="w-full flex flex-col gap-7  2xl:max-w-[963px]">
-                    <div>
-                        <Input type="text" name="username" placeholder="Username" />
-                        <Typography element="p" fontColor="title" fontSize="xl" fontWeight="normal" className="indent-3 mt-1 text-left">{t('email')}</Typography>
-                    </div>
-                    <Input type="password" name="password" placeholder="Password" size={4} />
+                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7  2xl:max-w-[963px]">
+                    <FormInput
+                        type="text"
+                        placeholder="email"
+                        label={t('email')}
+                        error={errors.email?.message}
+                        {...register("email")}
+                    />
+                    <FormInput
+                        type="password"
+                        placeholder="Password"
+                        error={errors.password?.message}
+                        {...register("password")}
+                    />
                     <div className="flex justify-between 2xl:my-4">
                         <div className="flex items-center gap-3">
                             <Checkbox id="terms" />

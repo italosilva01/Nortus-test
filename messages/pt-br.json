@@ -10,5 +10,9 @@
         "remember": "Lembrar meu usuário",
         "forgot": "Esqueceu sua senha?",
         "enter": "Entrar"
+    },
+    "errorsScreen": {
+        "emailInvalid": "Email inválido",
+        "passwordRequired": "Senha é obrigatória"
     }
 }
