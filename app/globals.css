@@ -51,6 +51,7 @@
   --color-app-blue-100: var(--app-blue-100);
   --color-app-blue-200: var(--app-blue-200);
   --color-app-dark-blue-500: var(--app-dark-blue-500);
+  --color-app-dark-blue-100: var(--app-dark-blue-100);
   --color-title: var(--title);
 }
 
@@ -96,6 +97,7 @@
   --app-blue-100: #F6F8FC0A;
   --app-blue-200: #2B3247;
   --app-dark-blue-500: #20273E;
+  --app-dark-blue-100: #FFFFFF0D;
   --title: #E3E3E3;
 }
 
@@ -137,6 +139,7 @@
   --app-secondary: #10B981;
   --app-accent: #F59E0B;
   --app-bg-dark: #0B1125;
+  --app-bg-dark-100: #171D2F;
   --title: #E3E3E3;
   --blue-300: #0B1125;
   --blue-200: #1876D2;

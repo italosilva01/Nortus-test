@@ -13,17 +13,13 @@ import {
 } from "@/components/ui/avatar"
 import { menuItems } from "@/shared/lib/helpers";
 
-
-
-
-
 export const Sidebar = () => {
   const pathname = usePathname();
   const t = useTranslations("Sidebar");
 
   return (
     <aside
-      className="flex flex-col h-screen w-24 2xl:w-37.5 bg-app-dark-blue-500 rounded-tr-[23px] rounded-br-[26px] shadow-2xl shadow-black border-r border-app-bg-dark"
+      className="flex flex-col h-screen w-24 2xl:w-37.5 bg-app-dark-blue-500 rounded-tr-[23px] rounded-br-[26px] shadow-2xl shadow-black "
     >
 
       <div className="flex h-16 items-center justify-center 2xl:p-10">

@@ -1,9 +1,9 @@
 
 import * as React from "react"
-import { Input } from "./input"
+import { Input } from "../input"
 import { Typography } from "./Typography"
 import { cn } from "@/shared/lib/utils"
-import { Button } from "./button"
+import { Button } from "../button"
 import { EyeIcon, EyeOffIcon } from "lucide-react"
 import { useState } from "react"
 interface FormInputProps extends React.ComponentProps<"input"> {
