@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { Toaster } from "sonner";
+import { SessionProvider } from "next-auth/react";
+import { AuthSync } from "@/components/AuthSync";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,14 +23,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body
         className={`${inter.variable} antialiased bg-app-bg-dark`}
       >
-        <NextIntlClientProvider>
-          {children}
-          <Toaster position="top-right" richColors />
-        </NextIntlClientProvider>
+        <SessionProvider>
+          <AuthSync />
+          <NextIntlClientProvider>
+            {children}
+            <Toaster position="top-right" richColors />
+          </NextIntlClientProvider>
+        </SessionProvider>
       </body>
     </html>
   );
