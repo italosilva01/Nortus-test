@@ -1,6 +1,6 @@
 import NextAuth from "next-auth"
 import Credentials from "next-auth/providers/credentials"
-import { endpoints } from "./lib/endpoints";
+import { endpoints } from "./shared/lib/endpoints";
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     Credentials({

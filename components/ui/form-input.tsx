@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Input } from "./input"
 import { Typography } from "./Typography"
-import { cn } from "@/lib/utils"
+import { cn } from "@/shared/lib/utils"
 import { Button } from "./button"
 import { EyeIcon, EyeOffIcon } from "lucide-react"
 import { useState } from "react"
