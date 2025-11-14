@@ -1,0 +1,19 @@
+{
+    "HomePage": {
+        "title": "Olá mundo!"
+    },
+    "LoginPage": {
+        "title": "Login",
+        "description": "Entre com suas credenciais para acessar a sua conta.",
+        "email": "Insira o seu e-mail, CPF ou passaporte.",
+        "password": "Senha",
+        "remember": "Lembrar meu usuário",
+        "forgot": "Esqueceu sua senha?",
+        "enter": "Entrar",
+        "errorsScreen": {
+            "emailInvalid": "Email inválido",
+            "passwordRequired": "Senha é obrigatória",
+            "CredenciaisInvalidas": "Credenciais inválidas. Verifique seu email e senha."
+        }
+    }
+}
