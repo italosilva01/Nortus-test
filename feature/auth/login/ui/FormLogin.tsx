@@ -41,6 +41,7 @@ export const FormLogin = () => {
     } = form;
 
     useEffect(() => {
+        // TODO: remover useEffect 
         if (errorParams) {
             const errorMessage = t(`errorsScreen.${errorParams}`) || errorParams
             toast.error(errorMessage)
