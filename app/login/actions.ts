@@ -6,7 +6,6 @@ import { AuthError } from "next-auth"
 import { FormSchema } from "@/feature/auth/login/lib/schemeValidation"
 
 export const handleLogin = async (data: FormSchema) => {
-  console.log("data",data)
   try {
     await signIn("credentials", {
       username: data.email,

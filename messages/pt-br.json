@@ -9,10 +9,11 @@
         "password": "Senha",
         "remember": "Lembrar meu usuário",
         "forgot": "Esqueceu sua senha?",
-        "enter": "Entrar"
-    },
-    "errorsScreen": {
-        "emailInvalid": "Email inválido",
-        "passwordRequired": "Senha é obrigatória"
+        "enter": "Entrar",
+        "errorsScreen": {
+            "emailInvalid": "Email inválido",
+            "passwordRequired": "Senha é obrigatória",
+            "CredenciaisInvalidas": "Credenciais inválidas. Verifique seu email e senha."
+        }
     }
 }
