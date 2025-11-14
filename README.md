@@ -26,6 +26,10 @@ Escolhi o shadcn/ui por ser uma biblioteca de componentes já prontos, de alta q
 ### IA
 Em relação ao uso de IA, utilizei o Cursor com o agente Claude Sonnet 4.5 para gerar trechos de código, esclarecer dúvidas e explorar diferentes abordagens de implementação.
 
+### Feature-Sliced Design (FSD)
+Escolhi utilizar a arquitetura Feature-Sliced Design (FSD) por considerar que ela favorece a escalabilidade e se adapta bem a um projeto de médio a grande porte. Pensando na possibilidade de expansão futura, essa arquitetura já oferece uma estrutura robusta e organizada, facilitando tanto a evolução das funcionalidades quanto a manutenção do código.
+
+Além disso, o FSD permite separar cada feature de forma independente, o que torna o fluxo de trabalho mais simples,especialmente importante já que estou desenvolvendo este projeto sozinho.
 
 ## Desafios do projeto
 
