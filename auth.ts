@@ -11,9 +11,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       async authorize() {
         try {
           const response = await endpoints.auth.login();
-          console.log("response", response);
           if(response.status === 200 && response?.data) {
-            console.log("AQUI")
             return {
               id: response.data?.data.id || "1", 
               accessToken: response.data?.data.accessToken,
@@ -22,8 +20,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           }
           return null;
         } catch (error) {
-          console.log("error", error);
-          return null;
+          throw new Error("Login failed");
         }
       }
     }),
@@ -39,11 +36,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
-        token.id = user.id,
+        token.id = user.id;
         token.accessToken = user.accessToken;
         token.username = user.username;
       }
-      return token
+      return token;
     },
     async session({ session, token }) {
       session.user.id = token.id as string;
