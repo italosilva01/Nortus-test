@@ -14,5 +14,12 @@ export const authEndpoints = {
     } catch {
       throw new Error('Dashboard data request failed');
     }
+  },
+  getCustomerMapData: async () => {
+    try {
+      return await api.get('/map.json');
+    } catch {
+      throw new Error('Customer map data request failed');
+    }
   }
 }

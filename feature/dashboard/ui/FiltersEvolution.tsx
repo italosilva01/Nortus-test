@@ -1,4 +1,4 @@
-import { Button } from "../button"
+import { Button } from "../../../components/ui/button"
 import { cn } from "@/shared/lib/utils"
 import { KPI_BUTTONS } from "@/shared/lib/helpers"
 

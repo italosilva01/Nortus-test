@@ -46,7 +46,6 @@ export const useDashboardStore = create<DashboardStore>((set, get) => ({
     set({ isLoading: true, error: null });
     try {
       const response = await endpoints.auth.getDashboardData();
-      console.log('response', response?.data);
       if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
         set({ data: response.data, isLoading: false });
       } else {

@@ -26,7 +26,8 @@
             "churn": "Taxa de Churn",
             "variation": "no período"
         },
-        "evolutionOfKpis": "Evolução dos KPI's"
+        "evolutionOfKpis": "Evolução dos KPI's",
+        "noDataAvailable": "Nenhum dado disponível"
     },
     "Sidebar": {
         "home": "Início",
