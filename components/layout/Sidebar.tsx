@@ -4,14 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import NortusIcon from "@/public/icons/nortusIcon.svg";
+import NortusIcon from "@/public/icons/sideBar/nortusIcon.svg";
 
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
 } from "@/components/ui/avatar"
-import { menuItems } from "@/shared/lib/helpers";
+import { MENU_ITEMS } from "@/shared/lib/helpers";
 
 export const Sidebar = () => {
   const pathname = usePathname();
@@ -27,7 +27,7 @@ export const Sidebar = () => {
       </div>
 
       <nav className="flex flex-1 flex-col p-4 items-center justify-center gap-10">
-        {menuItems.map((item) => {
+        {MENU_ITEMS.map((item) => {
           const Icon = item.icon as React.ElementType & { src: string };
           const isActive = pathname === item.href;
 

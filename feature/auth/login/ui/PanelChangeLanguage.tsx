@@ -2,7 +2,7 @@
 import Image from "next/image"
 import StackedCards from "@/public/image/StackedCard.svg"
 import { Button } from "@/components/ui/button"
-import HelpIcon from "@/public/icons/customerSupport.svg"
+import HelpIcon from "@/public/icons/sideBar/customerSupport.svg"
 import { BR } from "country-flag-icons/react/1x1"
 import { ArrowDown } from "lucide-react"
 

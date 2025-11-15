@@ -49,7 +49,7 @@ const CustomerMapRegion = () => {
                 new Style({
                     image: new Circle({
                         radius: 14,
-                        fill: new Fill({ color: '#ffffff' || 'rgba(59, 130, 246, 0.7)' }),
+                        fill: new Fill({ color: '#ffffff' }),
                         stroke: new Stroke({ color: location?.color, width: 2 }),
                     }),
                     text: new Text({

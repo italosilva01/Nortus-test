@@ -32,7 +32,7 @@ interface MapCustomerStore {
           response.data !== undefined &&
           response.data !== null
         ) {
-          set({ data: response.data.data as MapData, isLoading: false });
+          set({ data: response.data.data as unknown as MapData, isLoading: false });
         } else {
           set({ error: 'Falha ao buscar dados do mapa de clientes', isLoading: false });
         }

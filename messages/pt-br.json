@@ -2,6 +2,13 @@
     "HomePage": {
         "title": "Dashboard"
     },
+    "TicketsManagementPage": {
+        "title": "Gestão de Tickets"
+    },
+    "HeaderLayout": {
+        "ticketsManagement": "Gestão de Tickets",
+        "dashboard": "Dashboard"
+    },
     "LoginPage": {
         "title": "Login",
         "description": "Entre com suas credenciais para acessar a sua conta.",
