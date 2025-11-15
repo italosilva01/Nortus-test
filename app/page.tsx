@@ -44,10 +44,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex justify-between gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
         <PanelBig title="ARPU" />
 
-        <div className="w-max grid grid-cols-2 grid-rows-2 gap-6 ">
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 xl:gap-6 w-full lg:w-auto">
           <PanelPerformance
             title="ARPU"
             value={formatCurrency(data.kpisResume.arpu.valor)}

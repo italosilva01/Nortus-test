@@ -4,13 +4,28 @@ import { Panel } from "./Panel"
 import { Typography } from "./Typography"
 import { cn } from "@/shared/lib/utils"
 import ReactApexChart from "react-apexcharts"
+import { Button } from "../button"
+import { useDashboardStore } from "@/stores/useDashboardStore"
 
 interface PanelBigProps {
-    title: string
+    title?: string
     classNameTitle?: string
 }
-export const PanelBig = ({ title, classNameTitle }: PanelBigProps) => {
-    const [state, setState] = useState<any>({
+
+interface ChartSeries {
+    name: string
+    data: number[]
+}
+
+interface ChartState {
+    series: ChartSeries[]
+    options: ApexCharts.ApexOptions
+}
+
+export const PanelBig = ({ classNameTitle }: PanelBigProps) => {
+    const { data: { kpisTrend } } = useDashboardStore();
+    console.log("kpisTrend: ", kpisTrend);
+    const [state] = useState<ChartState>({
 
         series: [{
             name: 'series1',
@@ -44,22 +59,28 @@ export const PanelBig = ({ title, classNameTitle }: PanelBigProps) => {
 
     });
     return (
-        <Panel className="w-max border border-red-500 py-0  h-auto flex flex-col 2xl:gap-20">
-            <CardHeader className="flex px-6 pt-6">
-                <CardTitle className="flex items-center gap-2">
-                    <Typography fontFamily="montserrat" fontWeight="normal" className={cn("text-[24px] font-bold truncate", classNameTitle)} fontColor="title">
-                        Evolução dos KPI's
+        <Panel className="py-0 w-full h-full flex flex-col max-w-[680px] xl:max-w-[780px] 2xl:max-w-[852px]">
+            <CardHeader className="flex pt-6 px-4 lg:px-6">
+                <CardTitle className="flex flex-col lg:flex-row items-start lg:items-center gap-4 justify-between w-full">
+                    <Typography fontFamily="montserrat" fontWeight="normal" className={cn("text-xl lg:text-2xl font-bold truncate", classNameTitle)} fontColor="title">
+                        Evolução dos KPI&apos;s
                     </Typography>
+                    <div className="p-3 lg:p-4 xl:p-5 flex bg-app-dark-blue-100 rounded-full gap-1.5 lg:gap-2 flex-wrap lg:flex-nowrap">
+                        <Button className="bg-app-dark-blue-200 rounded-full py-2 px-3 lg:py-2.5 lg:px-4 xl:py-3 xl:px-5 text-xs lg:text-sm whitespace-nowrap">Retenção</Button>
+                        <Button className="bg-app-dark-blue-200 rounded-full py-2 px-3 lg:py-2.5 lg:px-4 xl:py-3 xl:px-5 text-xs lg:text-sm whitespace-nowrap">Conversão</Button>
+                        <Button className="bg-app-dark-blue-200 rounded-full py-2 px-3 lg:py-2.5 lg:px-4 xl:py-3 xl:px-5 text-xs lg:text-sm whitespace-nowrap">Churn</Button>
+                        <Button className="bg-app-dark-blue-200 rounded-full py-2 px-3 lg:py-2.5 lg:px-4 xl:py-3 xl:px-5 text-xs lg:text-sm whitespace-nowrap">ARPU</Button>
+                    </div>
                 </CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col px-6 w-min">
-                <div id="chart" className="w-[31.25rem] 2xl:w-201 2xl:max-w-201">
-                    <div className="w-full">
+            <CardContent className="flex flex-col px-4 lg:px-6 flex-1 w-full h-full">
+                <div id="chart" className="w-full h-full flex-1 flex items-center min-h-[200px] lg:min-h-62.5 xl:min-h-75">
+                    <div className="w-full h-full flex-1">
                         <ReactApexChart
-                            options={state.options as any}
-                            series={state.series as any}
+                            options={state.options}
+                            series={state.series}
                             type="area"
-                            height={208}
+                            height="100%"
                             width="100%"
                         />
                     </div>
