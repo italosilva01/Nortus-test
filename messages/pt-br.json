@@ -3,7 +3,13 @@
         "title": "Dashboard"
     },
     "TicketsManagementPage": {
-        "title": "Gestão de Tickets"
+        "title": "Gestão de Tickets",
+        "resumeTotalTickets": {
+            "open": "Tickets Abertos",
+            "inProgress": "Em andamento",
+            "solved": "Resolvidos hoje",
+            "timeAverageHours": "Tempo Médio"
+        }
     },
     "HeaderLayout": {
         "ticketsManagement": "Gestão de Tickets",
@@ -44,7 +50,8 @@
         "users": "Usuários",
         "reports": "Relatórios",
         "settings": "Configurações",
-        "calculator": "Calculadora"
+        "calculator": "Calculadora",
+        "ticketsManagement": "Gestão de Tickets"
     },
     "Header": {
         "searchPlaceholder": "Buscar...",

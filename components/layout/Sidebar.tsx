@@ -1,16 +1,16 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import NortusIcon from "@/public/icons/sideBar/nortusIcon.svg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import NortusIcon from "@/public/icons/sideBar/nortusIcon.svg";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/components/ui/avatar"
+} from "@/components/ui/avatar";
 import { MENU_ITEMS } from "@/shared/lib/helpers";
 
 export const Sidebar = () => {

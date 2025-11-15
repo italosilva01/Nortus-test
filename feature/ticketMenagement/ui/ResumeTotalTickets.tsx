@@ -1,13 +1,29 @@
-import TicketIcon from '@/public/icons/ticketManegement/ticketOpenIcon.svg';
 import Image from 'next/image';
-import PanelTotal from "./PanelTotal";
+
+import { PANELS_MAP } from '@/shared/lib/helpers';
+import { TicketResume } from '@/shared/types/ticketManagement';
+import { useTicketManagementStore } from '@/stores/useTicketManagementStore';
+
+import { useTranslations } from 'next-intl';
+import PanelTotal from './PanelTotal';
+
 export default function ResumeTotalTickets() {
-    return (
-      <div className="flex gap-6 w-full">
-      <PanelTotal title="Total de Tickets" value="24" icon={<Image src={TicketIcon as string} alt="Ticket Icon" />} />
-      <PanelTotal title="Total de Tickets" value="24" icon={<Image src={TicketIcon as string} alt="Ticket Icon" />} />
-      <PanelTotal title="Total de Tickets" value="24" icon={<Image src={TicketIcon as string} alt="Ticket Icon" />} />
-      <PanelTotal title="Total de Tickets" value="24" icon={<Image src={TicketIcon as string} alt="Ticket Icon" />} />
-  </div>
-    );
+  const { data } = useTicketManagementStore();
+  const resumeTotalTickets = data?.resumo;
+  const t = useTranslations();
+  return (
+    <div className="flex gap-6 w-full">
+      {PANELS_MAP.map((panel) => {
+        const title = t(`TicketsManagementPage.resumeTotalTickets.${panel.key}`) as string;
+        return (
+          <PanelTotal 
+            key={panel.key} 
+            title={title} 
+            value={resumeTotalTickets?.[panel.key as keyof TicketResume]?.toString() ?? '0'} 
+            icon={<Image src={panel.icon} alt={title} width={24} height={24} />} 
+          />
+        );
+      })}
+    </div>
+  );
 }

@@ -25,7 +25,6 @@ interface TicketManagementStore {
       set({ isLoading: true, error: null });
       try {
         const response = await endpoints.auth.getTicketManagementData();
-        console.log('response', response?.data)
         if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
           set({ data: response.data as TicketManagementData, isLoading: false });
         } else {

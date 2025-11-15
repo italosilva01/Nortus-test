@@ -6,9 +6,10 @@ import ResumeTotalTickets from '@/feature/ticketMenagement/ui/ResumeTotalTickets
 import { useTicketManagementStore } from '@/stores/useTicketManagementStore';
 
 export default function TicketsManagementPage() {
-    const { data, isLoading, fetchTicketManagementData } = useTicketManagementStore();
+    const { data, isLoading } = useTicketManagementStore();
+    
     useEffect(() => {
-        fetchTicketManagementData();
+        useTicketManagementStore.getState().fetchTicketManagementData();
     }, []);
 
     if (isLoading) {
@@ -20,7 +21,6 @@ export default function TicketsManagementPage() {
     return (
         <div className="flex flex-col w-full">
             <ResumeTotalTickets />
-
         </div >
     );
 }

@@ -1,8 +1,13 @@
-import DashboardIcon from "@/public/icons/sideBar/dashboard.svg";
-import PersonIcon from "@/public/icons/sideBar/person.svg";
-import MessageIcon from "@/public/icons/sideBar/message.svg";
-import TicketsIcon from "@/public/icons/sideBar/tickets.svg";
 import CalcIcon from "@/public/icons/sideBar/calcIcon.svg";
+import DashboardIcon from "@/public/icons/sideBar/dashboard.svg";
+import MessageIcon from "@/public/icons/sideBar/message.svg";
+import PersonIcon from "@/public/icons/sideBar/person.svg";
+import TicketsIcon from "@/public/icons/sideBar/tickets.svg";
+import TicketSolvedIcon from '@/public/icons/ticketManegement/doneTodayIcon.svg';
+import TicketInProgressIcon from '@/public/icons/ticketManegement/inProgress.svg';
+import TicketIcon from '@/public/icons/ticketManegement/ticketOpenIcon.svg';
+import TicketTimeAverageIcon from '@/public/icons/ticketManegement/timeMedian.svg';
+import { TicketResume } from "@/shared/types/ticketManagement";
 interface MenuItem {
     icon: { src: string };
     label: string;
@@ -75,3 +80,22 @@ export const MENU_ITEMS: MenuItem[] = [
     dark: '#00449A',
     accent: '#53A9F9',
 } as const;
+
+export const PANELS_MAP: { key: keyof TicketResume;  icon: string }[] = [
+  {
+    key: 'open',
+    icon: TicketIcon as string
+  },
+  {
+    key: 'inProgress',
+    icon: TicketInProgressIcon as string
+  },
+  {
+    key: 'solved',
+    icon: TicketSolvedIcon as string
+  },
+  {
+    key: 'timeAverageHours',
+    icon: TicketTimeAverageIcon as string
+  }
+];

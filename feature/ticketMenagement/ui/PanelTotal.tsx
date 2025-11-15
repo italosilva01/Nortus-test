@@ -1,7 +1,6 @@
 "use client";
 
-import { CardContent, CardTitle } from "@/components/ui/card";
-import { CardHeader } from "@/components/ui/card";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Panel } from "@/components/ui/custom/Panel";
 import { Typography } from "@/components/ui/custom/Typography";
 
@@ -31,7 +30,8 @@ const PanelTotal = ({ title, value, icon }: PanelTotalProps) => {
                     {value}
                 </Typography>
                 <span className="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center shrink-0">
-                    {icon}
+                  
+                {icon}
                 </span>
             </CardContent>
         </Panel>

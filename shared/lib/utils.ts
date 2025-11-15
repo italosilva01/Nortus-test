@@ -49,3 +49,4 @@ export const getTrendName = (selectedKpi: string) => {
   const kpiLabel = KPI_BUTTONS.find(kpi => kpi.value === selectedKpi)?.label;
   return kpiLabel || 'KPI';
 };
+
