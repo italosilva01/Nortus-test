@@ -18,12 +18,17 @@ export default function Home() {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col xl:flex-row gap-6">
-        <Skeleton className="w-[852px] h-[350px] rounded-lg" />
-        <SkeletonResumePanelPerformance />
+      <div className="flex flex-col gap-6">
+        <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
+          <Skeleton className="w-full xl:w-[852px] h-[400px] rounded-lg" />
+          <SkeletonResumePanelPerformance />
+        </div>
+        <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
+          <Skeleton className="w-full xl:w-[852px] h-[350px] rounded-lg" />
+          <Skeleton className="w-full xl:w-[345px] h-[350px] rounded-lg" />
+        </div>
       </div>
     );
-
   }
 
   if (!data) {
@@ -40,7 +45,6 @@ export default function Home() {
         <GraphEvolution />
         <ResumePerformance />
       </div>
-
       <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
         <CustomerMapRegion />
         <MapSegments />
