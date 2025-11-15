@@ -3,7 +3,20 @@
 
 A Nortus-dw é uma solução ficticia de inteligência artificial para times de vendas e atendimentos que utilza fato baseado em coomportamentos e analise de perfil. O projeto foi desenvolvido como um teste para a loomi.
 
-## Decisões
+## 📋 Status do Projeto
+### ✅ Features Implementadas
+- [x] **Login** - Autenticação com validações e middleware
+- [x] **Dashboard** - KPIs, gráficos e mapas interativos
+- [ ] **Gestão de Tickets** - [status atual]
+- [ ] **Chat** - [status atual]
+
+## ⏰ Cronologia
+- **Dia 1:** Setup + Login completo
+- **Dia 2:** Dashboard [em andamento/completo]
+- **Dia 3:** [planejado]
+- **Dia 4:** [planejado]
+
+## 🎯 Decisões
 
 ### Github & Kanban
 Usei o Kanban para gerenciar minhas tarefas diretamente no GitHub.
@@ -14,6 +27,17 @@ Escolhi o GitHub porque é onde o projeto e o repositório estão hospedados. As
 #### Kanban
 Optei pelo Kanban porque, analisando o contexto, ele é a melhor forma de acompanhar o andamento das tarefas e manter o foco nas features em desenvolvimento. Como estou trabalhando sozinho neste projeto, o Kanban facilita o controle do progresso e a organização das demandas.
 
+## Contexto das Decisões Técnicas
+
+Quis deixar registrado o contexto porque algumas das escolhas técnicas podem ser questionadas pela equipe, especialmente em cenários onde optei por soluções mais robustas, mesmo quando alternativas mais simples seriam possíveis.
+
+É importante destacar que desenvolvi o projeto pensando em escalabilidade. Por isso, em vários pontos tomei decisões que priorizam uma base mais sólida para crescimento futuro, mesmo adicionando um pouco mais de complexidade no curto prazo.
+
+Um exemplo disso é a escolha da arquitetura Feature-Sliced Design (FSD), que oferece uma estrutura mais organizada e preparada para evolução. Outro caso é a decisão de utilizar o Zustand para gerenciar os dados do dashboard.
+
+Ao analisar o protótipo, percebi que esses dados não se repetiam em outras telas. Inicialmente, cheguei a considerar usar apenas useState ou até um contexto simples. Porém, avaliando a perspectiva de crescimento do projeto e a possibilidade de novas telas consumirem esses dados no futuro, optei por implementar diretamente com Zustand. Isso me permitiu criar uma solução mais próxima de um cenário real de expansão.
+
+Em resumo, minhas decisões foram feitas pensando no horizonte do projeto, privilegiando uma base escalável e mais fácil de manter.
 
 ## Decisões técnicas
 
@@ -23,7 +47,7 @@ Além de ser uma das ferramentas obrigatórias, as configurações foram definid
 ### Shadcn
 Escolhi o shadcn/ui por ser uma biblioteca de componentes já prontos, de alta qualidade e com fácil integração ao Tailwind CSS. Essa escolha facilita a implementação e agiliza o processo de customização da interface, tornando o desenvolvimento mais rápido e padronizado.
 
-### IA
+### 🤖 IA
 Em relação ao uso de IA, utilizei o Cursor com o agente Claude Sonnet 4.5 para gerar trechos de código, esclarecer dúvidas e explorar diferentes abordagens de implementação.
 
 #### exemplo
@@ -37,6 +61,13 @@ O agent gerou alguns arquivos e depois avaliei o que estava de acordo com o pedi
 Escolhi utilizar a arquitetura Feature-Sliced Design (FSD) por considerar que ela favorece a escalabilidade e se adapta bem a um projeto de médio a grande porte. Pensando na possibilidade de expansão futura, essa arquitetura já oferece uma estrutura robusta e organizada, facilitando tanto a evolução das funcionalidades quanto a manutenção do código.
 
 Além disso, o FSD permite separar cada feature de forma independente, o que torna o fluxo de trabalho mais simples,especialmente importante já que estou desenvolvendo este projeto sozinho.
+
+### useDashboardStore
+Optei por criar o hook useDashboardStories de forma unificada porque a requisição do dashboard já retorna todos os dados juntos. Dessa forma, consigo exibir o skeleton de uma única vez, mantendo o carregamento consistente em toda a tela.
+
+Cheguei a considerar uma abordagem dividida, separar a resposta da requisição em partes e processá-las individualmente. Porém, isso tornaria a implementação mais complexa e adicionaria uma dificuldade que, ao meu ver, não fazia parte da intenção original dos desenvolvedores do teste.
+
+Por esse motivo, decidi criar um hook maior do que o habitual, priorizando simplicidade e coerência com o formato da API.
 
 ## Desafios do projeto
 

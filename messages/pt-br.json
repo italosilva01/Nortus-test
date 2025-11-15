@@ -16,12 +16,25 @@
             "CredenciaisInvalidas": "Credenciais inválidas. Verifique seu email e senha."
         }
     },
+    "DashboardPage": {
+        "title": "Dashboard",
+        "description": "Dashboard de performance da empresa",
+        "kpis": {
+            "arpu": "ARPU",
+            "conversion": "Taxa de Conversão",
+            "retention": "Taxa de Retenção",
+            "churn": "Taxa de Churn",
+            "variation": "no período"
+        },
+        "evolutionOfKpis": "Evolução dos KPI's"
+    },
     "Sidebar": {
         "home": "Início",
         "dashboard": "Dashboard",
         "users": "Usuários",
         "reports": "Relatórios",
-        "settings": "Configurações"
+        "settings": "Configurações",
+        "calculator": "Calculadora"
     },
     "Header": {
         "searchPlaceholder": "Buscar...",

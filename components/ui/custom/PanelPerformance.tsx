@@ -12,10 +12,10 @@ interface PanelPerformanceProps {
 }
 export const PanelPerformance = ({ title, value, diffLastMonth, positive = true, iconChildren }: PanelPerformanceProps) => {
     return (
-        <Panel className="">
+        <Panel className="xl:w-52 xl:h-40 2xl:min-w-56.75 2xl:min-h-44">
             <CardHeader className="px-6">
                 <CardTitle className="flex items-center gap-2">
-                    <Typography fontFamily="montserrat" fontWeight="normal" className="text-[14px]" fontColor="title">
+                    <Typography fontFamily="montserrat" fontWeight="normal" className="text-[14px] truncate" fontColor="title">
                         {title}
                     </Typography>
                 </CardTitle>

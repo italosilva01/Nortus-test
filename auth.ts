@@ -1,6 +1,7 @@
 import NextAuth from "next-auth"
 import Credentials from "next-auth/providers/credentials"
 import { endpoints } from "./shared/lib/endpoints";
+import { HTTP_STATUS_CODES } from "./shared/lib/helpers";
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     Credentials({
@@ -11,7 +12,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       async authorize() {
         try {
           const response = await endpoints.auth.login();
-          if(response.status === 200 && response?.data) {
+          if(response.status === HTTP_STATUS_CODES.OK && response?.data) {
             return {
               id: response.data?.data.id || "1", 
               accessToken: response.data?.data.accessToken,
