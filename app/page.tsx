@@ -6,9 +6,10 @@ import { formatCurrency, formatVariation } from '@/shared/lib/utils';
 import { useDashboardStore } from '@/stores/useDashboardStore';
 import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import { Skeleton } from '@/components/ui/skeleton';
 
 export default function Home() {
-  const { data, isLoading, error, fetchDashboardData } = useDashboardStore();
+  const { data, isLoading, fetchDashboardData } = useDashboardStore();
   const t = useTranslations();
   useEffect(() => {
     fetchDashboardData();
@@ -17,20 +18,12 @@ export default function Home() {
   if (isLoading) {
     // TODO: Add Skeleton Loading
     return (
-      <div className="flex flex-col gap-6">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"></div>
+      <div className="flex flex-col xl:flex-row gap-6">
+        <Skeleton className="w-[852px] h-[350px] rounded-lg" />
         <SkeletonResumePanelPerformance />
       </div>
     );
 
-  }
-
-  if (error) {
-    return (
-      <div className="flex min-h-screen items-center justify-center">
-        <p className="text-lg text-red-600">Erro: {error}</p>
-      </div>
-    );
   }
 
   if (!data) {
@@ -45,8 +38,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
-        <PanelBig title="ARPU" />
-
+        <PanelBig />
         <div className="grid grid-cols-2 grid-rows-2 gap-4 xl:gap-6 w-full lg:w-auto">
           <PanelPerformance
             title="ARPU"

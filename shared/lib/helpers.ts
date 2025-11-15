@@ -9,6 +9,12 @@ interface MenuItem {
     href: string;
   }
   
+  interface KpiButton {
+    id: string
+    label: string
+    value: string
+}
+
 export const menuItems: MenuItem[] = [
     {
       icon: DashboardIcon as { src: string },
@@ -36,6 +42,13 @@ export const menuItems: MenuItem[] = [
       href: "/calculator",
     },
   ];
+
+  export const KPI_BUTTONS: KpiButton[] = [
+    { id: 'retention', label: 'Retenção', value: 'retention' },
+    { id: 'conversion', label: 'Conversão', value: 'conversion' },
+    { id: 'churn', label: 'Churn', value: 'churn' },
+    { id: 'arpu', label: 'ARPU', value: 'arpu' }
+]
 
   export const HTTP_STATUS_CODES = {
     OK: 200,
