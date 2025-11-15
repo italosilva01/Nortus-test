@@ -21,5 +21,12 @@ export const authEndpoints = {
     } catch {
       throw new Error('Customer map data request failed');
     }
+  },
+  getTicketManagementData: async () => {
+    try {
+      return await api.get('/ticket-management.json');
+    } catch {
+      throw new Error('Ticket management data request failed');
+    }
   }
 }
