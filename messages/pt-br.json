@@ -1,6 +1,6 @@
 {
     "HomePage": {
-        "title": "Olá mundo!"
+        "title": "Dashboard"
     },
     "LoginPage": {
         "title": "Login",
@@ -15,5 +15,33 @@
             "passwordRequired": "Senha é obrigatória",
             "CredenciaisInvalidas": "Credenciais inválidas. Verifique seu email e senha."
         }
+    },
+    "DashboardPage": {
+        "title": "Dashboard",
+        "description": "Dashboard de performance da empresa",
+        "mapOfImpactBySegment": "Mapa de impacto por segmento",
+        "analyzeSegments": "Analisar segmentos",
+        "kpis": {
+            "arpu": "ARPU",
+            "conversion": "Taxa de Conversão",
+            "retention": "Taxa de Retenção",
+            "churn": "Taxa de Churn",
+            "variation": "no período"
+        },
+        "evolutionOfKpis": "Evolução dos KPI's",
+        "noDataAvailable": "Nenhum dado disponível"
+    },
+    "Sidebar": {
+        "home": "Início",
+        "dashboard": "Dashboard",
+        "users": "Usuários",
+        "reports": "Relatórios",
+        "settings": "Configurações",
+        "calculator": "Calculadora"
+    },
+    "Header": {
+        "searchPlaceholder": "Buscar...",
+        "notifications": "Notificações",
+        "logout": "Sair"
     }
 }

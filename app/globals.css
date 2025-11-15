@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "ol/ol.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -49,6 +50,10 @@
   --color-app-accent: var(--app-accent);
   --color-app-bg-dark: var(--app-bg-dark);
   --color-app-blue-100: var(--app-blue-100);
+  --color-app-blue-200: var(--app-blue-200);
+  --color-app-dark-blue-500: var(--app-dark-blue-500);
+  --color-app-dark-blue-100: var(--app-dark-blue-100);
+  --color-app-dark-blue-200: var(--app-dark-blue-200);
   --color-title: var(--title);
 }
 
@@ -92,6 +97,10 @@
   --app-accent: #F59E0B;
   --app-bg-dark: #0B1125;
   --app-blue-100: #F6F8FC0A;
+  --app-blue-200: #2B3247;
+  --app-dark-blue-500: #20273E;
+  --app-dark-blue-100: #FFFFFF0D;
+  --app-dark-blue-200: #F6F8FC1A;
   --title: #E3E3E3;
 }
 
@@ -133,6 +142,7 @@
   --app-secondary: #10B981;
   --app-accent: #F59E0B;
   --app-bg-dark: #0B1125;
+  --app-bg-dark-100: #171D2F;
   --title: #E3E3E3;
   --blue-300: #0B1125;
   --blue-200: #1876D2;
@@ -145,5 +155,35 @@
   }
   body {
     @apply bg-background ;
+  }
+}
+
+@layer utilities {
+  .sidebar-link-active {
+    background: linear-gradient(to bottom right, #60a5fa, #3b82f6, #2563eb);
+    box-shadow: 
+      0 8px 16px rgba(59, 130, 246, 0.4),
+      0 4px 8px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .sidebar-link-active:hover {
+    box-shadow: 
+      0 10px 20px rgba(59, 130, 246, 0.5),
+      0 6px 12px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .sidebar-link-inactive {
+    background-color: var(--app-blue-200);
+    transition: all 0.3s ease;
+  }
+
+  .sidebar-link-inactive:hover {
+    background: linear-gradient(to bottom right, #60a5fa, #3b82f6, #2563eb);
+    box-shadow: 
+      0 6px 12px rgba(59, 130, 246, 0.3),
+      0 3px 6px rgba(0, 0, 0, 0.3);
   }
 }

@@ -5,7 +5,6 @@ import { cookies, headers } from 'next/headers';
 type Messages = typeof enMessages;
 
 const getLocaleFromAcceptLanguage = (acceptLanguage: string | null): string => {
-    // fallback para o idioma padrão
   if (!acceptLanguage) return 'en';
   
   const languages = acceptLanguage

@@ -3,11 +3,7 @@ import { auth } from "@/auth"
 import { FormLogin } from "@/feature/auth/login/ui/FormLogin"
 import { PanelChangeLanguage } from "@/feature/auth/login/ui/PanelChangeLanguage"
 
-export default async function LoginPage({
-    searchParams,
-}: {
-    searchParams: { error?: string }
-}) {
+export default async function LoginPage() {
     const session = await auth()
 
     if (session) {
@@ -20,4 +16,5 @@ export default async function LoginPage({
             <PanelChangeLanguage />
         </main>
     )
-}       
+}
+

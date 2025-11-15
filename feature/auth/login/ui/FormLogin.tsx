@@ -1,10 +1,10 @@
 "use client"
-import { handleLogin } from "@/app/login/actions"
-import { FormInput } from "@/components/ui/form-input"
+import { handleLogin } from "@/app/(auth)/login/actions"
+import { FormInput } from "@/components/ui/custom/FormInput"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import NortusLogo from "@/public/NortusLogo.svg"
-import { Typography } from "@/components/ui/Typography"
+import { Typography } from "@/components/ui/custom/Typography"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
 import Link from "next/link"
@@ -13,16 +13,9 @@ import { FormSchema, getLoginSchema } from "../lib/schemeValidation"
 import { useForm } from "react-hook-form"
 import type { Resolver } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { useSearchParams, useRouter } from "next/navigation"
-import { toast } from "sonner"
-import { useEffect } from "react"
 
 export const FormLogin = () => {
     const t = useTranslations('LoginPage')
-    const router = useRouter()
-    const searchParams = useSearchParams()
-    const errorParams = searchParams?.get('error')
-
     const loginSchema = getLoginSchema(t)
     const resolver = zodResolver(loginSchema) as Resolver<FormSchema>
 
@@ -33,22 +26,11 @@ export const FormLogin = () => {
             password: ''
         }
     });
-
     const {
         handleSubmit,
         register,
         formState: { errors }
     } = form;
-
-    useEffect(() => {
-        // TODO: remover useEffect 
-        if (errorParams) {
-            const errorMessage = t(`errorsScreen.${errorParams}`) || errorParams
-            toast.error(errorMessage)
-
-            router.replace('/login')
-        }
-    }, [errorParams, t, router])
 
     return (
         <div className="flex flex-col gap-6 items-start bg-app-bg-dark h-max w-full xl:min-w-[1fr] 3xl:min-w-[805px] 3xl:max-w-[50.3125rem]">
