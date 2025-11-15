@@ -118,7 +118,7 @@ const CustomerMapRegion = () => {
 
     return (
         <PanelBig title="Mapa de Clientes por Região" className="h-max" contentClassName="py-6">
-            <div className="w-full h-[300px] relative">
+            <div className="w-full h-75 relative">
                 <div
                     ref={mapRef}
                     className="w-full h-full rounded-lg overflow-hidden"

@@ -60,3 +60,11 @@ export const menuItems: MenuItem[] = [
     NOT_FOUND: 404,
     INTERNAL_SERVER_ERROR: 500,
   }
+
+  export const MAP_SEGMENTS_COLORS = {
+    primary: '#006EF9',
+    light: '#77DFFD',
+    medium: '#0E81A5',
+    dark: '#00449A',
+    accent: '#53A9F9',
+} as const;

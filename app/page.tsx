@@ -7,6 +7,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import GraphEvolution from '@/feature/dashboard/ui/GraphEvolution';
 import { ResumePerformance } from '@/feature/dashboard/ui/ResumePerformance';
 import CustomerMapRegion from '@/feature/dashboard/ui/CustomerMapRegion';
+import MapSegments from '@/feature/dashboard/ui/MapSegments';
 
 export default function Home() {
   const { data, isLoading, fetchDashboardData } = useDashboardStore();
@@ -42,7 +43,7 @@ export default function Home() {
 
       <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
         <CustomerMapRegion />
-        <ResumePerformance />
+        <MapSegments />
       </div>
     </div>
   );

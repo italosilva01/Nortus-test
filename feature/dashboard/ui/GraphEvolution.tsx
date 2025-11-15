@@ -7,7 +7,12 @@ import { formatNumberWithK, getTrendData, getTrendName } from "@/shared/lib/util
 import { KpisTrend } from "@/shared/types/dashboard";
 import { useDashboardStore } from "@/stores/useDashboardStore";
 import { useMemo, useState } from "react";
-import ReactApexChart from "react-apexcharts";
+import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
+
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+    ssr: false,
+});
 interface ChartSeries {
     name: string
     data: number[]
@@ -22,7 +27,7 @@ const GraphEvolution = () => {
     const [selectedKpi, setSelectedKpi] = useState<string>('arpu')
     const { data } = useDashboardStore();
     const kpisTrend = data?.kpisTrend;
-
+    const t = useTranslations();
     const handleKpiClick = (kpiValue: string) => {
         setSelectedKpi(kpiValue);
     };
@@ -85,7 +90,7 @@ const GraphEvolution = () => {
     }, [kpisTrend, selectedKpi]);
 
     return (
-        <PanelBig title="Evolução dos KPIs" filtersChildren={<FiltersEvolution selectedKpi={selectedKpi} onKpiClick={handleKpiClick} />}>
+        <PanelBig title={t("DashboardPage.evolutionOfKpis")} filtersChildren={<FiltersEvolution selectedKpi={selectedKpi} onKpiClick={handleKpiClick} />}>
             <div id="chart" className="w-full h-full flex-1 flex items-center min-h-[200px] lg:min-h-62.5 xl:min-h-75">
                 {!kpisTrend ? (
                     <div className="w-full h-full flex items-center justify-center">

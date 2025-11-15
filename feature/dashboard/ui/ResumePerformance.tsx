@@ -13,25 +13,25 @@ export const ResumePerformance = () => {
     return (
         <div className="grid grid-cols-2 grid-rows-2 gap-4 xl:gap-6 w-full lg:w-auto">
             <PanelPerformance
-                title="ARPU"
+                title={t("DashboardPage.kpis.arpu")}
                 value={formatCurrency(data.kpisResume.arpu.valor)}
                 diffLastMonth={formatVariation(data.kpisResume.arpu.variacao, t)}
                 positive={data.kpisResume.arpu.valor > 0}
             />
             <PanelPerformance
-                title="Taxa de Conversão"
+                title={t("DashboardPage.kpis.conversion")}
                 value={`${data.kpisResume.conversion.valor}%`}
                 diffLastMonth={formatVariation(data.kpisResume.conversion.variacao, t)}
                 positive={data.kpisResume.conversion.valor > 0}
             />
             <PanelPerformance
-                title="Taxa de Retenção"
+                title={t("DashboardPage.kpis.retention")}
                 value={`${data.kpisResume.retention.valor}%`}
                 diffLastMonth={formatVariation(data.kpisResume.retention.variacao, t)}
                 positive={data.kpisResume.retention.valor > 0}
             />
             <PanelPerformance
-                title="Taxa de Churn"
+                title={t("DashboardPage.kpis.churn")}
                 value={`${data.kpisResume.churn.valor}%`}
                 diffLastMonth={formatVariation(data.kpisResume.churn.variacao, t)}
                 positive={data.kpisResume.churn.valor < 0}

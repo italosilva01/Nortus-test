@@ -23,6 +23,21 @@
         "reports": "Reports",
         "settings": "Settings"
     },
+    "DashboardPage": {
+        "title": "Dashboard",
+        "description": "Dashboard de performance da empresa",
+        "mapOfImpactBySegment": "Mapa de impacto por segmento",
+        "analyzeSegments": "Analisar segmentos",
+        "kpis": {
+            "arpu": "ARPU",
+            "conversion": "Taxa de Conversão",
+            "retention": "Taxa de Retenção",
+            "churn": "Taxa de Churn",
+            "variation": "no período"
+        },
+        "evolutionOfKpis": "Evolução dos KPI's",
+        "noDataAvailable": "Nenhum dado disponível"
+    },
     "Header": {
         "searchPlaceholder": "Search...",
         "notifications": "Notifications",

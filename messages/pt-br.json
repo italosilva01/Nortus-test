@@ -19,6 +19,8 @@
     "DashboardPage": {
         "title": "Dashboard",
         "description": "Dashboard de performance da empresa",
+        "mapOfImpactBySegment": "Mapa de impacto por segmento",
+        "analyzeSegments": "Analisar segmentos",
         "kpis": {
             "arpu": "ARPU",
             "conversion": "Taxa de Conversão",
