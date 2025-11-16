@@ -1,38 +1,56 @@
 import { Search } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-import { Combobox, ComboboxOption } from '@/components/ui/combobox';
+import { Combobox } from '@/components/ui/combobox';
 import { Input } from '@/components/ui/input';
+import { mapPriorityToTagVariant, mapStatusToTagVariant } from '@/shared/lib/utils';
+import { useTicketManagementStore } from '@/stores/useTicketManagementStore';
 
 interface FiltersTicketsProps {
-  priorityOptions: ComboboxOption[];
-  statusOptions: ComboboxOption[];
-  responsibleOptions: ComboboxOption[];
   searchTerm: string;
   onSearchTermChange: (value: string) => void;
   selectedPriority: string;
   onPriorityChange: (value: string) => void;
-  selectedStatus: string;
-  onStatusChange: (value: string) => void;
-  selectedResponsible: string;
-  onResponsibleChange: (value: string) => void;
+  selectedStatus?: string;
+  onStatusChange?: (value: string) => void;
+  selectedResponsible?: string;
+  onResponsibleChange?: (value: string) => void;
 }
-// TODO: refatorar esse componente para usar o useFormContext
 
 const FiltersTickets = ({
-  priorityOptions = [],
-  statusOptions = [],
-  responsibleOptions = [],
   searchTerm,
   onSearchTermChange,
   selectedPriority,
-  onPriorityChange,
   selectedStatus,
-  onStatusChange,
-  selectedResponsible,
-  onResponsibleChange,
+  onPriorityChange,
+  onStatusChange
 }: FiltersTicketsProps) => {
-  const t = useTranslations('TicketsManagementPage');
+  const t = useTranslations();
+  const { data } = useTicketManagementStore();
+  const priorityOptions = data?.priorities.map((priority) =>{
+    const convertPriority = mapPriorityToTagVariant(priority);
+    return {
+      value: convertPriority,
+      label : t(`Filters.priority.${convertPriority}`),
+    }
+  });
+
+  const statusOptions = data?.status.map((status) =>{
+    const convertStatus = mapStatusToTagVariant(status);
+    return {
+      value: convertStatus,
+      label : t(`Filters.status.${convertStatus}`),
+    }
+  });
+
+  const responsibleOptions = data?..map((responsible) =>{
+    return {
+      value: responsible,
+      label : responsible,
+    }
+  });
+
+  console.log("statusOptions", statusOptions);
 
  return(
   <div className="flex flex-col gap-4 w-full">
@@ -47,24 +65,24 @@ const FiltersTickets = ({
         className="pl-10 max-h-9 border-none bg-app-bg-dark"
       />
     </div>
-    <Combobox
-      options={statusOptions}
+   <Combobox
+      options={statusOptions ?? []}
       value={selectedStatus}
       onValueChange={onStatusChange}
-      placeholder={t('listTickets.selectStatus') || 'Status'}
-      searchPlaceholder={t('listTickets.searchStatus') || 'Buscar...'}
-      emptyMessage={t('listTickets.noStatus') || 'Nenhum status encontrado'}
+      placeholder={t('Filters.status.selectStatus')}
+      searchPlaceholder={t('Filters.status.searchStatus')}
+      emptyMessage={t('Filters.status.noStatus')}
       className="w-full sm:w-[200px] border-none bg-app-bg-dark max-h-9"
-    />
-    <Combobox
-      options={priorityOptions}
+    /> 
+   <Combobox
+      options={priorityOptions ?? []}
       value={selectedPriority}
       onValueChange={onPriorityChange}
-      placeholder={t('listTickets.selectPriority') || 'Prioridade'}
-      searchPlaceholder={t('listTickets.searchPriority') || 'Buscar...'}
-      emptyMessage={t('listTickets.noPriority') || 'Nenhuma prioridade encontrada'}
-      className="w-full sm:w-[200px] border-none bg-app-bg-dark max-h-9"
-    />
+      placeholder={t('Filters.priority.selectPriority')}
+      searchPlaceholder={t('Filters.priority.searchPriority')}
+      emptyMessage={t('TicketsManagementPage.listTickets.noPriority')}
+      className="w-full sm:w-50 border-none bg-app-bg-dark max-h-9"
+    /> 
      <Combobox
       options={responsibleOptions}
       value={selectedResponsible}
@@ -73,7 +91,7 @@ const FiltersTickets = ({
       searchPlaceholder={t('listTickets.searchResponsible') || 'Buscar...'}
       emptyMessage={t('listTickets.noResponsible') || 'Nenhum responsável encontrado'}
       className="w-full sm:w-[200px] border-none bg-app-bg-dark max-h-9"
-    />
+    /> 
     
   </div>
  

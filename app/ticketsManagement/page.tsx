@@ -2,9 +2,10 @@
 
 import { useEffect } from 'react';
 
+import ListTickets from '@/feature/ticketMenagement/ui/ListTickets';
 import ResumeTotalTickets from '@/feature/ticketMenagement/ui/ResumeTotalTickets';
+import { SkeletonTicketManagement } from '@/feature/ticketMenagement/ui/SkeletonTicketMenagement';
 import { useTicketManagementStore } from '@/stores/useTicketManagementStore';
-import ListTickets from '../../feature/ticketMenagement/ui/ListTickets';
 
 export default function TicketsManagementPage() {
     const { data, isLoading } = useTicketManagementStore();
@@ -14,7 +15,7 @@ export default function TicketsManagementPage() {
     }, []);
 
     if (isLoading) {
-        return <div>Carregando...</div>;
+        return <SkeletonTicketManagement />;
     }
     if (!data) {
         return <div>Nenhum dado encontrado</div>;

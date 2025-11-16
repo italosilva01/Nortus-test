@@ -27,6 +27,7 @@ interface TicketManagementStore {
       try {
         const response = await endpoints.auth.getTicketManagementData();
         if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
+          console.log("response.data", response.data);
           set({ data: {...response.data as TicketManagementData, tickets: convertTicketPrioritiesAndStatus(response.data.tickets as Ticket[])}, isLoading: false });
         } else {
           set({ error: 'Falha ao buscar dados de gerenciamento de tickets', isLoading: false });

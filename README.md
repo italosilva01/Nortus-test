@@ -69,6 +69,28 @@ Cheguei a considerar uma abordagem dividida, separar a resposta da requisição 
 
 Por esse motivo, decidi criar um hook maior do que o habitual, priorizando simplicidade e coerência com o formato da API.
 
+## Decisões de Priorização
+
+### Funcionalidades Implementadas
+
+Priorizei entregar features completas e funcionais:
+- ✅ Sistema de filtros robusto (status, prioridade)
+- ✅ CRUD de tickets com validações
+- ✅ Visualizações de dados principais
+
+### Funcionalidades Não Implementadas
+
+Algumas otimizações e refinamentos ficaram pendentes 
+devido ao prazo:
+- Paginação de tabelas
+- Filtros adicionais em visualizações
+- Animações elaboradas
+
+**Trade-off consciente:**
+Preferi entregar features core bem implementadas do que 
+adicionar funcionalidades complementares que comprometeriam 
+a qualidade do essencial.
+
 ## Desafios do projeto
 
 ### Estilização

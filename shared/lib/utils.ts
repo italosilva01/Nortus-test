@@ -66,10 +66,12 @@ export function mapStatusToTagVariant(status: string): 'open' | 'inProgress' | '
     'Aberto': 'open',
     'Em andamento': 'inProgress',
     'Resolvido': 'solved',
+    'Fechado': 'solved',
   };
   return mapping[status] || 'default';
 }
  
+
 
 export function convertTicketPrioritiesAndStatus<
   T extends { priority: string; status: string }

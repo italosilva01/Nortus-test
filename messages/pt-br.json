@@ -73,6 +73,37 @@
         "calculator": "Calculadora",
         "ticketsManagement": "Gestão de Tickets"
     },
+    "Filters":{
+      "priority":{
+      "urgent": "Urgente",
+      "high": "Alta",
+      "medium": "Média",
+      "low": "Baixa",
+      "select": "Selecionar",
+      "search": "Buscar",
+      "no": "Nenhum",
+      "all": "Todas",
+        "selectPriority": "Filtrar por prioridade",
+        "searchPriority": "Buscar prioridade...",
+        "noPriority": "Nenhuma prioridade encontrada",
+        "allPriorities": "Todas as prioridades"
+      },
+      "status":{
+        "selectStatus": "Filtrar por status",
+        "searchStatus": "Buscar status...",
+        "noStatus": "Nenhum status encontrado",
+        "open": "Aberto",
+        "inProgress": "Em andamento",
+        "solved": "Resolvido",
+        "default": "Selecione um status"
+      },
+      "responsible":{
+        "selectResponsible": "Filtrar por responsável",
+        "searchResponsible": "Buscar responsável...",
+        "noResponsible": "Nenhum responsável encontrado"
+      }
+      
+    },
     "Tags": {
         "medium": "média",
         "low": "baixa",

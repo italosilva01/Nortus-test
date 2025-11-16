@@ -13,27 +13,18 @@ const ListTickets = () => {
   const { data } = useTicketManagementStore();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPriority, setSelectedPriority] = useState('');
+  const [selectedStatus, setSelectedStatus] = useState('');
 
-  const priorityOptions = [
-    { value: '', label: t('listTickets.allPriorities') || 'Todas' },
-    ...(data?.priorities.map((priority) => ({
-      value: priority,
-      label: priority,
-    })) ?? []),
-  ];
+  const filteredTickets = data?.tickets?.filter((ticket) => {
+    const matchesSearch =
+      ticket.subject.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      ticket.client.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      ticket.email.toLowerCase().includes(searchTerm.toLowerCase());
 
-  // Filtrar tickets
-  const filteredTickets =
-    data?.tickets.filter((ticket) => {
-      const matchesSearch =
-        ticket.subject.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        ticket.client.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        ticket.email.toLowerCase().includes(searchTerm.toLowerCase());
-
-      const matchesPriority = selectedPriority === '' || ticket.priority === selectedPriority;
-
-      return matchesSearch && matchesPriority;
-    }) ?? [];
+    const matchesPriority = selectedPriority === '' || ticket.priority === selectedPriority;
+    const matchesStatus = selectedStatus === '' || ticket.status === selectedStatus;
+    return matchesSearch && matchesPriority && matchesStatus;
+  }) ?? [];
 
   return (
     <PanelBig
@@ -42,15 +33,14 @@ const ListTickets = () => {
       contentClassName="flex flex-col gap-4"
     >
       <FiltersTickets
-        priorityOptions={priorityOptions}
-        statusOptions={priorityOptions}
-        responsibleOptions={priorityOptions}
         searchTerm={searchTerm}
         onSearchTermChange={setSearchTerm}
+        selectedStatus={selectedStatus}
+        onStatusChange={setSelectedStatus}
         selectedPriority={selectedPriority}
-        onPriorityChange={setSelectedPriority} selectedStatus={''} onStatusChange={function (value: string): void {
-          throw new Error('Function not implemented.');
-        } } selectedResponsible={''} onResponsibleChange={function (value: string): void {
+        onPriorityChange={setSelectedPriority}
+        selectedResponsible={''}
+        onResponsibleChange={function (value: string): void {
           throw new Error('Function not implemented.');
         } }      
       />
