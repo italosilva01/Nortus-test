@@ -1,20 +1,21 @@
 'use client';
+import { Skeleton } from '@/components/ui/skeleton';
+import CustomerMapRegion from '@/feature/dashboard/ui/CustomerMapRegion';
+import GraphEvolution from '@/feature/dashboard/ui/GraphEvolution';
+import MapSegments from '@/feature/dashboard/ui/MapSegments';
+import { ResumePerformance } from '@/feature/dashboard/ui/ResumePerformance';
 import { SkeletonResumePanelPerformance } from '@/feature/dashboard/ui/SkeletonResumePanelPerformance';
 import { useDashboardStore } from '@/stores/useDashboardStore';
-import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { Skeleton } from '@/components/ui/skeleton';
-import GraphEvolution from '@/feature/dashboard/ui/GraphEvolution';
-import { ResumePerformance } from '@/feature/dashboard/ui/ResumePerformance';
-import CustomerMapRegion from '@/feature/dashboard/ui/CustomerMapRegion';
-import MapSegments from '@/feature/dashboard/ui/MapSegments';
+import { useEffect } from 'react';
 
 export default function Home() {
-  const { data, isLoading, fetchDashboardData } = useDashboardStore();
+  const { data, isLoading } = useDashboardStore();
   const t = useTranslations();
+  
   useEffect(() => {
-    fetchDashboardData();
-  }, [fetchDashboardData]);
+    useDashboardStore.getState().fetchDashboardData();
+  }, []);
 
   if (isLoading) {
     return (

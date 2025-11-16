@@ -45,9 +45,10 @@
       "@utils/*": [
         "./utils/*"
       ],
-      "@services/*": [
-        "./services/*"
-      ]
+      "@stores/*": [
+        "./stores/*"
+      ],
+      
     }
   },
   "include": [
