@@ -1,5 +1,6 @@
 import { Tag, TagVariants } from "@/components/ui/custom/Tag";
 import React from "react";
+import { ActionsButton } from "../../../components/ui/custom/ActionsButton";
 
 interface Ticket {
   id: string;
@@ -31,9 +32,7 @@ const TableTicketsRow: React.FC<TableTicketsRowProps> = ({
               <td className="px-4 py-2">{ticket.createdAt}</td>
               <td className="px-4 py-2">{ticket.responsible}</td>
               <td className="px-4 py-2">
-                <button className="text-blue-400 hover:text-blue-300">
-                  Ver detalhes
-                </button>
+                <ActionsButton onView={() => onActionClick?.(ticket)} onEdit={() => onActionClick?.(ticket)} />
               </td>
             </tr>
   );

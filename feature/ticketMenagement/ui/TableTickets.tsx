@@ -29,7 +29,7 @@ const TableTickets = ({ tickets }: TableTicketsProps) => {
   }
 
   return (
-    <div className="overflow-x-auto rounded-2xl shadow bg-app-dark-blue-300 text-white min-h-100">
+    <div className="overflow-x-auto rounded-2xl shadow bg-app-dark-blue-300 text-white min-h-75">
       <table className="table-auto min-w-full border-separate border-spacing-y-2 text-left">
         <thead>
           <tr className="">

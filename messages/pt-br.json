@@ -82,6 +82,10 @@
         "urgent": "urgente",
         "secondary": "Secundário"
     },
+    "ActionsButton": {
+        "edit": "Editar",
+        "view": "Ver detalhes"
+    },
     "Header": {
         "searchPlaceholder": "Buscar...",
         "notifications": "Notificações",
