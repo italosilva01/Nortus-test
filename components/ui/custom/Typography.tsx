@@ -1,12 +1,12 @@
-import { cn } from "@/lib/utils"
+import { cn } from "@/shared/lib/utils"
 import { createElement } from "react"
 
 interface TypographyProps {
     children: React.ReactNode
     className?: string
     element?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span" | "div"
-    fontFamily?: "inter" | "sans"
-    fontWeight?: "normal" | "bold"
+    fontFamily?: "inter" | "sans" | "montserrat"
+    fontWeight?: "normal" | "bold" | "semibold" | "extrabold"
     fontSize?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl"
     fontColor?: "primary" | "secondary" | "accent" | "bg-dark" | "title"
     fontStyle?: "normal" | "italic"

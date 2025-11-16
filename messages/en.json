@@ -1,5 +1,125 @@
 {
-    "HomePage": {
-        "title": "Hello world!"
+  "HomePage": {
+      "title": "Dashboard"
+  },
+  "TicketsManagementPage": {
+      "title": "Ticket Management",
+      "resumeTotalTickets": {
+          "open": "Open Tickets",
+          "inProgress": "In Progress",
+          "solved": "Solved Today",
+          "timeAverageHours": "Average Time"
+      },
+      "listTickets": {
+          "title": "Ticket List",
+          "searchPlaceholder": "Search by subject, client or email...",
+          "selectStatus": "Filter by status",
+          "selectPriority": "Filter by priority",
+          "searchPriority": "Search priority...",
+          "allPriorities": "All priorities",
+          "noPriority": "No priority found",
+          "noTickets": "No tickets found",
+          "selectResponsible": "Filter by responsible",
+          "searchResponsible": "Search responsible...",
+          "noResponsible": "No responsible found",
+          "priority": "Priority",
+          "client": "Client",
+          "subject": "Subject",
+          "status": "Status",
+          "createdAt": "Created At",
+          "responsible": "Responsible",
+          "actions": "Actions"
+      }
+  },
+  "HeaderLayout": {
+      "ticketsManagement": "Ticket Management",
+      "dashboard": "Dashboard"
+  },
+  "LoginPage": {
+      "title": "Login",
+      "description": "Enter your credentials to access your account.",
+      "email": "Enter your email, CPF or passport.",
+      "password": "Password",
+      "remember": "Remember me",
+      "forgot": "Forgot your password?",
+      "enter": "Log In",
+      "errorsScreen": {
+          "emailInvalid": "Invalid email",
+          "passwordRequired": "Password is required",
+          "CredenciaisInvalidas": "Invalid credentials. Check your email and password."
+      }
+  },
+  "DashboardPage": {
+      "title": "Dashboard",
+      "description": "Company performance dashboard",
+      "mapOfImpactBySegment": "Impact map by segment",
+      "analyzeSegments": "Analyze segments",
+      "kpis": {
+          "arpu": "ARPU",
+          "conversion": "Conversion Rate",
+          "retention": "Retention Rate",
+          "churn": "Churn Rate",
+          "variation": "in the period"
+      },
+      "evolutionOfKpis": "KPIs Evolution",
+      "noDataAvailable": "No data available"
+  },
+  "Sidebar": {
+      "home": "Home",
+      "dashboard": "Dashboard",
+      "users": "Users",
+      "reports": "Reports",
+      "settings": "Settings",
+      "calculator": "Calculator",
+      "ticketsManagement": "Ticket Management"
+  },
+  "Filters":{
+    "priority":{
+    "urgent": "Urgent",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "select": "Select",
+    "search": "Search",
+    "no": "None",
+    "all": "All",
+      "selectPriority": "Filter by priority",
+      "searchPriority": "Search priority...",
+      "noPriority": "No priority found",
+      "allPriorities": "All priorities"
+    },
+    "status":{
+      "selectStatus": "Filter by status",
+      "searchStatus": "Search status...",
+      "noStatus": "No status found",
+      "open": "Open",
+      "inProgress": "In progress",
+      "solved": "Solved",
+      "default": "Select a status"
+    },
+    "responsible":{
+      "selectResponsible": "Filter by responsible",
+      "searchResponsible": "Search responsible...",
+      "noResponsible": "No responsible found"
     }
+    
+  },
+  "Tags": {
+      "medium": "medium",
+      "low": "low",
+      "open": "open",
+      "inProgress": "in progress",
+      "solved": "solved",
+      "urgent": "urgent",
+      "secondary": "Secondary"
+  },
+  "ActionsButton": {
+      "edit": "Edit",
+      "view": "View details"
+  },
+  "Header": {
+      "searchPlaceholder": "Search...",
+      "notifications": "Notifications",
+      "logout": "Logout"
+  }
 }

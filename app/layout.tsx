@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { Toaster } from "sonner";
 import { SessionProvider } from "next-auth/react";
 import { AuthSync } from "@/components/AuthSync";
+import { DashboardLayoutWrapper } from "@/components/layout/DashboardLayoutWrapper";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -25,12 +31,14 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${inter.variable} antialiased bg-app-bg-dark`}
+        className={`${inter.variable} ${montserrat.variable} antialiased bg-app-bg-dark`}
       >
         <SessionProvider>
           <AuthSync />
           <NextIntlClientProvider>
-            {children}
+            <DashboardLayoutWrapper>
+              {children}
+            </DashboardLayoutWrapper>
             <Toaster position="top-right" richColors />
           </NextIntlClientProvider>
         </SessionProvider>

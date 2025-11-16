@@ -1,27 +1,42 @@
 
-import * as React from "react"
-import { Input } from "./input"
-import { Typography } from "./Typography"
-import { cn } from "@/lib/utils"
-import { Button } from "./button"
+import { cn } from "@/shared/lib/utils"
 import { EyeIcon, EyeOffIcon } from "lucide-react"
+import * as React from "react"
 import { useState } from "react"
+import { Button } from "../button"
+import { Input } from "../input"
+import { Typography } from "./Typography"
 interface FormInputProps extends React.ComponentProps<"input"> {
   error?: string
   label?: string
+  title?: string
   labelClassName?: string
   containerClassName?: string
+  inputClassName?: string
 }
 
 const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
-  ({ error, label, labelClassName, containerClassName, ...props }, ref) => {
+  ({ error, label, title, labelClassName, containerClassName, inputClassName, ...props }, ref) => {
     const [isPasswordVisible, setIsPasswordVisible] = useState(false)
     const typeInput = props?.type
     const isPassword = typeInput === 'password'
+
     return (
       <div className={cn("w-full", containerClassName)}>
+         {title && (
+            <Typography
+              element="p"
+              fontColor="title"
+              fontSize="xl"
+              fontWeight="normal"
+              className="mt-1 mb-0.5 text-left text-[1rem] font-medium"
+            >
+              {title}
+            </Typography>
+          )}
         <div className="flex items-center gap-2 relative">
-          <Input ref={ref} aria-invalid={!!error} {...props} type={isPassword ? (isPasswordVisible ? 'text' : 'password') : typeInput} />
+         
+          <Input ref={ref} aria-invalid={!!error} {...props} type={isPassword ? (isPasswordVisible ? 'text' : 'password') : typeInput} className={inputClassName} />
           {isPassword && (
             <Button
               type="button"

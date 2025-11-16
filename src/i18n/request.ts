@@ -1,11 +1,10 @@
-import {getRequestConfig} from 'next-intl/server';
-import type enMessages from '../../messages/en.json';
+import { getRequestConfig } from 'next-intl/server';
 import { cookies, headers } from 'next/headers';
+import type enMessages from '../../messages/en.json';
 
 type Messages = typeof enMessages;
 
 const getLocaleFromAcceptLanguage = (acceptLanguage: string | null): string => {
-    // fallback para o idioma padrão
   if (!acceptLanguage) return 'en';
   
   const languages = acceptLanguage

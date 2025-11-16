@@ -28,7 +28,7 @@
         "./*"
       ],
       "@lib/*": [
-        "./lib/*"
+        "./shared/lib/*"
       ],
       "@components/*": [
         "./components/*"
@@ -45,9 +45,10 @@
       "@utils/*": [
         "./utils/*"
       ],
-      "@services/*": [
-        "./services/*"
-      ]
+      "@stores/*": [
+        "./stores/*"
+      ],
+      
     }
   },
   "include": [
