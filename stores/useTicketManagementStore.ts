@@ -6,43 +6,43 @@ import { create } from "zustand";
 
 interface TicketManagementStore {
     data: TicketManagementData | null;
-    uniqueResponsibles: string[];
     isLoading: boolean;
     error: string | null;
-  
+    isOpenModalCreateTicket: boolean;
+    openCreateTicketModal: () => void;   
+    closeCreateTicketModal: () => void;
     setDataTicketManagement: (data: TicketManagementData) => void;
     setLoading: (loading: boolean) => void;
     fetchTicketManagementData: () => Promise<void>;
     getUniqueResponsibles: () => string[];
+    addTicket: (newTicket: Ticket) => void;
+    updateTicket: (updatedTicket: Ticket) => void;
   }
 
   export const useTicketManagementStore = create<TicketManagementStore>((set, get) => ({
     data: null,
-    uniqueResponsibles: [],
     isLoading: false,
     error: null,
-  
+    isOpenModalCreateTicket: false,    
+    openCreateTicketModal: () => set({ isOpenModalCreateTicket: true }),
+    closeCreateTicketModal: () => set({ isOpenModalCreateTicket: false }),
     setDataTicketManagement: (data) => set({ data, error: null }),
     setLoading: (isLoading) => set({ isLoading }),
 
-    getUniqueResponsibles: () => {
-      const tickets = get().data?.tickets;
-      if (!tickets) return [];
-      return [...new Set(tickets.map((ticket: Ticket) => ticket.responsible))];
-    },
-    
     fetchTicketManagementData: async () => {
       set({ isLoading: true, error: null });
       try {
         const response = await endpoints.auth.getTicketManagementData();
         if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
-          console.log("response.data", response.data);
           const responseData = response.data as TicketManagementData;
+          console.log('responseData', responseData);
+          const convertedTickets = convertTicketPrioritiesAndStatus(responseData.tickets);
+          
           set({ 
             data: {
               ...responseData, 
-              tickets: convertTicketPrioritiesAndStatus(responseData.tickets)
-            }, 
+              tickets: convertedTickets
+            },
             isLoading: false 
           });
         } else {
@@ -52,6 +52,40 @@ interface TicketManagementStore {
         const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
         set({ error: errorMessage, isLoading: false });
       }
+    },
+
+    getUniqueResponsibles: () => {
+      const tickets = get().data?.tickets;
+      if (!tickets) return [];
+      return [...new Set(tickets.map((ticket: Ticket) => ticket.responsible))];
+    },
+
+    addTicket: (newTicket: Ticket) => {
+      const currentTickets = get().data?.tickets ?? [];
+      const convertedTicket = convertTicketPrioritiesAndStatus([newTicket])[0];
+      const updatedTickets = [convertedTicket, ...currentTickets];
+      
+      set((state) => ({
+        data: state.data ? {
+          ...state.data,
+          tickets: updatedTickets
+        } : null
+      }));
+    },
+
+    updateTicket: (updatedTicket: Ticket) => {
+      const currentTickets = get().data?.tickets ?? [];
+      const updatedTickets = currentTickets.map(ticket =>
+        ticket.id === updatedTicket.id ? { ...updatedTicket } : ticket
+      );
+      const convertedTickets = convertTicketPrioritiesAndStatus(updatedTickets);
+      
+      set((state) => ({
+        data: state.data ? { 
+          ...state.data, 
+          tickets: convertedTickets 
+        } : null,
+      }));
     },
 
   }));

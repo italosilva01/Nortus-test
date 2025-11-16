@@ -10,7 +10,7 @@ import TableTickets from './TableTickets';
 
 const ListTickets = () => {
   const t = useTranslations('TicketsManagementPage');
-  const { data } = useTicketManagementStore();
+  const tickets = useTicketManagementStore((state) => state.data?.tickets);
 
   const {
     searchTerm,
@@ -22,7 +22,7 @@ const ListTickets = () => {
     selectedResponsible,
     setSelectedResponsible,
     filteredTickets,
-  } = useTicketFilters({ tickets: data?.tickets });
+  } = useTicketFilters({ tickets: tickets ?? undefined });
 
   return (
     <PanelBig

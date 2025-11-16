@@ -13,7 +13,7 @@ const TableTickets = ({ tickets }: TableTicketsProps) => {
 
   if (!tickets || tickets.length === 0) {
     return (
-      <div className="w-full text-center text-muted-foreground py-8 h-75 flex items-center justify-center text-white">
+      <div className="w-full text-center py-8 h-75 flex items-center justify-center text-white">
         {t('listTickets.noTickets')}
       </div>
     );

@@ -1,8 +1,8 @@
 
-import { MapData } from "@/shared/types/mapCustomer";
-import { create } from "zustand";
 import { endpoints } from "@/shared/lib/endpoints";
 import { HTTP_STATUS_CODES } from "@/shared/lib/helpers";
+import { MapData } from "@/shared/types/mapCustomer";
+import { create } from "zustand";
 
 interface MapCustomerStore {
     data: MapData | null;
@@ -26,7 +26,6 @@ interface MapCustomerStore {
       set({ isLoading: true, error: null });
       try {
         const response = await endpoints.auth.getCustomerMapData();
-        console.log('response', response?.data)
         if (
           response.status === HTTP_STATUS_CODES.OK &&
           response.data !== undefined &&

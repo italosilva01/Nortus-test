@@ -29,24 +29,30 @@ const FiltersTickets = ({
   onResponsibleChange
 }: FiltersTicketsProps) => {
   const t = useTranslations();
-  const { data, getUniqueResponsibles } = useTicketManagementStore();
-  const uniqueResponsibles = getUniqueResponsibles();
+  const priorities = useTicketManagementStore((state) => state.data?.priorities);
+  const status = useTicketManagementStore((state) => state.data?.status);
+  const tickets = useTicketManagementStore((state) => state.data?.tickets);
+  
+  const uniqueResponsibles = useMemo(() => {
+    if (!tickets) return [];
+    return [...new Set(tickets.map((ticket) => ticket.responsible))];
+  }, [tickets]);
 
-  const priorityOptions = useMemo(() => data?.priorities?.map((priority: string) =>{
+  const priorityOptions = useMemo(() => priorities?.map((priority: string) =>{
     const convertPriority = mapPriorityToTagVariant(priority);
     return {
       value: convertPriority,
       label : t(`Filters.priority.${convertPriority}`),
     }
-  }), [data?.priorities, t]);
+  }), [priorities, t]);
 
-  const statusOptions = useMemo(() => data?.status?.map((status: string) =>{
-    const convertStatus = mapStatusToTagVariant(status);
+  const statusOptions = useMemo(() => status?.map((statusItem: string) =>{
+    const convertStatus = mapStatusToTagVariant(statusItem);
     return {
       value: convertStatus,
       label : t(`Filters.status.${convertStatus}`),
     }
-  }), [data?.status, t]);
+  }), [status, t]);
 
   const responsibleOptions = useMemo(() => uniqueResponsibles.map((responsible: string) =>{
     return {
@@ -93,7 +99,7 @@ const FiltersTickets = ({
       onValueChange={onResponsibleChange}
       placeholder={t('Filters.responsible.selectResponsible')}
       searchPlaceholder={t('Filters.responsible.searchResponsible')}
-      emptyMessage={t('listTickets.noResponsible') || 'Nenhum responsável encontrado'}
+      emptyMessage={t('TicketsManagementPage.listTickets.noResponsible')}
       className="w-full sm:w-[200px] border-none bg-app-bg-dark max-h-9"
     /> 
     

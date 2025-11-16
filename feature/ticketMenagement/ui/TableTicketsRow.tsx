@@ -24,7 +24,7 @@ const TableTicketsRow: React.FC<TableTicketsRowProps> = ({
 }) => {
   return (
     <tr key={ticket.id} className="bg-app-bg border-b last:border-b-0">
-              <td className="px-4 py-2">{ticket.id}</td>
+              <td className="px-4 py-2">{ticket.id.slice(0, 8)}</td>
               <td className="px-4 py-2"><Tag variant={ticket.priority as TagVariants} /></td>
               <td className="px-4 py-2">{ticket.client}</td>
               <td className="px-4 py-2">{ticket.subject}</td>
