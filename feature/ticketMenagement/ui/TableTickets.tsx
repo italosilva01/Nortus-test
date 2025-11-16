@@ -8,19 +8,19 @@ interface TableTicketsProps {
 }
 
 const TableTickets = ({ tickets }: TableTicketsProps) => {
-  
+
   const t = useTranslations('TicketsManagementPage');
 
   if (!tickets || tickets.length === 0) {
     return (
-      <div className="w-full text-center py-8 h-75 flex items-center justify-center text-white">
+      <div className="w-full text-center py-8 h-96 flex items-center justify-center text-white">
         {t('listTickets.noTickets')}
       </div>
     );
   }
 
   return (
-    <div className="rounded-2xl shadow bg-app-dark-blue-300 text-white h-75 my-2 overflow-hidden">
+    <div className="rounded-2xl shadow bg-app-dark-blue-300 text-white h-96 mb-4 overflow-hidden">
       <div className="table-scroll overflow-y-auto h-full">
         <table className="table-auto min-w-full border-separate border-spacing-y-2 text-left">
           <thead className="sticky top-0 z-10 bg-app-dark-blue-300">

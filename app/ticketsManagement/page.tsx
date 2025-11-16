@@ -23,10 +23,10 @@ export default function TicketsManagementPage() {
         return <div>Nenhum dado encontrado</div>;
     }
     return (
-        <div className="flex flex-col w-full xl:gap-y-5 2xl:gap-y-10">
+        <div className="flex flex-col w-full gap-y-5 2xl:gap-y-10">
             <CreateTicketModal />
             <ResumeTotalTickets />
-            <ListTickets />            
+            <ListTickets />
         </div >
     );
 }
