@@ -9,6 +9,26 @@
             "inProgress": "Em andamento",
             "solved": "Resolvidos hoje",
             "timeAverageHours": "Tempo Médio"
+        },
+        "listTickets": {
+            "title": "Lista de Tickets",
+            "searchPlaceholder": "Buscar por assunto, cliente ou email...",
+            "selectStatus": "Filtrar por status",
+            "selectPriority": "Filtrar por prioridade",
+            "searchPriority": "Buscar prioridade...",
+            "allPriorities": "Todas as prioridades",
+            "noPriority": "Nenhuma prioridade encontrada",
+            "noTickets": "Nenhum ticket encontrado",
+            "selectResponsible": "Filtrar por responsável",
+            "searchResponsible": "Buscar responsável...",
+            "noResponsible": "Nenhum responsável encontrado",
+            "priority": "Prioridade",
+            "client": "Cliente",
+            "subject": "Assunto",
+            "status": "Status",
+            "createdAt": "Criado em",
+            "responsible": "Responsável",
+            "actions": "Ações"
         }
     },
     "HeaderLayout": {
