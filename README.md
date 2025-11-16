@@ -4,17 +4,47 @@
 A Nortus-dw é uma solução ficticia de inteligência artificial para times de vendas e atendimentos que utilza fato baseado em coomportamentos e analise de perfil. O projeto foi desenvolvido como um teste para a loomi.
 
 ## 📋 Status do Projeto
+
 ### ✅ Features Implementadas
-- [x] **Login** - Autenticação com validações e middleware
-- [x] **Dashboard** - KPIs, gráficos e mapas interativos
-- [x] **Gestão de Tickets** - [60%]
-- [ ] **Chat** - [status atual]
+
+#### **Login**
+- Inputs com validação  
+- Exibição/ocultação de senha  
+- Autenticação com regras de validação  
+- Middleware para controle de acesso  
+
+#### **Dashboard**
+- Gráficos de ARPU, Retenção, Churn e Conversão  
+- Mapa interativo de clientes  
+- Mapa de impacto segmentado por tipo  
+
+#### **Gestão de Tickets**
+- Listagem clara com indicação de prioridade e status  
+- Filtros por status, prioridade e responsável  
+- Acesso rápido às ações: editar e visualizar detalhes  
+- Adição de novos tickets à listagem  
+- Validação completa de todos os campos do formulário de criação  
+
+### 🚧 Em Desenvolvimento
+- **Chat** — *0% concluído*
 
 ## ⏰ Cronologia
 - **Dia 1:** Setup + Login completo
 - **Dia 2:** Dashboard [em andamento]
 - **Dia 3:** Dashboard completo + Gerenciamento de ticket [em andamento]
-- **Dia 4:** Gerenciamento de ticket completo
+- **Dia 4:** Gerenciamento de ticket completo + deploy + ajuste final ao README
+
+## 🚀 Deploy
+
+**URL:** https://nortus-test-francisco-italo.vercel.app/
+
+⚠️ **Nota:**  
+Os componentes estão sendo renderizados com dimensões ligeiramente diferentes em produção,aparentam maiores do que no ambiente de desenvolvimento.  
+Atualmente estou investigando um possível problema relacionado ao build de CSS. Localmente, tudo funciona perfeitamente.
+
+Para testar com a estilização 100% fiel, recomendo rodar o projeto localmente.
+
+
 
 ## 🎯 Decisões
 
