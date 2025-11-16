@@ -14,6 +14,6 @@ export const createTicketSchema = (t: (key: string) => string) => z.object({
     .string({ message: t("errorsScreen.responsibleRequired") }),
   subject: z
     .string({ message: t("errorsScreen.subjectRequired") })
-    .min(5, t("errorsScreen.subjectRequiredMin")),
+    .min(1, t("errorsScreen.subjectRequiredMin")),
 });
 export type CreateTicketSchema = z.infer<typeof createTicketSchema>;

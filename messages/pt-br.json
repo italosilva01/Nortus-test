@@ -11,7 +11,10 @@
         "priorityRequired": "Prioridade é obrigatória.",
         "priorityMin": "Prioridade é obrigatória.",
         "responsibleRequired": "Responsável é obrigatório.",
-        "responsibleMin": "Responsável deve ter pelo menos 2 caracteres."},
+        "responsibleMin": "Responsável deve ter pelo menos 2 caracteres.",
+        "subjectRequired": "Assunto é obrigatório.",
+        "subjectRequiredMin": "Assunto deve ter pelo menos 1 caractere."
+      },
 
       "createTicket": {
         "title": "Novo Ticket",

@@ -69,7 +69,7 @@ const FormCreateTicket = ({ onSubmit, onCancel }: FormCreateTicketProps) => {
         render={({ field }) => (
           <FormCombobox
             title={t('createTicket.fields.priority')}
-            options={[{ value: 'Urgente', label: 'low' }, { value: 'Média', label: 'medium' }, { value: 'high', label: 'high' }]}
+            options={[{ value: 'Baixa', label: 'low' }, { value: 'Média', label: 'medium' }, { value: 'Urgente', label: 'high' }]}
             placeholder={t('createTicket.fields.priorityPlaceholder')}
             value={field.value}
             onValueChange={field.onChange}

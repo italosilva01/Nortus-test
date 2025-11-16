@@ -35,7 +35,6 @@ interface TicketManagementStore {
         const response = await endpoints.auth.getTicketManagementData();
         if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
           const responseData = response.data as TicketManagementData;
-          console.log('responseData', responseData);
           const convertedTickets = convertTicketPrioritiesAndStatus(responseData.tickets);
           
           set({ 
