@@ -8,9 +8,11 @@ export interface TicketResume {
 export interface Ticket {
   id: string;
   priority: "Urgente" | "Média" | "Baixa";
+  status: string;
   client: string;
   email: string;
   subject: string;
+  responsible: string;
 }
 
 export interface TicketManagementData {

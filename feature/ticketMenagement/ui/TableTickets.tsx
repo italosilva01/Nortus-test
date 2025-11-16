@@ -1,6 +1,7 @@
 
 import TableTicketsRow from '@/feature/ticketMenagement/ui/TableTicketsRow';
 import { useTranslations } from 'next-intl';
+import { useEffect } from 'react';
 
 interface Ticket {
   id: string;
@@ -19,6 +20,10 @@ interface TableTicketsProps {
 
 const TableTickets = ({ tickets }: TableTicketsProps) => {
   const t = useTranslations('TicketsManagementPage');
+
+  useEffect(() => {
+    console.log("Render tickets");
+  }, [tickets]);
 
   if (!tickets || tickets.length === 0) {
     return (

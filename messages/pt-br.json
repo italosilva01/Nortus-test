@@ -74,6 +74,7 @@
         "ticketsManagement": "Gestão de Tickets"
     },
     "Filters":{
+      "searchPlaceholder": "Buscar por assunto, cliente ou email...",
       "priority":{
       "urgent": "Urgente",
       "high": "Alta",

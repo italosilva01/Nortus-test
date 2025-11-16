@@ -7,7 +7,7 @@ A Nortus-dw é uma solução ficticia de inteligência artificial para times de 
 ### ✅ Features Implementadas
 - [x] **Login** - Autenticação com validações e middleware
 - [x] **Dashboard** - KPIs, gráficos e mapas interativos
-- [ ] **Gestão de Tickets** - [status atual]
+- [ ] **Gestão de Tickets** - [60%]
 - [ ] **Chat** - [status atual]
 
 ## ⏰ Cronologia

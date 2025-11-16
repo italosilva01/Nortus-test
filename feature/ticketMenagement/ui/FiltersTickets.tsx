@@ -5,6 +5,7 @@ import { Combobox } from '@/components/ui/combobox';
 import { Input } from '@/components/ui/input';
 import { mapPriorityToTagVariant, mapStatusToTagVariant } from '@/shared/lib/utils';
 import { useTicketManagementStore } from '@/stores/useTicketManagementStore';
+import { useMemo } from 'react';
 
 interface FiltersTicketsProps {
   searchTerm: string;
@@ -23,34 +24,37 @@ const FiltersTickets = ({
   selectedPriority,
   selectedStatus,
   onPriorityChange,
-  onStatusChange
+  onStatusChange,
+  selectedResponsible,
+  onResponsibleChange
 }: FiltersTicketsProps) => {
   const t = useTranslations();
-  const { data } = useTicketManagementStore();
-  const priorityOptions = data?.priorities.map((priority) =>{
+  const { data, getUniqueResponsibles } = useTicketManagementStore();
+  const uniqueResponsibles = getUniqueResponsibles();
+
+  const priorityOptions = useMemo(() => data?.priorities?.map((priority: string) =>{
     const convertPriority = mapPriorityToTagVariant(priority);
     return {
       value: convertPriority,
       label : t(`Filters.priority.${convertPriority}`),
     }
-  });
+  }), [data?.priorities, t]);
 
-  const statusOptions = data?.status.map((status) =>{
+  const statusOptions = useMemo(() => data?.status?.map((status: string) =>{
     const convertStatus = mapStatusToTagVariant(status);
     return {
       value: convertStatus,
       label : t(`Filters.status.${convertStatus}`),
     }
-  });
+  }), [data?.status, t]);
 
-  const responsibleOptions = data?..map((responsible) =>{
+  const responsibleOptions = useMemo(() => uniqueResponsibles.map((responsible: string) =>{
     return {
       value: responsible,
       label : responsible,
     }
-  });
+  }), [uniqueResponsibles]);
 
-  console.log("statusOptions", statusOptions);
 
  return(
   <div className="flex flex-col gap-4 w-full">
@@ -58,7 +62,7 @@ const FiltersTickets = ({
     <div className="relative flex-1 w-full">
       <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
       <Input
-        placeholder={t('listTickets.searchPlaceholder')}
+        placeholder={t('Filters.searchPlaceholder')}
         type="search"
         value={searchTerm}
         onChange={(e) => onSearchTermChange(e.target.value)}
@@ -84,11 +88,11 @@ const FiltersTickets = ({
       className="w-full sm:w-50 border-none bg-app-bg-dark max-h-9"
     /> 
      <Combobox
-      options={responsibleOptions}
+      options={responsibleOptions ?? []}
       value={selectedResponsible}
       onValueChange={onResponsibleChange}
-      placeholder={t('listTickets.selectResponsible') || 'Responsável'}
-      searchPlaceholder={t('listTickets.searchResponsible') || 'Buscar...'}
+      placeholder={t('Filters.responsible.selectResponsible')}
+      searchPlaceholder={t('Filters.responsible.searchResponsible')}
       emptyMessage={t('listTickets.noResponsible') || 'Nenhum responsável encontrado'}
       className="w-full sm:w-[200px] border-none bg-app-bg-dark max-h-9"
     /> 

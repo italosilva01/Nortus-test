@@ -6,21 +6,30 @@ import { create } from "zustand";
 
 interface TicketManagementStore {
     data: TicketManagementData | null;
+    uniqueResponsibles: string[];
     isLoading: boolean;
     error: string | null;
   
     setDataTicketManagement: (data: TicketManagementData) => void;
     setLoading: (loading: boolean) => void;
     fetchTicketManagementData: () => Promise<void>;
+    getUniqueResponsibles: () => string[];
   }
 
-  export const useTicketManagementStore = create<TicketManagementStore>((set) => ({
+  export const useTicketManagementStore = create<TicketManagementStore>((set, get) => ({
     data: null,
+    uniqueResponsibles: [],
     isLoading: false,
     error: null,
   
     setDataTicketManagement: (data) => set({ data, error: null }),
     setLoading: (isLoading) => set({ isLoading }),
+
+    getUniqueResponsibles: () => {
+      const tickets = get().data?.tickets;
+      if (!tickets) return [];
+      return [...new Set(tickets.map((ticket: Ticket) => ticket.responsible))];
+    },
     
     fetchTicketManagementData: async () => {
       set({ isLoading: true, error: null });
@@ -28,7 +37,14 @@ interface TicketManagementStore {
         const response = await endpoints.auth.getTicketManagementData();
         if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
           console.log("response.data", response.data);
-          set({ data: {...response.data as TicketManagementData, tickets: convertTicketPrioritiesAndStatus(response.data.tickets as Ticket[])}, isLoading: false });
+          const responseData = response.data as TicketManagementData;
+          set({ 
+            data: {
+              ...responseData, 
+              tickets: convertTicketPrioritiesAndStatus(responseData.tickets)
+            }, 
+            isLoading: false 
+          });
         } else {
           set({ error: 'Falha ao buscar dados de gerenciamento de tickets', isLoading: false });
         }
