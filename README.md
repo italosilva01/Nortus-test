@@ -7,14 +7,14 @@ A Nortus-dw é uma solução ficticia de inteligência artificial para times de 
 ### ✅ Features Implementadas
 - [x] **Login** - Autenticação com validações e middleware
 - [x] **Dashboard** - KPIs, gráficos e mapas interativos
-- [ ] **Gestão de Tickets** - [60%]
+- [x] **Gestão de Tickets** - [60%]
 - [ ] **Chat** - [status atual]
 
 ## ⏰ Cronologia
 - **Dia 1:** Setup + Login completo
-- **Dia 2:** Dashboard [em andamento/completo]
-- **Dia 3:** [planejado]
-- **Dia 4:** [planejado]
+- **Dia 2:** Dashboard [em andamento]
+- **Dia 3:** Dashboard completo + Gerenciamento de ticket [em andamento]
+- **Dia 4:** Gerenciamento de ticket completo
 
 ## 🎯 Decisões
 
@@ -104,3 +104,11 @@ Para contornar essa situação, iniciei a estilização direto na resolução 2X
 ### OpenLayers
 
 Tive dificuldade ao trabalhar com o mapa do OpenLayers. Foi a primeira vez que utilizei essa ferramenta de mapas e, por isso, precisei de mais tempo para entender seu funcionamento e me adaptar à sua API.
+
+### Aprendizados
+
+Um dos aprendizados deste projeto foi utilizar Zustand em conjunto com Zod em um contexto de média escala. Até então, eu só havia trabalhado com essas ferramentas em projetos menores e experimentais.
+
+Durante o desenvolvimento, foi interessante explorar abordagens que aproveitassem melhor as particularidades do Zustand, especialmente o uso de seletores de estado.
+
+Por exemplo, no módulo de gerenciamento de tickets, percebi que poderia armazenar todo o estado de uma única vez e, posteriormente, acessar cada parte desse estado por meio de seletores específicos. Essa abordagem reduz renders desnecessários e melhora o desempenho da aplicação.
