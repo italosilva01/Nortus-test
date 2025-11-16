@@ -54,6 +54,7 @@
   --color-app-dark-blue-500: var(--app-dark-blue-500);
   --color-app-dark-blue-100: var(--app-dark-blue-100);
   --color-app-dark-blue-200: var(--app-dark-blue-200);
+  --color-app-dark-blue-300: var(--app-dark-blue-300);
   --color-title: var(--title);
 }
 
@@ -101,6 +102,7 @@
   --app-dark-blue-500: #20273E;
   --app-dark-blue-100: #FFFFFF0D;
   --app-dark-blue-200: #F6F8FC1A;
+  --app-dark-blue-300: #23293A;
   --title: #E3E3E3;
 }
 

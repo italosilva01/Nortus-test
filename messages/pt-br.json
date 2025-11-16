@@ -73,6 +73,15 @@
         "calculator": "Calculadora",
         "ticketsManagement": "Gestão de Tickets"
     },
+    "Tags": {
+        "medium": "média",
+        "low": "baixa",
+        "open": "aberto",
+        "inProgress": "em andamento",
+        "solved": "resolvido",
+        "urgent": "urgente",
+        "secondary": "Secundário"
+    },
     "Header": {
         "searchPlaceholder": "Buscar...",
         "notifications": "Notificações",

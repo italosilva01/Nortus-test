@@ -76,8 +76,6 @@ const FiltersTickets = ({
     />
     
   </div>
-
-  {/* Lista de Tickets */}
  
 </div>
  )

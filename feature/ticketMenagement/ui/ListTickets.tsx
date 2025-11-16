@@ -14,6 +14,7 @@ const ListTickets = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPriority, setSelectedPriority] = useState('');
 
+  console.log("data", data);
   // Opções de prioridade para o Combobox
   const priorityOptions = [
     { value: '', label: t('listTickets.allPriorities') || 'Todas' },
@@ -39,7 +40,8 @@ const ListTickets = () => {
   return (
     <PanelBig
       title={t('listTickets.title')}
-      className="size-full max-w-full xl:max-w-full 2xl:max-w-full flex flex-col gap-4 !border"
+      className="size-full max-w-full xl:max-w-full 2xl:max-w-full flex flex-col gap-4"
+      contentClassName="flex flex-col gap-4"
     >
       <FiltersTickets
         priorityOptions={priorityOptions}
@@ -48,10 +50,14 @@ const ListTickets = () => {
         searchTerm={searchTerm}
         onSearchTermChange={setSearchTerm}
         selectedPriority={selectedPriority}
-        onPriorityChange={setSelectedPriority}
-      
+        onPriorityChange={setSelectedPriority} selectedStatus={''} onStatusChange={function (value: string): void {
+          throw new Error('Function not implemented.');
+        } } selectedResponsible={''} onResponsibleChange={function (value: string): void {
+          throw new Error('Function not implemented.');
+        } }      
       />
-      <TableTickets tickets={filteredTickets} />
+      {/* TODO: adicionar o filtro de status e responsável  e remover o slice*/}
+      <TableTickets tickets={filteredTickets.slice(0, 5)} />
      </PanelBig>
   );
 };

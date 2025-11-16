@@ -1,4 +1,5 @@
 
+import { Tag, TagVariants } from '@/components/ui/custom/Tag';
 import { useTranslations } from 'next-intl';
 
 interface Ticket {
@@ -28,10 +29,10 @@ const TableTickets = ({ tickets }: TableTicketsProps) => {
   }
 
   return (
-    <div className="overflow-x-auto rounded-2xl shadow bg-app-bg-dark text-white">
+    <div className="overflow-x-auto rounded-2xl shadow bg-app-dark-blue-300 text-white min-h-100">
       <table className="table-auto min-w-full border-separate border-spacing-y-2 text-left">
         <thead>
-          <tr className="bg-app-bg-dark">
+          <tr className="">
             <th className="px-4 py-2">ID</th>
             <th className="px-4 py-2">{t('listTickets.priority') || 'Prioridade'}</th>
             <th className="px-4 py-2">{t('listTickets.client') || 'Cliente'}</th>
@@ -46,10 +47,10 @@ const TableTickets = ({ tickets }: TableTicketsProps) => {
           {tickets.map(ticket => (
             <tr key={ticket.id} className="bg-app-bg border-b last:border-b-0">
               <td className="px-4 py-2">{ticket.id}</td>
-              <td className="px-4 py-2">{ticket.priority}</td>
+              <td className="px-4 py-2"><Tag variant={ticket.priority as TagVariants} /></td>
               <td className="px-4 py-2">{ticket.client}</td>
               <td className="px-4 py-2">{ticket.subject}</td>
-              <td className="px-4 py-2">{ticket.status}</td>
+              <td className="px-4 py-2"><Tag variant={ticket.status as TagVariants} /></td>
               <td className="px-4 py-2">{ticket.createdAt}</td>
               <td className="px-4 py-2">{ticket.responsible}</td>
               <td className="px-4 py-2">

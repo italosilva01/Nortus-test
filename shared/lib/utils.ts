@@ -50,3 +50,38 @@ export const getTrendName = (selectedKpi: string) => {
   return kpiLabel || 'KPI';
 };
 
+
+export function mapPriorityToTagVariant(priority: string): 'medium' | 'low' | 'urgent' | 'default' {
+  const mapping: Record<string, 'medium' | 'low' | 'urgent' | 'default'> = {
+    'Média': 'medium',
+    'Baixa': 'low',
+    'Urgente': 'urgent',
+    'Alta': 'urgent',
+  };
+  return mapping[priority] || 'default';
+}
+
+export function mapStatusToTagVariant(status: string): 'open' | 'inProgress' | 'solved' | 'default' {
+  const mapping: Record<string, 'open' | 'inProgress' | 'solved' | 'default'> = {
+    'Aberto': 'open',
+    'Em andamento': 'inProgress',
+    'Resolvido': 'solved',
+  };
+  return mapping[status] || 'default';
+}
+ 
+
+export function convertTicketPrioritiesAndStatus<
+  T extends { priority: string; status: string }
+>(
+  tickets: T[]
+): (T & {
+  priority: 'medium' | 'low' | 'urgent' | 'default';
+  status: 'open' | 'inProgress' | 'solved' | 'default';
+})[] {
+  return tickets.map((ticket) => ({
+    ...ticket,
+    priority: mapPriorityToTagVariant(ticket.priority),
+    status: mapStatusToTagVariant(ticket.status),
+  }));
+}
