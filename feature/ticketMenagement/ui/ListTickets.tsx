@@ -14,8 +14,6 @@ const ListTickets = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPriority, setSelectedPriority] = useState('');
 
-  console.log("data", data);
-  // Opções de prioridade para o Combobox
   const priorityOptions = [
     { value: '', label: t('listTickets.allPriorities') || 'Todas' },
     ...(data?.priorities.map((priority) => ({

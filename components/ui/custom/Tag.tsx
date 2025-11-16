@@ -12,7 +12,7 @@ const TagVariantsMapping: Record<TagVariants, {classname: string, name: string}>
   medium: {classname: 'bg-app-primary', name: 'medium'},
   low: {classname: 'bg-blue-100 text-black', name: 'low'},
   open: {classname: 'bg-green-200 text-black', name: 'open'},
-  inProgress: {classname: 'bg-app-accent', name: 'inProgress'},
+  inProgress: {classname: 'bg-app-accent truncate', name: 'inProgress'},
   solved: {classname: 'bg-app-accent', name: 'solved'},
   urgent: {classname: 'bg-red-500 text-white', name: 'urgent'},
   secondary: {classname: 'bg-app-accent', name: 'secondary'},

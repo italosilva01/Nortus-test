@@ -1,5 +1,5 @@
 
-import { Tag, TagVariants } from '@/components/ui/custom/Tag';
+import TableTicketsRow from '@/feature/ticketMenagement/ui/TableTicketsRow';
 import { useTranslations } from 'next-intl';
 
 interface Ticket {
@@ -45,20 +45,7 @@ const TableTickets = ({ tickets }: TableTicketsProps) => {
         </thead>
         <tbody>
           {tickets.map(ticket => (
-            <tr key={ticket.id} className="bg-app-bg border-b last:border-b-0">
-              <td className="px-4 py-2">{ticket.id}</td>
-              <td className="px-4 py-2"><Tag variant={ticket.priority as TagVariants} /></td>
-              <td className="px-4 py-2">{ticket.client}</td>
-              <td className="px-4 py-2">{ticket.subject}</td>
-              <td className="px-4 py-2"><Tag variant={ticket.status as TagVariants} /></td>
-              <td className="px-4 py-2">{ticket.createdAt}</td>
-              <td className="px-4 py-2">{ticket.responsible}</td>
-              <td className="px-4 py-2">
-                <button className="text-blue-400 hover:text-blue-300">
-                  Ver detalhes
-                </button>
-              </td>
-            </tr>
+            <TableTicketsRow key={ticket.id} ticket={ticket} />
           ))}
         </tbody>
       </table>
