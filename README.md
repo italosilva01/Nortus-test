@@ -74,6 +74,40 @@ A Nortus-dw é uma solução fictícia de inteligência artificial para times de
 ### 🚧 Em Desenvolvimento
 - **Chat** — *0% concluído*
 
+### Observações:
+- animação realizada em alguns items
+- Deploy na vercel
+- salvando cookie com o JWT do client
+- Salvando dados do usuário no localStorage
+- Loading Skeletons e estados vazios em Dashboard e na tela de gerenciamento de tickets
+- Internacionalização feita
+## 🚀 Como executar
+
+### Pré-requisitos
+- Node.js 18+ 
+- pnpm instalado
+
+### Instalação
+
+```
+# Instalar dependências
+
+pnpm install
+
+# Criar arquivo .env.local (se necessário)
+# NEXTAUTH_SECRET=sua_chave_secreta_aqui
+
+# Executar em desenvolvimento
+pnpm devA aplicação estará disponível em `http://localhost:3000`
+
+### Outros comandos disponíveis
+
+pnpm build    # Build para produção
+pnpm start    # Executar build de produção
+pnpm lint     # Executar linter
+pnpm test     # Executar testes
+
+```
 ## ⏰ Cronologia
 - **Dia 1:** Setup + Login completo
 - **Dia 2:** Dashboard [em andamento]
@@ -103,17 +137,6 @@ Escolhi o GitHub porque é onde o projeto e o repositório estão hospedados. As
 #### Kanban
 Optei pelo Kanban porque, analisando o contexto, ele é a melhor forma de acompanhar o andamento das tarefas e manter o foco nas features em desenvolvimento. Como estou trabalhando sozinho neste projeto, o Kanban facilita o controle do progresso e a organização das demandas.
 
-## Contexto das Decisões Técnicas
-
-Quis deixar registrado o contexto porque algumas das escolhas técnicas podem ser questionadas pela equipe, especialmente em cenários onde optei por soluções mais robustas, mesmo quando alternativas mais simples seriam possíveis.
-
-É importante destacar que desenvolvi o projeto pensando em escalabilidade. Por isso, em vários pontos tomei decisões que priorizam uma base mais sólida para crescimento futuro, mesmo adicionando um pouco mais de complexidade no curto prazo.
-
-Um exemplo disso é a escolha da arquitetura Feature-Sliced Design (FSD), que oferece uma estrutura mais organizada e preparada para evolução. Outro caso é a decisão de utilizar o Zustand para gerenciar os dados do dashboard.
-
-Ao analisar o protótipo, percebi que esses dados não se repetiam em outras telas. Inicialmente, cheguei a considerar usar apenas useState ou até um contexto simples. Porém, avaliando a perspectiva de crescimento do projeto e a possibilidade de novas telas consumirem esses dados no futuro, optei por implementar diretamente com Zustand. Isso me permitiu criar uma solução mais próxima de um cenário real de expansão.
-
-Em resumo, minhas decisões foram feitas pensando no horizonte do projeto, privilegiando uma base escalável e mais fácil de manter.
 
 ## Decisões técnicas
 
@@ -145,6 +168,22 @@ Cheguei a considerar uma abordagem dividida, separar a resposta da requisição 
 
 Por esse motivo, decidi criar um hook maior do que o habitual, priorizando simplicidade e coerência com o formato da API.
 
+### Autenticação - Credentials Provider
+
+Escolhi implementar autenticação usando o provider Credentials do NextAuth ao invés de OAuth (Google, GitHub, etc.) porque o projeto utiliza uma API própria para autenticação.
+
+A API já retorna um `accessToken` após validação das credenciais, então faz sentido manter essa integração direta. O NextAuth gerencia a sessão JWT e o middleware de proteção de rotas, enquanto a validação real das credenciais é feita pela API externa.
+
+
+### Gerenciamento de Estado - Tickets
+
+Optei por uma arquitetura híbrida para o módulo de tickets: Zustand para gerenciar os dados globais (listagem, loading, modal) e um hook customizado `useTicketFilters` para a lógica de filtros.
+
+**Por que separar?**
+
+Inicialmente, considerei colocar os filtros diretamente no store do Zustand. Porém, percebi que os filtros eram usados apenas pelo componente de filtro da listagem e toda a lógica dos filtros estava declarada na page de gerenciamento de ticket. Para solucionar isso, criei um hook para ser responsável por toda a lógica de filtragem e disponibilizar as funções e states para os outros componentes.
+
+Além disso, utilizo seletores específicos do Zustand (`state.data?.tickets`) para evitar re-renders desnecessários em componentes que não precisam de toda a estrutura do store.
 ## Decisões de Priorização
 
 ### Funcionalidades Implementadas
@@ -167,7 +206,7 @@ Preferi entregar features core bem implementadas do que
 adicionar funcionalidades complementares que comprometeriam 
 a qualidade do essencial.
 
-## Desafios do projeto
+## 🧩 Desafios do projeto
 
 ### Estilização
 
@@ -179,9 +218,9 @@ Para contornar essa situação, iniciei a estilização direto na resolução 2X
 
 ### OpenLayers
 
-Tive dificuldade ao trabalhar com o mapa do OpenLayers. Foi a primeira vez que utilizei essa ferramenta de mapas e, por isso, precisei de mais tempo para entender seu funcionamento e me adaptar à sua API.
+Tive dificuldade ao trabalhar com o mapa do OpenLayers. Foi a primeira vez que utilizei essa ferramenta de mapas e, por isso, precisei de mais tempo para entender seu funcionamento e me adaptar à sua API. No fim, tudo ocorreu bem.
 
-### Aprendizados
+## 📚 Aprendizados
 
 Um dos aprendizados deste projeto foi utilizar Zustand em conjunto com Zod em um contexto de média escala. Até então, eu só havia trabalhado com essas ferramentas em projetos menores e experimentais.
 
