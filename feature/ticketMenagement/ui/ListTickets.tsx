@@ -1,33 +1,28 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useMemo, useState } from 'react';
 
 import { PanelBig } from '@/components/ui/custom/PanelBig';
 import FiltersTickets from '@/feature/ticketMenagement/ui/FiltersTickets';
+import { useTicketFilters } from '@/hooks/useTicketFilters';
 import { useTicketManagementStore } from '@/stores/useTicketManagementStore';
 import TableTickets from './TableTickets';
 
 const ListTickets = () => {
   const t = useTranslations('TicketsManagementPage');
   const { data } = useTicketManagementStore();
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedPriority, setSelectedPriority] = useState('');
-  const [selectedStatus, setSelectedStatus] = useState('');
-  const [selectedResponsible, setSelectedResponsible] = useState('');
 
-  const filteredTickets = useMemo(() => data?.tickets?.filter((ticket) => {
-    const matchesSearch =
-      ticket.subject.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      ticket.client.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      ticket.email.toLowerCase().includes(searchTerm.toLowerCase());
-
-    const matchesPriority = selectedPriority === '' || ticket.priority === selectedPriority;
-    const matchesStatus = selectedStatus === '' || ticket.status === selectedStatus;
-    const matchesResponsible = selectedResponsible === '' || ticket.responsible === selectedResponsible;
-
-    return matchesSearch && matchesPriority && matchesStatus && matchesResponsible;
-  }) ?? [], [data?.tickets, searchTerm, selectedPriority, selectedStatus, selectedResponsible]);
+  const {
+    searchTerm,
+    setSearchTerm,
+    selectedPriority,
+    setSelectedPriority,
+    selectedStatus,
+    setSelectedStatus,
+    selectedResponsible,
+    setSelectedResponsible,
+    filteredTickets,
+  } = useTicketFilters({ tickets: data?.tickets });
 
   return (
     <PanelBig
@@ -45,8 +40,7 @@ const ListTickets = () => {
         selectedResponsible={selectedResponsible}
         onResponsibleChange={setSelectedResponsible}      
       />
-      {/* TODO: adicionar o filtro de status e responsável  e remover o slice*/}
-      <TableTickets tickets={filteredTickets.slice(0, 5)} />
+      <TableTickets tickets={filteredTickets} />
      </PanelBig>
   );
 };

@@ -13,6 +13,7 @@ export interface Ticket {
   email: string;
   subject: string;
   responsible: string;
+  createdAt: string;
 }
 
 export interface TicketManagementData {
