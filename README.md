@@ -1,7 +1,8 @@
 
-# Notus-dw
 
-A Nortus-dw é uma solução fictícia de inteligência artificial para times de vendas e atendimentos que utiliza fato baseado em comportamentos e análise de perfil. O projeto foi desenvolvido como um teste para a loomi.
+# Nortus-dw
+
+A Nortus-dw é uma solução fictícia de inteligência artificial para times de vendas e atendimentos que utiliza dados baseados em comportamentos e análise de perfil. O projeto foi desenvolvido como um teste para a loomi.
 
 ## 🛠️  Tecnologias
 
@@ -75,12 +76,12 @@ A Nortus-dw é uma solução fictícia de inteligência artificial para times de
 - **Chat** — *0% concluído*
 
 ### Observações:
-- animação realizada em alguns items
-- Deploy na vercel
-- salvando cookie com o JWT do client
+- Animações realizadas em alguns elementos
+- Deploy na Vercel
+- Salvando cookie com o JWT do client
 - Salvando dados do usuário no localStorage
 - Loading Skeletons e estados vazios em Dashboard e na tela de gerenciamento de tickets
-- Internacionalização feita
+- Internacionalização implementada
 ## 🚀 Como executar
 
 ### Pré-requisitos
@@ -98,7 +99,9 @@ pnpm install
 # NEXTAUTH_SECRET=sua_chave_secreta_aqui
 
 # Executar em desenvolvimento
-pnpm devA aplicação estará disponível em `http://localhost:3000`
+pnpm dev
+
+A aplicação estará disponível em `http://localhost:3000`
 
 ### Outros comandos disponíveis
 
@@ -147,14 +150,34 @@ Além de ser uma das ferramentas obrigatórias, as configurações foram definid
 Escolhi o shadcn/ui por ser uma biblioteca de componentes já prontos, de alta qualidade e com fácil integração ao Tailwind CSS. Essa escolha facilita a implementação e agiliza o processo de customização da interface, tornando o desenvolvimento mais rápido e padronizado.
 
 ### 🤖 IA
-Em relação ao uso de IA, utilizei o Cursor com o agente Claude Sonnet 4.5 para gerar trechos de código, esclarecer dúvidas e explorar diferentes abordagens de implementação.
+Em relação ao uso de IA, utilizei as seguintes ferramentas:
+- **Cursor com o agente Claude Sonnet 4.5** para gerar trechos de código, esclarecer dúvidas e explorar diferentes abordagens de implementação.
 
-#### Exemplo
-Como exemplo, usei o cursor para gerar o layout default da aplicação (com o header e o menu lateral) com o seguinte comando no modo agent:
+- **Cursor modo Ask** para conhecer outras abordagens para algumas problemas enfrentados durante o desenvolvimento
+
+- **Chatgpt** para auxilio na escrita de textos do README.
+
+- **Google Studio (Google Gemini)** para traduzir o objeto de internacionalização para inglês. (LLM treinada por mim mesmo) 
+
+#### Exemplos
+**Exemplo 1**
+
+Usei o Cursor para gerar o layout padrão da aplicação (com o header e o menu lateral) com o seguinte comando no modo agent:
 
 `Quero que faça um layout padrão para toda a aplicação, menos para as rotas de auth. Esse layout vai ter um menu lateral e um header `
 
 O agent gerou alguns arquivos e depois avaliei o que estava de acordo com o pedido e o que não queria no projeto. Depois foi necessário alterar a estilização gerada pela IA, pois não estava nem próxima ao Figma.
+
+**Exemplo 2**
+
+Fazendo a implementação do Mapa de clientes, não sabia quais eram as abordagens para adicionar ícones nos pontos de atenção no mapa. Fiz o seguinte comando no modo ASK:
+
+`Existe outras abordagens para adicionar os ícones ao feature.setStyle ?`
+
+Por sua vez, ela apresentou algumas abordagens possíveis e eu escolhi qual era a mais interessante e implementei.
+#### Decisão baseada pela IA
+
+Utilizar selectors do Zustand para manipular apenas os tickets. Identifiquei que estavam ocorrendo renderizações desnecessárias: ao atualizar a listagem de tickets, todos os dados retornados pelo fetch causavam re-renderizações em componentes não relacionados.
 
 ### Feature-Sliced Design (FSD)
 Escolhi utilizar a arquitetura Feature-Sliced Design (FSD) por considerar que ela favorece a escalabilidade e se adapta bem a um projeto de médio a grande porte. Pensando na possibilidade de expansão futura, essa arquitetura já oferece uma estrutura robusta e organizada, facilitando tanto a evolução das funcionalidades quanto a manutenção do código.
@@ -195,16 +218,13 @@ Priorizei entregar features completas e funcionais:
 
 ### Funcionalidades Não Implementadas
 
-Algumas otimizações e refinamentos ficaram pendentes 
-devido ao prazo:
+Algumas otimizações e refinamentos ficaram pendentes devido ao prazo:
 - Paginação de tabelas
 - Filtros adicionais em visualizações
 - Animações elaboradas
 
 **Trade-off consciente:**
-Preferi entregar features core bem implementadas do que 
-adicionar funcionalidades complementares que comprometeriam 
-a qualidade do essencial.
+Preferi entregar features core bem implementadas do que adicionar funcionalidades complementares que comprometeriam a qualidade do essencial.
 
 ## 🧩 Desafios do projeto
 
