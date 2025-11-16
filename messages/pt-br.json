@@ -19,6 +19,7 @@
       "createTicket": {
         "title": "Novo Ticket",
         "description": "Preencha os dados abaixo para registrar um novo ticket na plataforma.",
+        "success": "Ticket registrado com sucesso.",
         "fields": {
           "name": "Nome do cliente",
           "namePlaceholder": "Nome da pessoa ou empresa que está solicitando o suporte",
