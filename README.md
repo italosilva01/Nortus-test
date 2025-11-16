@@ -1,8 +1,54 @@
 
 # Notus-dw
 
-A Nortus-dw é uma solução ficticia de inteligência artificial para times de vendas e atendimentos que utilza fato baseado em coomportamentos e analise de perfil. O projeto foi desenvolvido como um teste para a loomi.
+A Nortus-dw é uma solução fictícia de inteligência artificial para times de vendas e atendimentos que utiliza fato baseado em comportamentos e análise de perfil. O projeto foi desenvolvido como um teste para a loomi.
 
+## 🛠️  Tecnologias
+
+### Framework e linguagem
+- **Next.js** (16.0.2) - Framework React para produção
+- **React** (19.2.0) - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** (^5) - Superset do JavaScript com tipagem estática
+
+### Estilização e UI
+- **Tailwind CSS** (^4) - Framework CSS utility-first
+- **Shadcn/ui** - Biblioteca de componentes baseada em Radix UI
+- **Radix UI** - Componentes primitivos 
+- **Framer Motion** (^12.23.24) - Biblioteca de animações
+- **Lucide React** (^0.553.0) - Biblioteca de ícones
+- **clsx** (^2.1.1) - Utilitário para construção de classes CSS
+
+### Gerenciamento de Estado e Formulários
+- **Zustand** (^5.0.8) - Biblioteca de gerenciamento de estado
+- **React Hook Form** (^7.66.0) - Biblioteca para gerenciamento de formulários
+- **Zod** (^4.1.12) - Biblioteca de validação de schemas TypeScript-first
+- **@hookform/resolvers** (^5.2.2) - Resolvers para integração Zod + React Hook Form
+
+### Autenticação e Internacionalização
+- **NextAuth.js** (5.0.0-beta.30) - Autenticação completa para Next.js
+- **next-intl** (^4.5.2) - Internacionalização (i18n) para Next.js
+
+### Gráficos e Visualizações
+- **ApexCharts** (^5.3.6) - Biblioteca de gráficos interativos
+- **react-apexcharts** (^1.8.0) - Wrapper React para ApexCharts
+- **OpenLayers (ol)** (^10.7.0) - Biblioteca de mapas interativos
+
+### HTTP e Utilitários
+- **Axios** (^1.13.2) - Cliente HTTP baseado em Promises
+- **UUID** (^13.0.0) - Geração de identificadores únicos
+- **country-flag-icons** (^1.5.21) - Ícones de bandeiras de países
+
+### Notificações e UI Auxiliar
+- **Sonner** (^2.0.7) - Biblioteca de toasts/notificações
+- **cmdk** (^1.1.1) - Command menu component
+
+### Ferramentas de Desenvolvimento
+- **ESLint** (^9) - Linter para JavaScript/TypeScript
+- **Jest** (^30.2.0) - Framework de testes
+- **Testing Library** - Utilitários para testes:
+  - `@testing-library/react` - Utilitários de teste para React
+  - `@testing-library/jest-dom` - Matchers customizados para Jest
+  - `@testing-library/dom` - Utilitários de teste para DOM
 ## 📋 Status do Projeto
 
 ### ✅ Features Implementadas
@@ -39,7 +85,7 @@ A Nortus-dw é uma solução ficticia de inteligência artificial para times de 
 **URL:** https://nortus-test-francisco-italo.vercel.app/
 
 ⚠️ **Nota:**  
-Os componentes estão sendo renderizados com dimensões ligeiramente diferentes em produção,aparentam maiores do que no ambiente de desenvolvimento.  
+Os componentes estão sendo renderizados com dimensões ligeiramente diferentes em produção, aparentam maiores do que no ambiente de desenvolvimento.  
 Atualmente estou investigando um possível problema relacionado ao build de CSS. Localmente, tudo funciona perfeitamente.
 
 Para testar com a estilização 100% fiel, recomendo rodar o projeto localmente.
@@ -72,7 +118,7 @@ Em resumo, minhas decisões foram feitas pensando no horizonte do projeto, privi
 ## Decisões técnicas
 
 ### Eslint
-Além de ser uma das ferramentas obrigatórias, as configurações foram definidas para evitar erros comuns que costumo cometer no código, por exemplo, esquecer de usar o optional chaining.# Nortus-test
+Além de ser uma das ferramentas obrigatórias, as configurações foram definidas para evitar erros comuns que costumo cometer no código, por exemplo, esquecer de usar o optional chaining.
 
 ### Shadcn
 Escolhi o shadcn/ui por ser uma biblioteca de componentes já prontos, de alta qualidade e com fácil integração ao Tailwind CSS. Essa escolha facilita a implementação e agiliza o processo de customização da interface, tornando o desenvolvimento mais rápido e padronizado.
@@ -80,20 +126,20 @@ Escolhi o shadcn/ui por ser uma biblioteca de componentes já prontos, de alta q
 ### 🤖 IA
 Em relação ao uso de IA, utilizei o Cursor com o agente Claude Sonnet 4.5 para gerar trechos de código, esclarecer dúvidas e explorar diferentes abordagens de implementação.
 
-#### exemplo
-Como exemplo, usei o cursor para gerar o layout default da aplicação ( com o header e o menu lateral) com o seguinte comando no modo agent:
+#### Exemplo
+Como exemplo, usei o cursor para gerar o layout default da aplicação (com o header e o menu lateral) com o seguinte comando no modo agent:
 
 `Quero que faça um layout padrão para toda a aplicação, menos para as rotas de auth. Esse layout vai ter um menu lateral e um header `
 
-O agent gerou alguns arquivos e depois avaliei o que estava de acordo com o pedido e o que não queria no projeto. Depois foi necessários alterar a estilização gerada pela IA, pois não estava nem próxima ao figma
+O agent gerou alguns arquivos e depois avaliei o que estava de acordo com o pedido e o que não queria no projeto. Depois foi necessário alterar a estilização gerada pela IA, pois não estava nem próxima ao Figma.
 
 ### Feature-Sliced Design (FSD)
 Escolhi utilizar a arquitetura Feature-Sliced Design (FSD) por considerar que ela favorece a escalabilidade e se adapta bem a um projeto de médio a grande porte. Pensando na possibilidade de expansão futura, essa arquitetura já oferece uma estrutura robusta e organizada, facilitando tanto a evolução das funcionalidades quanto a manutenção do código.
 
-Além disso, o FSD permite separar cada feature de forma independente, o que torna o fluxo de trabalho mais simples,especialmente importante já que estou desenvolvendo este projeto sozinho.
+Além disso, o FSD permite separar cada feature de forma independente, o que torna o fluxo de trabalho mais simples, especialmente importante já que estou desenvolvendo este projeto sozinho.
 
 ### useDashboardStore
-Optei por criar o hook useDashboardStories de forma unificada porque a requisição do dashboard já retorna todos os dados juntos. Dessa forma, consigo exibir o skeleton de uma única vez, mantendo o carregamento consistente em toda a tela.
+Optei por criar o hook useDashboardStore de forma unificada porque a requisição do dashboard já retorna todos os dados juntos. Dessa forma, consigo exibir o skeleton de uma única vez, mantendo o carregamento consistente em toda a tela.
 
 Cheguei a considerar uma abordagem dividida, separar a resposta da requisição em partes e processá-las individualmente. Porém, isso tornaria a implementação mais complexa e adicionaria uma dificuldade que, ao meu ver, não fazia parte da intenção original dos desenvolvedores do teste.
 
