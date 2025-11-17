@@ -89,14 +89,16 @@ A Nortus-dw é uma solução fictícia de inteligência artificial para times de
 - pnpm instalado
 
 ### Instalação
-
 ```
 # Instalar dependências
 
 pnpm install
 
-# Criar arquivo .env.local (se necessário)
-# NEXTAUTH_SECRET=sua_chave_secreta_aqui
+# Configurar variáveis de ambiente
+cp .env.example .env.local
+# Edite o arquivo .env.local e configure as variáveis necessárias
+# Para gerar um NEXTAUTH_SECRET seguro, execute:
+# openssl rand -base64 32
 
 # Executar em desenvolvimento
 pnpm dev
