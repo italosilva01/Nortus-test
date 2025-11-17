@@ -34,7 +34,7 @@ export const MENU_ITEMS: MenuItem[] = [
     {
       icon: PersonIcon as { src: string },
       label: "users",
-      href: "/users",
+      href: "/chat",
     },
     {
       icon: MessageIcon as { src: string },
@@ -52,6 +52,7 @@ export const MENU_ITEMS: MenuItem[] = [
   export  const ROUTE_MAP: Record<string, string> = {
     "/": "dashboard",
     "/ticketsManagement": "ticketsManagement",
+    "/chat": "chat",
 
   };
 

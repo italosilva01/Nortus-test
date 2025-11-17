@@ -41,21 +41,17 @@ export const useTicketFilters = ({ tickets }: UseTicketFiltersProps) => {
   );
 
   return {
-    // States
     searchTerm,
     selectedPriority,
     selectedStatus,
     selectedResponsible,
-    // Setters
     setSearchTerm,
     setSelectedPriority,
     setSelectedStatus,
     setSelectedResponsible,
-    // Computed
     filteredTickets,
     hasActiveFilters,
     totalResults: filteredTickets.length,
-    // Actions
     resetFilters,
   };
 };
