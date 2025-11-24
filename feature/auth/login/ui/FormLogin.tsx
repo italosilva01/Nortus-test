@@ -33,7 +33,7 @@ export const FormLogin = () => {
     } = form;
 
     return (
-        <div className="flex flex-col gap-6 items-start bg-app-bg-dark h-max w-full xl:min-w-[1fr] 3xl:min-w-[805px] 3xl:max-w-[50.3125rem]">
+        <div className="flex flex-col gap-6 items-start bg-app-bg-dark h-max">
             <Image
                 src={NortusLogo as string}
                 alt="Logo Nortus"
@@ -44,13 +44,15 @@ export const FormLogin = () => {
             />
             <div className="mt-8 lg:mt-24 xl:mt-32 2xl:mt-40 flex flex-col xl:gap-16 gap-10 w-full">
                 <div>
-                    <Typography element="h1" fontColor="title" fontSize="4xl">{t('title')}</Typography>
-                    <Typography element="p" fontFamily="inter" className="text-[1.25rem]" fontWeight="normal" fontColor="title">{t('description')}</Typography>
+                    <Typography element="h1" fontColor="surface-solid" className="text-[2.2269rem] !line-height-[2.8631rem] letter-spacing-0px "
+                    fontFamily="space-grotesk"
+                    >{t('title')}</Typography>
+                    <Typography element="p" fontFamily="inter" className="text-[1.25rem] !line-height-[1.875rem] letter-spacing-0.64px" fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
                 </div>
                 <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7  2xl:max-w-[963px]">
                     <FormInput
                         type="text"
-                        placeholder="email"
+                        placeholder="Usuário"
                         label={t('email')}
                         error={errors.email?.message}
                         {...register("email")}

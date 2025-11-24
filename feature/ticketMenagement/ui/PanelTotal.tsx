@@ -14,7 +14,7 @@ const PanelTotal = ({ title, value, icon }: PanelTotalProps) => {
         <Panel className="flex flex-col gap-4 w-full sm:w-70 lg:w-75 xl:w-81">
             <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                    <Typography fontFamily="montserrat" fontWeight="normal" className="text-sm truncate" fontColor="title">
+                    <Typography fontFamily="montserrat" fontWeight="normal" className="text-sm truncate" fontColor="surface-solid">
                         {title}
                     </Typography>
                 </CardTitle>
@@ -24,7 +24,7 @@ const PanelTotal = ({ title, value, icon }: PanelTotalProps) => {
                     fontFamily="montserrat"
                     fontWeight="semibold"
                     className="text-base sm:text-lg lg:text-xl"
-                    fontColor="title"
+                    fontColor="surface-solid"
                     element="p"
                 >
                     {value}

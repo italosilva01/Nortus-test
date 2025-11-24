@@ -26,7 +26,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
          {title && (
             <Typography
               element="p"
-              fontColor="title"
+              fontColor="surface-solid"
               fontSize="xl"
               fontWeight="normal"
               className="mt-1 mb-0.5 text-left text-[1rem] font-medium"
@@ -36,7 +36,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
           )}
         <div className="flex items-center gap-2 relative">
          
-          <Input ref={ref} aria-invalid={!!error} {...props} type={isPassword ? (isPasswordVisible ? 'text' : 'password') : typeInput} className={inputClassName} />
+          <Input ref={ref} aria-invalid={!!error} {...props} type={isPassword ? (isPasswordVisible ? 'text' : 'password') : typeInput} className={cn("max-w-190.75 w-190.75 px-1.5 !text-[1.125rem] line-height-[1.5625rem] letter-spacing-0.32px border-outline-solid rounded-20.1px pl-[20px] py-[22px] !border-[1.27px] opacity-90", inputClassName)} />
           {isPassword && (
             <Button
               type="button"
@@ -53,7 +53,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
           label && (
             <Typography
               element="p"
-              fontColor="title"
+              fontColor="surface-solid"
               fontSize="xl"
               fontWeight="normal"
               className={cn("indent-3 mt-1 text-left", labelClassName)}
@@ -82,4 +82,3 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
 FormInput.displayName = "FormInput"
 
 export { FormInput }
-

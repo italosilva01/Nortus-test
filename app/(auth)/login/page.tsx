@@ -1,7 +1,7 @@
-import { redirect } from "next/navigation"
 import { auth } from "@/auth"
 import { FormLogin } from "@/feature/auth/login/ui/FormLogin"
 import { PanelChangeLanguage } from "@/feature/auth/login/ui/PanelChangeLanguage"
+import { redirect } from "next/navigation"
 
 export default async function LoginPage() {
     const session = await auth()
@@ -11,7 +11,7 @@ export default async function LoginPage() {
     }
 
     return (
-        <main className="flex justify-between 2xl:gap-16 gap-10 w-full items-start p-10">
+        <main className="flex justify-between w-full items-start 2xl:mx-13.75 2xl:my-[24px] px-[2.5rem] py-[50px]">
             <FormLogin />
             <PanelChangeLanguage />
         </main>
