@@ -37,17 +37,17 @@ export const FormLogin = () => {
             <Image
                 src={NortusLogo as string}
                 alt="Logo Nortus"
-                width={174}
+                width={174.12}
                 height={54}
                 priority
                 unoptimized
             />
-            <div className="mt-8 lg:mt-24 xl:mt-32 2xl:mt-40 flex flex-col gap-[4.25rem] w-full">
-                <div>
-                    <Typography element="h1" fontColor="surface-solid" className="text-[2.2269rem] !line-height-[2.8631rem] letter-spacing-0px "
+            <div className="mt-8 lg:mt-24 xl:mt-32 2xl:mt-[160px] flex flex-col gap-[4.25rem] w-full">
+                <div >
+                    <Typography element="h1" fontColor="surface-solid" className="text-[2.2269rem] line-height-[45.81px] letter-spacing-0px"
                     fontFamily="space-grotesk"
                     >{t('title')}</Typography>
-                    <Typography element="p" fontFamily="inter" className="text-[1.25rem] !line-height-[1.875rem] letter-spacing-0.64px" fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
+                    <Typography element="p" fontFamily="inter" className="text-[20.36px] !line-height-[30.54px] letter-spacing-0.64px mt-1.5 " fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
                 </div>
                 <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7 2xl:max-w-[963px]">
                     <FormInput
@@ -68,12 +68,12 @@ export const FormLogin = () => {
                             <Checkbox id="terms" className="size-[22px] border-outline-solid font-medium border-[1.27px]" />
                             <Label htmlFor="terms" className="text-white !text-[1.125rem] !line-height-[25.45px] ml-4 !letter-spacing-0.13px font-space-grotesk">{t('remember')}</Label>
                         </div>
-                        <Link href="/forgot-password" className="font-space-grotesk font-medium !text-[1.125rem] !line-height-[25.45px] !letter-spacing-0.13px text-app-primary">{t('forgot')}</Link>
+                        <Link href="/forgot-password" className="font-space-grotesk font-medium !text-[1.125rem] !line-height-[25.45px] !letter-spacing-0.13px text-app-primary mr-5">{t('forgot')}</Link>
                     </div>
                     <Button
                         type="submit"
                         size="lg"
-                        className="w-full h-[68px] rounded-[20px] border-[1.27px] !text-button-solid border-outline-solid text-[18px]"
+                        className="w-full h-[68px] rounded-[20px] border-[1.27px] !text-button-solid border-outline-solid text-[18px] mt-6"
                         variant="default"
                     >
                         {t('enter')}

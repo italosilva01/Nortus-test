@@ -41,7 +41,7 @@ export const Typography = ({ children, className, element = "p", fontFamily = "i
     }[fontColor] : ""
 
     return createElement(element, {
-        className: cn(
+        className: cn(`h-min`,
           fontFamilyClass,
             fontWeightClass,
             fontSizeClass,
