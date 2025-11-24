@@ -1,8 +1,8 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Sidebar } from "./Sidebar";
 import { Header } from "./Header";
+import { Sidebar } from "./Sidebar";
 
 const authRoutes = ["/login"];
 
@@ -20,7 +20,7 @@ export const DashboardLayoutWrapper = ({
   }
 
   return (
-    <div className="flex h-screen w-full  overflow-hidden bg-app-bg-dark">
+    <div className="flex  w-full  overflow-hidden bg-app-bg-dark">
       <Sidebar />
       <div className="flex flex-1 flex-col overflow-hidden">
         <Header />
