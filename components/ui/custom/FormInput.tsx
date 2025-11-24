@@ -36,7 +36,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
           )}
         <div className="flex items-center gap-2 relative">
          
-          <Input ref={ref} aria-invalid={!!error} {...props} type={isPassword ? (isPasswordVisible ? 'text' : 'password') : typeInput} className={cn("max-w-190.75 w-190.75 px-1.5 !text-[1.125rem] line-height-[1.5625rem] letter-spacing-0.32px border-outline-solid rounded-20.1px pl-[20px] py-[22px] !border-[1.27px] opacity-90", inputClassName)} />
+          <Input ref={ref} aria-invalid={!!error} {...props} type={isPassword ? (isPasswordVisible ? 'text' : 'password') : typeInput} className={cn("max-w-190.75 w-190.75 px-1.5 !text-[1.125rem] line-height-[1.5625rem] letter-spacing-0.32px border-outline-solid rounded-[22px] pl-[20px] py-[22px] !border-[1.27px] opacity-90", inputClassName)} />
           {isPassword && (
             <Button
               type="button"
