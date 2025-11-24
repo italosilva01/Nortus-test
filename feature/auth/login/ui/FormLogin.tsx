@@ -34,22 +34,26 @@ export const FormLogin = () => {
 
     return (
         <div className="flex flex-col items-start bg-app-bg-dark h-max">
-            <Image
-                src={NortusLogo as string}
-                alt="Logo Nortus"
-                width={174.12}
-                height={54}
-                priority
-                unoptimized
-            />
-            <div className="mt-8 lg:mt-24 xl:mt-32 2xl:mt-[160px] flex flex-col gap-[4.25rem] w-full">
+            <div className="xl:w-[130px] 2xl:w-[174.12px] h-auto">
+                <Image
+                    src={NortusLogo as string}
+                    alt="Logo Nortus"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: '100%', height: 'auto' }}
+                    priority
+                    unoptimized
+                />
+            </div>
+            <div className="mt-8 lg:mt-24 xl:mt-[120px] 2xl:mt-[160px] flex flex-col  xl:gap-[3.1875rem] 2xl:gap-[68px] w-fulL">
                 <div >
-                    <Typography element="h1" fontColor="surface-solid" className="text-[2.2269rem] line-height-[45.81px] letter-spacing-0px"
+                    <Typography element="h1" fontColor="surface-solid" className="xl:text-[1.75rem] 2xl:text-[2.2269rem] line-height-[45.81px] letter-spacing-0px"
                     fontFamily="space-grotesk"
                     >{t('title')}</Typography>
-                    <Typography element="p" fontFamily="inter" className="text-[20.36px] !line-height-[30.54px] letter-spacing-0.64px mt-1.5 " fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
+                    <Typography element="p" fontFamily="inter" className="xl:text-[1.125rem] 2xl:text-[20.36px] !line-height-[30.54px] letter-spacing-0.64px mt-1.5 " fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
                 </div>
-                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7 2xl:max-w-[963px]">
+                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7 xl:max-w-[563px] 2xl:max-w-[963px] xl:gap-[1.3125rem] 2xl:gap-7">
                     <FormInput
                         type="text"
                         placeholder="Usuário"
@@ -65,15 +69,15 @@ export const FormLogin = () => {
                     />
                     <div className="flex justify-between my-2">
                         <div className="flex items-center">
-                            <Checkbox id="terms" className="size-[22px] border-outline-solid font-medium border-[1.27px]" />
-                            <Label htmlFor="terms" className="text-white !text-[1.125rem] !line-height-[25.45px] ml-4 !letter-spacing-0.13px font-space-grotesk">{t('remember')}</Label>
+                            <Checkbox id="terms" className="xl:size-[18px] 2xl:size-[22px] border-outline-solid font-medium border-[1.27px]" />
+                            <Label htmlFor="terms" className="text-white xl:text-[1rem] 2xl:!text-[1.125rem] !line-height-[25.45px] ml-4 !letter-spacing-0.13px font-space-grotesk">{t('remember')}</Label>
                         </div>
-                        <Link href="/forgot-password" className="font-space-grotesk font-medium !text-[1.125rem] !line-height-[25.45px] !letter-spacing-0.13px text-app-primary mr-5">{t('forgot')}</Link>
+                        <Link href="/forgot-password" className="font-space-grotesk font-medium xl:text-[1rem] 2xl:!text-[1.125rem] !line-height-[25.45px] !letter-spacing-0.13px text-app-primary mr-5">{t('forgot')}</Link>
                     </div>
                     <Button
                         type="submit"
                         size="lg"
-                        className="w-full h-[68px] rounded-[20px] border-[1.27px] !text-button-solid border-outline-solid text-[18px] mt-6"
+                        className="w-full xl:h-[52px] 2xl:h-[68px] rounded-[20px] border-[1.27px] !text-button-solid border-outline-solid xl:!text-[1rem] 2xl:text-[18px] xl:mt-[18px] 2xl:mt-6"
                         variant="default"
                     >
                         {t('enter')}

@@ -45,7 +45,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
               onClick={() => setIsPasswordVisible(!isPasswordVisible)}
               aria-label={isPasswordVisible ? "Esconder senha" : "Mostrar senha"}
             >
-              {isPasswordVisible ? <EyeOffIcon className="size-7" /> : <EyeIcon className="size-7" />}
+              {isPasswordVisible ? <EyeOffIcon className="2xl:size-7 size-5" /> : <EyeIcon className="2xl:size-7 size-5" />}
             </Button>
           )}
         </div>
