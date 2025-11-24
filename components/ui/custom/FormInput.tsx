@@ -41,11 +41,11 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
             <Button
               type="button"
               variant="ghost"
-              className="absolute bg-transparent right-0 top-0 h-full px-4 text-white hover:bg-transparent hover:text-gray-300 rounded-l-none rounded-r-2xl"
+              className="absolute bg-transparent right-0 top-0 h-full px-4 text-white hover:bg-transparent hover:text-gray-300 rounded-l-none rounded-r-2xl mr-4"
               onClick={() => setIsPasswordVisible(!isPasswordVisible)}
               aria-label={isPasswordVisible ? "Esconder senha" : "Mostrar senha"}
             >
-              {isPasswordVisible ? <EyeOffIcon className="w-5 h-5" /> : <EyeIcon className="w-5 h-5" />}
+              {isPasswordVisible ? <EyeOffIcon className="size-7" /> : <EyeIcon className="size-7" />}
             </Button>
           )}
         </div>
