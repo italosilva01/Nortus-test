@@ -58,6 +58,7 @@
   --color-surface-solid: var(--surface-solid);
   --color-outline-solid: var(--outline-solid);
   --color-surface-variant-solid: var(--surface-variant-solid);
+  --color-button-solid: var(--text-button-solid);
 }
 
 :root {
@@ -109,6 +110,7 @@
   --surface-solid: #E3E3E3;
   --outline-solid: #737677;
   --surface-variant-solid: #C9C9C9;
+  --text-button-solid: #F6F8FC;
 }
 .dark {
   --background-primary: oklch(0.145 0 0);

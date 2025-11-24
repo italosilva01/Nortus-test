@@ -56,7 +56,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
               fontColor="surface-solid"
               fontSize="xl"
               fontWeight="normal"
-              className={cn("indent-3 mt-1 text-left", labelClassName)}
+              className={cn("!pl-[20px] mt-1 text-left !text-[1rem] !line-height-[20.36px] !letter-spacing-0.51px text-surface-variant-solid", labelClassName)}
             >
               {label}
             </Typography>
