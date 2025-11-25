@@ -34,7 +34,7 @@ export const FormLogin = () => {
 
     return (
         <div className="flex flex-col items-start bg-app-bg-dark h-max">
-            <div className="xl:w-[130px] 2xl:w-[10.8825rem] h-auto">
+            <div className="w-full max-w-[130px] xl:max-w-[9.375em] 2xl:max-w-[10.8825rem] h-auto">
                 <Image
                     src={NortusLogo as string}
                     alt="Logo Nortus"
@@ -53,7 +53,7 @@ export const FormLogin = () => {
                     >{t('title')}</Typography>
                     <Typography element="p" fontFamily="inter" className="text-[1.2725rem] !line-height-[30.54px] letter-spacing-0.64px mt-1.5 " fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
                 </div>
-                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7 max-w-[34.75rem] 2xl:max-w-[60.1875em] xl:gap-[1.3125rem] 2xl:gap-7">
+                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7 md:max-w-[25rem] xl:max-w-[34.75rem] 2xl:max-w-[60.1875em] xl:gap-[1.3125rem] 2xl:gap-7">
                     <FormInput
                         type="text"
                         placeholder="Usuário"

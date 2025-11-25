@@ -22,7 +22,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
     const isPassword = typeInput === 'password'
 
     return (
-      <div className={cn("w-full", containerClassName)}>
+      <div className={cn("w-full ", containerClassName)}>
          {title && (
             <Typography
               element="p"
