@@ -34,7 +34,7 @@ export const FormLogin = () => {
 
     return (
         <div className="flex flex-col items-start bg-app-bg-dark h-max">
-            <div className="xl:w-[130px] 2xl:w-[174.12px] h-auto">
+            <div className="xl:w-[130px] 2xl:w-[10.8825rem] h-auto">
                 <Image
                     src={NortusLogo as string}
                     alt="Logo Nortus"
@@ -46,14 +46,14 @@ export const FormLogin = () => {
                     unoptimized
                 />
             </div>
-            <div className="mt-8 lg:mt-24 xl:mt-[120px] 2xl:mt-[160px] flex flex-col  xl:gap-[3.1875rem] 2xl:gap-[68px] w-fulL">
+            <div className="mt-[120px] 2xl:mt-[160px] flex flex-col gap-[3.1875rem] 2xl:gap-[68px] w-min">
                 <div >
-                    <Typography element="h1" fontColor="surface-solid" className="xl:text-[1.75rem] 2xl:text-[2.2269rem] line-height-[45.81px] letter-spacing-0px"
+                    <Typography element="h1" fontColor="surface-solid" className="text-[2.2269rem] line-height-[45.81px] letter-spacing-0px"
                     fontFamily="space-grotesk"
                     >{t('title')}</Typography>
-                    <Typography element="p" fontFamily="inter" className="xl:text-[1.125rem] 2xl:text-[20.36px] !line-height-[30.54px] letter-spacing-0.64px mt-1.5 " fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
+                    <Typography element="p" fontFamily="inter" className="text-[1.2725rem] !line-height-[30.54px] letter-spacing-0.64px mt-1.5 " fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
                 </div>
-                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7 xl:max-w-[563px] 2xl:max-w-[963px] xl:gap-[1.3125rem] 2xl:gap-7">
+                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7 max-w-[34.75rem] 2xl:max-w-[60.1875em] xl:gap-[1.3125rem] 2xl:gap-7">
                     <FormInput
                         type="text"
                         placeholder="Usuário"
