@@ -19,10 +19,10 @@ export const Sidebar = () => {
 
   return (
     <aside
-      className="flex flex-col h-screen w-24 2xl:w-37.5 bg-app-dark-blue-500 rounded-tr-[23px] rounded-br-[26px] shadow-2xl shadow-black z-40"
+      className="flex flex-col h-screen w-24 2xl:pt-[28px] 2xl:w-37.5 bg-app-dark-blue-500 rounded-tr-[23px] rounded-br-[26px] shadow-2xl shadow-black z-40"
     >
 
-      <div className="flex h-16 items-center justify-center 2xl:p-10">
+      <div className="flex h-16 items-center justify-center mr-0.5">
         <Image src={NortusIcon as string} alt="Nortus icon" width={40} height={40} />
       </div>
 

@@ -16,7 +16,7 @@ const isTicketsManagement = pathname === "/ticketsManagement";
 
   return (
     <header className="w-full z-10 flex h-16 xl:h-20 2xl:h-22 items-center justify-between bg-app-dark-blue-500 px-6 pl-[140px] 2xl:pl-[190px] absolute">
-      <Typography fontFamily="montserrat" fontWeight="semibold" className="text-[1.25rem]" fontColor="text-button-solid">
+      <Typography fontFamily="montserrat" fontWeight="semibold" className="text-[1.25rem]" fontColor="button-solid">
         {t(ROUTE_MAP[pathname] || "dashboard")}
       </Typography>
 

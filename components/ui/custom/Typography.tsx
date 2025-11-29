@@ -38,7 +38,7 @@ export const Typography = ({ children, className, element = "p", fontFamily = "i
           fontFamilyClass,
             fontWeightClass,
             fontSizeClass,
-            fontColor,
+            `text-${fontColor}`,
             className
         ),
     },
