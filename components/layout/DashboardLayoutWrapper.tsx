@@ -20,10 +20,10 @@ export const DashboardLayoutWrapper = ({
   }
 
   return (
-    <div className="flex  w-full  overflow-hidden bg-app-bg-dark">
+    <div className="flex w-full overflow-hidden bg-app-bg-dark relative">
       <Sidebar />
-      <div className="flex flex-1 flex-col overflow-hidden">
         <Header />
+      <div className="flex flex-1 flex-col overflow-hidden mt-[5.5rem]">
         <main className="flex-1 overflow-y-auto p-6 mx-auto w-full max-w-[1370px]">
           {children};
         </main>

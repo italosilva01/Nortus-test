@@ -19,7 +19,7 @@ export const Sidebar = () => {
 
   return (
     <aside
-      className="flex flex-col h-screen w-24 2xl:w-37.5 bg-app-dark-blue-500 rounded-tr-[23px] rounded-br-[26px] shadow-2xl shadow-black "
+      className="flex flex-col h-screen w-24 2xl:w-37.5 bg-app-dark-blue-500 rounded-tr-[23px] rounded-br-[26px] shadow-2xl shadow-black z-40"
     >
 
       <div className="flex h-16 items-center justify-center 2xl:p-10">
