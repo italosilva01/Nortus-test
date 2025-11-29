@@ -1,15 +1,17 @@
 
-import Image from "next/image"
-import StackedCards from "@/public/image/StackedCard.svg"
 import { Button } from "@/components/ui/button"
 import HelpIcon from "@/public/icons/sideBar/customerSupport.svg"
+import StackedCards from "@/public/image/StackedCard.svg"
 import { BR } from "country-flag-icons/react/1x1"
 import { ArrowDown } from "lucide-react"
+import Image from "next/image"
 
 export const PanelChangeLanguage = () => {
     return (
-        <div className="">
-            <div className="relative size-[60vw] xl:size-[50vw] 2xl:min-w-233.5 2xl:h-237.5 2xl:max-w-245 rounded-2xl">
+        <div className="pt-10">
+            <div className="relative w-full md:size-[50vw] 
+  lg:size-[60vw] 
+  xl:size-[50vw] 2xl:min-w-233.5 2xl:h-237.5 2xl:max-w-233.5 rounded-2xl">
                 <div className="absolute top-0 left-0 size-full z-50 flex items-start justify-end" >
                     <div className="
                     flex gap-2 bg-app-bg-dark 2xl:w-max rounded-2xl rounded-tr-none p-4

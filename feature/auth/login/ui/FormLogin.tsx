@@ -33,7 +33,7 @@ export const FormLogin = () => {
     } = form;
 
     return (
-        <div className="flex flex-col items-start bg-app-bg-dark h-max">
+        <div className="flex flex-col items-start bg-app-bg-dark h-max py-[50px] pl-7">
             <div className="w-full max-w-32.5 xl:max-w-[9.375em] 2xl:max-w-[10.8825rem] h-auto">
                 <Image
                     src={NortusLogo as string}
@@ -46,14 +46,14 @@ export const FormLogin = () => {
                     unoptimized
                 />
             </div>
-            <div className="mt-30 2xl:mt-40 flex flex-col gap-12.75 2xl:gap-17 w-min">
+            <div className="mt-10 xl:mt-30 2xl:mt-40 flex flex-col gap-7 xl:gap-12.75 2xl:gap-17">
                 <div >
                     <Typography element="h1" fontColor="surface-solid" className="text-2xl xl:text-3xl 2xl:text-4xl line-height-[2.8631rem] letter-spacing-0px mb-3"
                     fontFamily="space-grotesk"
                     >{t('title')}</Typography>
                     <Typography element="p" fontFamily="inter" className="lg:text-base xl:text-lg 2xl:text-xl !line-height-[1.9375rem] letter-spacing-0.64px mt-1.5 " fontWeight="normal" fontColor="surface-solid">{t('description')}</Typography>
                 </div>
-                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-7 md:max-w-100 xl:max-w-139 2xl:max-w-240.75 xl:gap-5.25 2xl:gap-7 mt-0.5">
+                <form onSubmit={handleSubmit((data) => handleLogin(data))} className="w-full flex flex-col gap-4 md:max-w-80 lg:w-[764px] xl:max-w-139 2xl:max-w-[764px] xl:gap-5.25 2xl:gap-7 mt-0.5">
                     <FormInput
                         type="text"
                         placeholder="Usuário"
