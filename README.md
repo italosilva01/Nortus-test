@@ -2,7 +2,7 @@
 
 # Nortus-dw
 
-A Nortus-dw é uma solução fictícia de inteligência artificial para times de vendas e atendimentos que utiliza dados baseados em comportamentos e análise de perfil. O projeto foi desenvolvido como um teste para a loomi.
+A Nortus-dw é uma solução fictícia de inteligência artificial para times de vendas e atendimentos que utiliza dados baseados em comportamentos e análise de perfil.
 
 ## 🛠️  Tecnologias
 
