@@ -22,11 +22,11 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
     const isPassword = typeInput === 'password'
 
     return (
-      <div className={cn("w-full", containerClassName)}>
+      <div className={cn("w-full ", containerClassName)}>
          {title && (
             <Typography
               element="p"
-              fontColor="title"
+              fontColor="surface-solid"
               fontSize="xl"
               fontWeight="normal"
               className="mt-1 mb-0.5 text-left text-[1rem] font-medium"
@@ -36,16 +36,16 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
           )}
         <div className="flex items-center gap-2 relative">
          
-          <Input ref={ref} aria-invalid={!!error} {...props} type={isPassword ? (isPasswordVisible ? 'text' : 'password') : typeInput} className={inputClassName} />
+          <Input ref={ref} aria-invalid={!!error} {...props} type={isPassword ? (isPasswordVisible ? 'text' : 'password') : typeInput} className={cn("max-w-190.75 w-full px-1.5 !text-[1.125rem] line-height-[1.5625rem] letter-spacing-0.32px border-outline-solid rounded-[22px] pl-[20px] py-[22px] !border-[1.27px] opacity-90", inputClassName)} />
           {isPassword && (
             <Button
               type="button"
               variant="ghost"
-              className="absolute bg-transparent right-0 top-0 h-full px-4 text-white hover:bg-transparent hover:text-gray-300 rounded-l-none rounded-r-2xl"
+              className="absolute bg-transparent right-0 top-0 h-full px-4 text-white hover:bg-transparent hover:text-gray-300 rounded-l-none rounded-r-2xl mr-4"
               onClick={() => setIsPasswordVisible(!isPasswordVisible)}
               aria-label={isPasswordVisible ? "Esconder senha" : "Mostrar senha"}
             >
-              {isPasswordVisible ? <EyeOffIcon className="w-5 h-5" /> : <EyeIcon className="w-5 h-5" />}
+              {isPasswordVisible ? <EyeOffIcon className="2xl:size-7 size-5" /> : <EyeIcon className="2xl:size-7 size-5" />}
             </Button>
           )}
         </div>
@@ -53,10 +53,10 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
           label && (
             <Typography
               element="p"
-              fontColor="title"
+              fontColor="surface-solid"
               fontSize="xl"
               fontWeight="normal"
-              className={cn("indent-3 mt-1 text-left", labelClassName)}
+              className={cn("!pl-[20px] mt-1 text-left !text-[1rem] !line-height-[20.36px] !letter-spacing-0.51px text-surface-variant-solid", labelClassName)}
             >
               {label}
             </Typography>
@@ -82,4 +82,3 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
 FormInput.displayName = "FormInput"
 
 export { FormInput }
-

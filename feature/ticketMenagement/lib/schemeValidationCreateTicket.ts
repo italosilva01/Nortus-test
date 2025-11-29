@@ -10,6 +10,7 @@ export const createTicketSchema = (t: (key: string) => string) => z.object({
   priority: z
     .string({ message: t("errorsScreen.priorityRequired") })
    ,
+   
   responsible: z
     .string({ message: t("errorsScreen.responsibleRequired") }),
   subject: z
