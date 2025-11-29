@@ -36,7 +36,7 @@ const FormCombobox = ({
       {title && (
         <Typography
           element="p"
-          fontColor="title"
+          fontColor="surface-solid"
           fontSize="xl"
           fontWeight="normal"
           className="mt-1 mb-0.5 text-left text-[1rem] font-medium"
@@ -58,7 +58,7 @@ const FormCombobox = ({
         {label && (
           <Typography
             element="p"
-            fontColor="title"
+            fontColor="surface-solid"
             fontSize="xl"
             fontWeight="normal"
             className={cn("indent-3 mt-1 text-left", labelClassName)}

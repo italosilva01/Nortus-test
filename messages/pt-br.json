@@ -78,7 +78,7 @@
     "email": "Insira o seu e-mail, CPF ou passaporte.",
     "password": "Senha",
     "remember": "Lembrar meu usuário",
-    "forgot": "Esqueceu sua senha?",
+    "forgot": "Esqueceu sua senha",
     "enter": "Entrar",
     "errorsScreen": {
       "emailInvalid": "Email inválido",

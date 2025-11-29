@@ -18,7 +18,7 @@ export const PanelBig = ({ classNameTitle, title, children, filtersChildren, cla
         <Panel className={cn("py-0 w-full h-full flex flex-col max-w-[680px] xl:max-w-[780px] 2xl:max-w-[852px]", className)}>
             <CardHeader className="flex pt-6 px-4 lg:px-6">
                 <CardTitle className="flex flex-col lg:flex-row items-start lg:items-center gap-4 justify-between w-full">
-                    <Typography fontFamily="montserrat" fontWeight="normal" className={cn("text-xl lg:text-2xl font-bold truncate", classNameTitle)} fontColor="title">
+                    <Typography fontFamily="montserrat" fontWeight="normal" className={cn("text-xl lg:text-2xl font-bold truncate", classNameTitle)} fontColor="surface-solid">
                         {title}
                     </Typography>
                     {filtersChildren}
