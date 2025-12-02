@@ -13,16 +13,16 @@ interface TypographyProps {
     fontDecoration?: "none" | "underline" | "line-through"
     fontTransform?: "none" | "uppercase" | "lowercase"
 }
-export const Typography = ({ children, className, element = "p", fontFamily = "inter", fontWeight = "normal", fontSize, fontColor = "text-surface-solid" }: TypographyProps) => {
+export const Typography = ({ children, className, element = "p", fontFamily = "inter", fontWeight = "normal", fontSize, fontColor }: TypographyProps) => {
 
-
+ 
     const fontWeightClass = fontWeight ? {
         "normal": "font-normal",
         "bold": "font-bold",
         "semibold": "font-semibold",
         "extrabold": "font-extrabold"
     }[fontWeight] : ""
-
+    const currentFontColor = fontColor ? `text-${fontColor}` : "text-surface-solid" 
     const fontSizeClass = fontSize ? `text-${fontSize}` : ""
 
     const fontFamilyClass = fontFamily ? {
@@ -32,13 +32,12 @@ export const Typography = ({ children, className, element = "p", fontFamily = "i
         "space-grotesk": "font-space-grotesk"
     }[fontFamily] : ""
 
-   
     return createElement(element, {
         className: cn(`h-min`,
           fontFamilyClass,
             fontWeightClass,
             fontSizeClass,
-            `text-${fontColor}`,
+            currentFontColor,
             className
         ),
     },

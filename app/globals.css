@@ -61,6 +61,7 @@
   --color-outline-solid: var(--outline-solid);
   --color-surface-variant-solid: var(--surface-variant-solid);
   --color-button-solid: var(--text-button-solid);
+  --color-app-green-600: var(--app-green-600);
 }
 
 :root {
@@ -113,6 +114,7 @@
   --outline-solid: #737677;
   --surface-variant-solid: #C9C9C9;
   --text-button-solid: #F6F8FC;
+  --app-green-600: #00DC04;
 }
 .dark {
   --background-primary: oklch(0.145 0 0);

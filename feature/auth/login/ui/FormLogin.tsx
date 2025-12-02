@@ -6,7 +6,7 @@ import { FormInput } from "@/components/ui/custom/FormInput"
 import { Typography } from "@/components/ui/custom/Typography"
 import { Label } from "@/components/ui/label"
 import { FormSchema, getLoginSchema } from "@/feature/auth/login/lib/schemeValidation"
-import NortusLogo from "@/public/NortusLogo.svg"
+import nortusLogoImage from "@/public/NortusLogo.svg"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
@@ -36,7 +36,7 @@ export const FormLogin = () => {
         <div className="flex flex-col items-start bg-app-bg-dark h-max py-[50px] pl-7">
             <div className="w-full max-w-32.5 xl:max-w-[9.375em] 2xl:max-w-[10.8825rem] h-auto">
                 <Image
-                    src={NortusLogo as string}
+                    src={nortusLogoImage}
                     alt="Logo Nortus"
                     width={0}
                     height={0}

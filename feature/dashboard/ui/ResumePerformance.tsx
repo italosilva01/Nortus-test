@@ -1,6 +1,5 @@
 import { PanelPerformance } from "@/components/ui/custom/PanelPerformance"
-import { formatCurrency } from "@/shared/lib/utils"
-import { formatVariation } from "@/shared/lib/utils"
+import { formatCurrency, formatVariation } from "@/shared/lib/utils"
 import { useDashboardStore } from "@/stores/useDashboardStore"
 import { useTranslations } from "next-intl"
 
@@ -11,7 +10,7 @@ export const ResumePerformance = () => {
         return null
     }
     return (
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 xl:gap-6 w-full lg:w-auto">
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 w-max border border-button-solid/10">
             <PanelPerformance
                 title={t("DashboardPage.kpis.arpu")}
                 value={formatCurrency(data.kpisResume.arpu.valor)}
