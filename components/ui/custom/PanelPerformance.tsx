@@ -9,10 +9,11 @@ interface PanelPerformanceProps {
     diffLastMonth: string
     positive: boolean
     iconChildren?: React.ReactNode
+    iconClassName?: string
 }
-export const PanelPerformance = ({ title, value, diffLastMonth, positive = true, iconChildren }: PanelPerformanceProps) => {
+export const PanelPerformance = ({ title, value, diffLastMonth, positive = true, iconChildren, iconClassName = "" }: PanelPerformanceProps) => {
     return (
-        <Panel className="size-full xl:w-56.75 xl:h-44 border border-button-solid/10">
+        <Panel className="relative size-full xl:w-56.75 xl:h-44 border border-button-solid/10">
             <CardHeader className="" >
                 <CardTitle className="flex justify-start items-start gap-2">
                     <Typography fontFamily="montserrat" fontWeight="normal" className="text-[14px] truncate" fontColor="surface-solid">
@@ -29,10 +30,11 @@ export const PanelPerformance = ({ title, value, diffLastMonth, positive = true,
                 </Typography>
             </CardContent>
 
-
-            <CardFooter className="px-6">
-                {iconChildren}
-            </CardFooter>
+            {iconChildren && (
+                <CardFooter className={cn("absolute bottom-0 right-0 px-0 pr-1", iconClassName)}>
+                    {iconChildren}
+                </CardFooter>
+            )}
         </Panel >
     );
 };
