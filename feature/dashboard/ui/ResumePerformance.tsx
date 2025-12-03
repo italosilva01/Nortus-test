@@ -13,7 +13,7 @@ export const ResumePerformance = () => {
         return null
     }
     return (
-        <div className="grid grid-cols-2 grid-rows-2 gap-6 w-max h-min border border-button-solid/10">
+        <div className="grid grid-cols-2 grid-rows-2 gap-6 w-full xl:w-max h-min">
             <PanelPerformance
                 title={t("DashboardPage.kpis.arpu")}
                 value={formatCurrency(data.kpisResume.arpu.valor)}

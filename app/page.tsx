@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex flex-row gap-4 xl:gap-6">
+      <div className="flex xl:flex-row flex-col  size-full gap-4 xl:gap-6">
         <GraphEvolution />
         <ResumePerformance />
       </div>
