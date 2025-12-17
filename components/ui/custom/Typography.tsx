@@ -8,21 +8,21 @@ interface TypographyProps {
     fontFamily?: "inter" | "sans" | "montserrat" | "space-grotesk"
     fontWeight?: "normal" | "bold" | "semibold" | "extrabold"
     fontSize?: "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl"
-    fontColor?: "primary" | "secondary" | "accent" | "bg-dark" | "surface-solid"
+    fontColor?: string
     fontStyle?: "normal" | "italic"
     fontDecoration?: "none" | "underline" | "line-through"
     fontTransform?: "none" | "uppercase" | "lowercase"
 }
 export const Typography = ({ children, className, element = "p", fontFamily = "inter", fontWeight = "normal", fontSize, fontColor }: TypographyProps) => {
 
-
+ 
     const fontWeightClass = fontWeight ? {
         "normal": "font-normal",
         "bold": "font-bold",
         "semibold": "font-semibold",
         "extrabold": "font-extrabold"
     }[fontWeight] : ""
-
+    const currentFontColor = fontColor ? `text-${fontColor}` : "text-surface-solid" 
     const fontSizeClass = fontSize ? `text-${fontSize}` : ""
 
     const fontFamilyClass = fontFamily ? {
@@ -32,20 +32,12 @@ export const Typography = ({ children, className, element = "p", fontFamily = "i
         "space-grotesk": "font-space-grotesk"
     }[fontFamily] : ""
 
-    const fontColorClass = fontColor ? {
-        "primary": "text-app-primary",
-        "secondary": "text-app-secondary",
-        "accent": "text-app-accent",
-        "bg-dark": "text-app-bg-dark",
-        "surface-solid": "text-surface-solid"
-    }[fontColor] : ""
-
     return createElement(element, {
         className: cn(`h-min`,
           fontFamilyClass,
             fontWeightClass,
             fontSizeClass,
-            fontColorClass,
+            currentFontColor,
             className
         ),
     },

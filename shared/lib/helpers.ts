@@ -32,15 +32,16 @@ export const MENU_ITEMS: MenuItem[] = [
       href: "/ticketsManagement",
     },
     {
-      icon: PersonIcon as { src: string },
-      label: "users",
-      href: "/chat",
-    },
-    {
       icon: MessageIcon as { src: string },
       label: "reports",
       href: "/reports",
     },
+    {
+      icon: PersonIcon as { src: string },
+      label: "users",
+      href: "/chat",
+    },
+   
     
     {
       icon: CalcIcon as { src: string },

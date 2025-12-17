@@ -1,8 +1,10 @@
 import { PanelPerformance } from "@/components/ui/custom/PanelPerformance"
-import { formatCurrency } from "@/shared/lib/utils"
-import { formatVariation } from "@/shared/lib/utils"
+import arrowDownIcon from "@/public/perfomance/arrowdown1.svg"
+import arrowUpIcon from "@/public/perfomance/arrowup2.svg"
+import { formatCurrency, formatVariation } from "@/shared/lib/utils"
 import { useDashboardStore } from "@/stores/useDashboardStore"
 import { useTranslations } from "next-intl"
+import Image from "next/image"
 
 export const ResumePerformance = () => {
     const { data } = useDashboardStore()
@@ -11,12 +13,13 @@ export const ResumePerformance = () => {
         return null
     }
     return (
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 xl:gap-6 w-full lg:w-auto">
+        <div className="grid grid-cols-2 grid-rows-2 gap-6 w-full xl:w-max h-min">
             <PanelPerformance
                 title={t("DashboardPage.kpis.arpu")}
                 value={formatCurrency(data.kpisResume.arpu.valor)}
                 diffLastMonth={formatVariation(data.kpisResume.arpu.variacao, t)}
                 positive={data.kpisResume.arpu.valor > 0}
+                iconChildren={<Image src={arrowUpIcon} alt="arrow up icon" width={87} height={68} />}
             />
             <PanelPerformance
                 title={t("DashboardPage.kpis.conversion")}
@@ -35,6 +38,9 @@ export const ResumePerformance = () => {
                 value={`${data.kpisResume.churn.valor}%`}
                 diffLastMonth={formatVariation(data.kpisResume.churn.variacao, t)}
                 positive={data.kpisResume.churn.valor < 0}
+                iconChildren={<Image src={arrowDownIcon} alt="arrow down icon" width={105} height={83} />
+                }
+                iconClassName="-right-2"
             />
         </div>
     )
