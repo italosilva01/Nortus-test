@@ -62,6 +62,7 @@
   --color-surface-variant-solid: var(--surface-variant-solid);
   --color-button-solid: var(--text-button-solid);
   --color-app-green-600: var(--app-green-600);
+  --color-cyan: var(--cyan);
 }
 
 :root {
@@ -115,6 +116,7 @@
   --surface-variant-solid: #C9C9C9;
   --text-button-solid: #F6F8FC;
   --app-green-600: #00DC04;
+  --cyan: hsba(188, 78%, 78%, 1);
 }
 .dark {
   --background-primary: oklch(0.145 0 0);

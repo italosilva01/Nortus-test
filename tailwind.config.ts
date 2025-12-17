@@ -22,7 +22,8 @@ const config: Config = {
           50: '#FAFAFA',
           100: '#F5F5F5',
         },
-        title:"#E3E3E3"
+        title:"#E3E3E3",
+        'cyan': 'hsba(188, 78%, 78%, 1)',
       },
       fontFamily: {
         'inter': ['var(--font-inter)'],
