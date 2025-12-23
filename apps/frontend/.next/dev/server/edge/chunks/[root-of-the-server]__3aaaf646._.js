@@ -481,7 +481,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 ;
 const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$auth$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["auth"])((req)=>{
-    console.log('req', req);
     const isLoggedIn = !!req.auth;
     const isOnLoginPage = req.nextUrl.pathname.startsWith('/login');
     if (isLoggedIn && isOnLoginPage) {

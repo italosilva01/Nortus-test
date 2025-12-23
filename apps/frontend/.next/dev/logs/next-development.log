@@ -1,341 +1,41 @@
-[00:00:00.902] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:00.990] Server  LOG      ✓ Ready in 799ms
-[00:00:03.700] Server  LOG     req {
-  cookies: RequestCookies {"authjs.csrf-token":{"name":"authjs.csrf-token","value":"ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6|85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129"},"authjs.callback-url":{"name":"authjs.callback-url","value":"http://localhost:3000"},"__next_hmr_refresh_hash__":{"name":"__next_hmr_refresh_hash__","value":"62"}},
-  nextUrl: {
-  href: 'http://localhost:3000/login',
-  origin: 'http://localhost:3000',
-  protocol: 'http:',
-  username: '',
-  password: '',
-  host: 'localhost:3000',
-  hostname: 'localhost',
-  port: '3000',
-  pathname: '/login',
-  search: '',
-  searchParams: URLSearchParams {  },
-  hash: ''
-},
-  url: 'http://localhost:3000/login',
-  bodyUsed: false,
-  cache: 'default',
-  credentials: 'same-origin',
-  destination: '',
-  headers: {
-  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-  accept-encoding: 'gzip, deflate, br, zstd',
-  accept-language: 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7',
-  cache-control: 'max-age=0',
-  connection: 'keep-alive',
-  cookie: 'authjs.csrf-token=ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6%7C85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129; authjs.callback-url=http%3A%2F%2Flocalhost%3A3000; __next_hmr_refresh_hash__=62',
-  host: 'localhost:3000',
-  referer: 'http://localhost:3000/login',
-  sec-ch-ua: '"Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
-  sec-ch-ua-mobile: '?0',
-  sec-ch-ua-platform: '"Linux"',
-  sec-fetch-dest: 'document',
-  sec-fetch-mode: 'navigate',
-  sec-fetch-site: 'same-origin',
-  upgrade-insecure-requests: '1',
-  user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
-  x-forwarded-for: '::1',
-  x-forwarded-host: 'localhost:3000',
-  x-forwarded-port: '3000',
-  x-forwarded-proto: 'http'
-},
-  integrity: '',
-  keepalive: false,
-  method: 'GET',
-  mode: 'cors',
-  redirect: 'follow',
-  referrer: 'about:client',
-  referrerPolicy: '',
-  signal: AbortSignal {
-  [Symbol(kEvents)]: SafeMap(0) {},
-  [Symbol(events.maxEventTargetListeners)]: 0,
-  [Symbol(events.maxEventTargetListenersWarned)]: false,
-  [Symbol(kHandlers)]: SafeMap(0) {},
-  [Symbol(kAborted)]: false,
-  [Symbol(kReason)]: undefined,
-  [Symbol(kComposite)]: false
-}
-}
-[00:00:06.389] Server  LOG     req {
-  cookies: RequestCookies {"authjs.csrf-token":{"name":"authjs.csrf-token","value":"ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6|85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129"},"authjs.callback-url":{"name":"authjs.callback-url","value":"http://localhost:3000"},"__next_hmr_refresh_hash__":{"name":"__next_hmr_refresh_hash__","value":"62"}},
-  nextUrl: {
-  href: 'http://localhost:3000/.well-known/appspecific/com.chrome.devtools.json',
-  origin: 'http://localhost:3000',
-  protocol: 'http:',
-  username: '',
-  password: '',
-  host: 'localhost:3000',
-  hostname: 'localhost',
-  port: '3000',
-  pathname: '/.well-known/appspecific/com.chrome.devtools.json',
-  search: '',
-  searchParams: URLSearchParams {  },
-  hash: ''
-},
-  url: 'http://localhost:3000/.well-known/appspecific/com.chrome.devtools.json',
-  bodyUsed: false,
-  cache: 'default',
-  credentials: 'same-origin',
-  destination: '',
-  headers: {
-  accept-encoding: 'gzip, deflate, br, zstd',
-  accept-language: 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7',
-  connection: 'keep-alive',
-  cookie: 'authjs.csrf-token=ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6%7C85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129; authjs.callback-url=http%3A%2F%2Flocalhost%3A3000; __next_hmr_refresh_hash__=62',
-  host: 'localhost:3000',
-  sec-fetch-dest: 'empty',
-  sec-fetch-mode: 'no-cors',
-  sec-fetch-site: 'same-origin',
-  user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
-  x-forwarded-for: '::1',
-  x-forwarded-host: 'localhost:3000',
-  x-forwarded-port: '3000',
-  x-forwarded-proto: 'http'
-},
-  integrity: '',
-  keepalive: false,
-  method: 'GET',
-  mode: 'cors',
-  redirect: 'follow',
-  referrer: 'about:client',
-  referrerPolicy: '',
-  signal: AbortSignal {
-  [Symbol(kEvents)]: SafeMap(0) {},
-  [Symbol(events.maxEventTargetListeners)]: 0,
-  [Symbol(events.maxEventTargetListenersWarned)]: false,
-  [Symbol(kHandlers)]: SafeMap(0) {},
-  [Symbol(kAborted)]: false,
-  [Symbol(kReason)]: undefined,
-  [Symbol(kComposite)]: false
-}
-}
-[00:00:06.396] Server  LOG     req {
-  cookies: RequestCookies {"authjs.csrf-token":{"name":"authjs.csrf-token","value":"ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6|85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129"},"authjs.callback-url":{"name":"authjs.callback-url","value":"http://localhost:3000"},"__next_hmr_refresh_hash__":{"name":"__next_hmr_refresh_hash__","value":"62"}},
-  nextUrl: {
-  href: 'http://localhost:3000/login',
-  origin: 'http://localhost:3000',
-  protocol: 'http:',
-  username: '',
-  password: '',
-  host: 'localhost:3000',
-  hostname: 'localhost',
-  port: '3000',
-  pathname: '/login',
-  search: '',
-  searchParams: URLSearchParams {  },
-  hash: ''
-},
-  url: 'http://localhost:3000/login',
-  bodyUsed: false,
-  cache: 'default',
-  credentials: 'same-origin',
-  destination: '',
-  headers: {
-  accept-encoding: 'gzip, deflate, br, zstd',
-  accept-language: 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7',
-  connection: 'keep-alive',
-  cookie: 'authjs.csrf-token=ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6%7C85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129; authjs.callback-url=http%3A%2F%2Flocalhost%3A3000; __next_hmr_refresh_hash__=62',
-  host: 'localhost:3000',
-  sec-fetch-dest: 'empty',
-  sec-fetch-mode: 'no-cors',
-  sec-fetch-site: 'same-origin',
-  user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
-  x-forwarded-for: '::1',
-  x-forwarded-host: 'localhost:3000',
-  x-forwarded-port: '3000',
-  x-forwarded-proto: 'http'
-},
-  integrity: '',
-  keepalive: false,
-  method: 'GET',
-  mode: 'cors',
-  redirect: 'follow',
-  referrer: 'about:client',
-  referrerPolicy: '',
-  signal: AbortSignal {
-  [Symbol(kEvents)]: SafeMap(0) {},
-  [Symbol(events.maxEventTargetListeners)]: 0,
-  [Symbol(events.maxEventTargetListenersWarned)]: false,
-  [Symbol(kHandlers)]: SafeMap(0) {},
-  [Symbol(kAborted)]: false,
-  [Symbol(kReason)]: undefined,
-  [Symbol(kComposite)]: false
-}
-}
-[00:00:07.232] Browser WARN    Image with src "http://localhost:3000/_next/static/media/NortusLogo.8a6b77e2.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:07.339] Browser WARN    Image with src "/_next/static/media/StackedCard.2e024979.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:08.503] Server  LOG     req {
-  cookies: RequestCookies {"authjs.csrf-token":{"name":"authjs.csrf-token","value":"ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6|85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129"},"authjs.callback-url":{"name":"authjs.callback-url","value":"http://localhost:3000"},"__next_hmr_refresh_hash__":{"name":"__next_hmr_refresh_hash__","value":"62"}},
-  nextUrl: {
-  href: 'http://localhost:3000/login',
-  origin: 'http://localhost:3000',
-  protocol: 'http:',
-  username: '',
-  password: '',
-  host: 'localhost:3000',
-  hostname: 'localhost',
-  port: '3000',
-  pathname: '/login',
-  search: '',
-  searchParams: URLSearchParams {  },
-  hash: ''
-},
-  url: 'http://localhost:3000/login',
-  bodyUsed: false,
-  cache: 'default',
-  credentials: 'same-origin',
-  destination: '',
-  headers: {
-  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-  accept-encoding: 'gzip, deflate, br, zstd',
-  accept-language: 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7',
-  cache-control: 'max-age=0',
-  connection: 'keep-alive',
-  cookie: 'authjs.csrf-token=ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6%7C85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129; authjs.callback-url=http%3A%2F%2Flocalhost%3A3000; __next_hmr_refresh_hash__=62',
-  host: 'localhost:3000',
-  referer: 'http://localhost:3000/login',
-  sec-ch-ua: '"Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"',
-  sec-ch-ua-mobile: '?0',
-  sec-ch-ua-platform: '"Linux"',
-  sec-fetch-dest: 'document',
-  sec-fetch-mode: 'navigate',
-  sec-fetch-site: 'same-origin',
-  sec-fetch-user: '?1',
-  upgrade-insecure-requests: '1',
-  user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
-  x-forwarded-for: '::1',
-  x-forwarded-host: 'localhost:3000',
-  x-forwarded-port: '3000',
-  x-forwarded-proto: 'http'
-},
-  integrity: '',
-  keepalive: false,
-  method: 'GET',
-  mode: 'cors',
-  redirect: 'follow',
-  referrer: 'about:client',
-  referrerPolicy: '',
-  signal: AbortSignal {
-  [Symbol(kEvents)]: SafeMap(0) {},
-  [Symbol(events.maxEventTargetListeners)]: 0,
-  [Symbol(events.maxEventTargetListenersWarned)]: false,
-  [Symbol(kHandlers)]: SafeMap(0) {},
-  [Symbol(kAborted)]: false,
-  [Symbol(kReason)]: undefined,
-  [Symbol(kComposite)]: false
-}
-}
-[00:00:08.590] Server  LOG     req {
-  cookies: RequestCookies {"authjs.csrf-token":{"name":"authjs.csrf-token","value":"ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6|85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129"},"authjs.callback-url":{"name":"authjs.callback-url","value":"http://localhost:3000"},"__next_hmr_refresh_hash__":{"name":"__next_hmr_refresh_hash__","value":"62"}},
-  nextUrl: {
-  href: 'http://localhost:3000/.well-known/appspecific/com.chrome.devtools.json',
-  origin: 'http://localhost:3000',
-  protocol: 'http:',
-  username: '',
-  password: '',
-  host: 'localhost:3000',
-  hostname: 'localhost',
-  port: '3000',
-  pathname: '/.well-known/appspecific/com.chrome.devtools.json',
-  search: '',
-  searchParams: URLSearchParams {  },
-  hash: ''
-},
-  url: 'http://localhost:3000/.well-known/appspecific/com.chrome.devtools.json',
-  bodyUsed: false,
-  cache: 'default',
-  credentials: 'same-origin',
-  destination: '',
-  headers: {
-  accept-encoding: 'gzip, deflate, br, zstd',
-  accept-language: 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7',
-  connection: 'keep-alive',
-  cookie: 'authjs.csrf-token=ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6%7C85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129; authjs.callback-url=http%3A%2F%2Flocalhost%3A3000; __next_hmr_refresh_hash__=62',
-  host: 'localhost:3000',
-  sec-fetch-dest: 'empty',
-  sec-fetch-mode: 'no-cors',
-  sec-fetch-site: 'same-origin',
-  user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
-  x-forwarded-for: '::1',
-  x-forwarded-host: 'localhost:3000',
-  x-forwarded-port: '3000',
-  x-forwarded-proto: 'http'
-},
-  integrity: '',
-  keepalive: false,
-  method: 'GET',
-  mode: 'cors',
-  redirect: 'follow',
-  referrer: 'about:client',
-  referrerPolicy: '',
-  signal: AbortSignal {
-  [Symbol(kEvents)]: SafeMap(0) {},
-  [Symbol(events.maxEventTargetListeners)]: 0,
-  [Symbol(events.maxEventTargetListenersWarned)]: false,
-  [Symbol(kHandlers)]: SafeMap(0) {},
-  [Symbol(kAborted)]: false,
-  [Symbol(kReason)]: undefined,
-  [Symbol(kComposite)]: false
-}
-}
-[00:00:08.595] Server  LOG     req {
-  cookies: RequestCookies {"authjs.csrf-token":{"name":"authjs.csrf-token","value":"ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6|85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129"},"authjs.callback-url":{"name":"authjs.callback-url","value":"http://localhost:3000"},"__next_hmr_refresh_hash__":{"name":"__next_hmr_refresh_hash__","value":"62"}},
-  nextUrl: {
-  href: 'http://localhost:3000/login',
-  origin: 'http://localhost:3000',
-  protocol: 'http:',
-  username: '',
-  password: '',
-  host: 'localhost:3000',
-  hostname: 'localhost',
-  port: '3000',
-  pathname: '/login',
-  search: '',
-  searchParams: URLSearchParams {  },
-  hash: ''
-},
-  url: 'http://localhost:3000/login',
-  bodyUsed: false,
-  cache: 'default',
-  credentials: 'same-origin',
-  destination: '',
-  headers: {
-  accept-encoding: 'gzip, deflate, br, zstd',
-  accept-language: 'en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7',
-  connection: 'keep-alive',
-  cookie: 'authjs.csrf-token=ce3f45fbe8cf5cfb668ce8eff04bd5f537963d88bdf8c56af3e1e6a0b1386ab6%7C85a98b4db94f841f342f76251bf667c62c3885e60399971f11665369a1884129; authjs.callback-url=http%3A%2F%2Flocalhost%3A3000; __next_hmr_refresh_hash__=62',
-  host: 'localhost:3000',
-  sec-fetch-dest: 'empty',
-  sec-fetch-mode: 'no-cors',
-  sec-fetch-site: 'same-origin',
-  user-agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36',
-  x-forwarded-for: '::1',
-  x-forwarded-host: 'localhost:3000',
-  x-forwarded-port: '3000',
-  x-forwarded-proto: 'http'
-},
-  integrity: '',
-  keepalive: false,
-  method: 'GET',
-  mode: 'cors',
-  redirect: 'follow',
-  referrer: 'about:client',
-  referrerPolicy: '',
-  signal: AbortSignal {
-  [Symbol(kEvents)]: SafeMap(0) {},
-  [Symbol(events.maxEventTargetListeners)]: 0,
-  [Symbol(events.maxEventTargetListenersWarned)]: false,
-  [Symbol(kHandlers)]: SafeMap(0) {},
-  [Symbol(kAborted)]: false,
-  [Symbol(kReason)]: undefined,
-  [Symbol(kComposite)]: false
-}
-}
-[00:00:09.169] Browser WARN    Image with src "http://localhost:3000/_next/static/media/NortusLogo.8a6b77e2.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:09.169] Browser WARN    Image with src "/_next/static/media/StackedCard.2e024979.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:00.997] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.111] Server  LOG      ✓ Ready in 881ms
+[00:00:08.013] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/fron...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+                            className="inter_fe8b9d92-module__LINzvG__variable montserrat_a6b8e55e-module__JnHUVq__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:00:08.013] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:08.013] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

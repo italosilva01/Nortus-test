@@ -2,7 +2,6 @@ import { auth } from '@/auth';
 import { NextResponse } from 'next/server';
 
 export default auth((req) => {
-  console.log('req', req);
   const isLoggedIn = !!req.auth;
   const isOnLoginPage = req.nextUrl.pathname.startsWith('/login');
 
