@@ -22,6 +22,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ax
 ;
 const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$axios$40$1$2e$13$2e$2$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: 'https://loomi.s3.us-east-1.amazonaws.com/mock-api-json/v2',
+    //baseURL: 'http://localhost:3001/api',
     headers: {
         'Content-Type': 'application/json'
     }

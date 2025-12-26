@@ -1,7 +1,6 @@
 import { Router } from 'express';
-import { loginController } from '../controllers/authController';
+import { AuthController } from '../controllers/authController';
 import ticketsRouter from './tickets.routes';
-
 const router = Router();
 
 // Registrar rotas
@@ -20,18 +19,9 @@ router.get('/', (_req, res) => {
   });
 });
 router.post('/login', async (req, res) => {
-  if (!req.body) {
-    return res.status(400).json({ message: 'Body is required' });
-  }
-  const { email, password } = req.body;
-  if (!email || !password) {
-    return res.status(400).json({ message: 'Email is required' });
-  }
-  if (!password) {
-    return res.status(400).json({ message: 'Password is required' });
-  }
-  //  const user = await User.findOne({ where: { email } });
-  await loginController(req, res);
+  console.log('login backend');
+  const authController = new AuthController();
+  await authController.login(req, res);
 });
 
 export default router;

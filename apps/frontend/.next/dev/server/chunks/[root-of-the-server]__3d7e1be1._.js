@@ -142,6 +142,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ax
 ;
 const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$axios$40$1$2e$13$2e$2$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].create({
     baseURL: 'https://loomi.s3.us-east-1.amazonaws.com/mock-api-json/v2',
+    //baseURL: 'http://localhost:3001/api',
     headers: {
         'Content-Type': 'application/json'
     }
@@ -158,10 +159,13 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/api.ts [app-route] (ecmascript)");
 ;
 const authEndpoints = {
-    login: async ()=>{
+    login: async (username, password)=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].get('/login.json');
-        } catch  {
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].post('/login', {
+                username,
+                password
+            });
+        } catch (error) {
             throw new Error('Login request failed');
         }
     },
