@@ -1,23 +1,21 @@
-"use server"
+'use server';
 
-import { signIn } from "@/auth"
-import { redirect } from "next/navigation"
-import { AuthError } from "next-auth"
-import { FormSchema } from "@/feature/auth/login/lib/schemeValidation"
+import { signIn } from '@/auth';
+import { FormSchema } from '@/feature/auth/login/lib/schemeValidation';
+import { AuthError } from 'next-auth';
+import { redirect } from 'next/navigation';
 
 export const handleLogin = async (data: FormSchema) => {
   try {
-    await signIn("credentials", {
-      username: data.email,
+    await signIn('credentials', {
+      username: data.username,
       password: data.password,
-      redirectTo: "/",
-    })
+      redirectTo: '/',
+    });
   } catch (error) {
     if (error instanceof AuthError) {
-      return redirect("/login?error=CredenciaisInvalidas")
+      return redirect('/login?error=CredenciaisInvalidas');
     }
-    throw error
+    throw error;
   }
-}
-
-
+};

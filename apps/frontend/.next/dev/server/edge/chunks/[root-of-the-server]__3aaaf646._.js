@@ -21,8 +21,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$axios$40$1$2e$13$2e$2$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/axios@1.13.2/node_modules/axios/lib/axios.js [middleware-edge] (ecmascript)");
 ;
 const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$axios$40$1$2e$13$2e$2$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: 'https://loomi.s3.us-east-1.amazonaws.com/mock-api-json/v2',
-    //baseURL: 'http://localhost:3001/api',
+    //baseURL: 'https://loomi.s3.us-east-1.amazonaws.com/mock-api-json/v2',
+    baseURL: 'http://localhost:3001/api',
     headers: {
         'Content-Type': 'application/json'
     }
@@ -39,9 +39,12 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/api.ts [middleware-edge] (ecmascript)");
 ;
 const authEndpoints = {
-    login: async ()=>{
+    login: async (username, password)=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/login.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].post('/login', {
+                username,
+                password
+            });
         } catch  {
             throw new Error('Login request failed');
         }
@@ -412,41 +415,42 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2
 const { handlers, signIn, signOut, auth } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$30_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2d$auth$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"])({
     providers: [
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$41$2e$0$2f$node_modules$2f40$auth$2f$core$2f$providers$2f$credentials$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"])({
-            name: "Credentials",
+            name: 'Credentials',
             credentials: {
-                email: {
-                    label: "Email",
-                    type: "text",
-                    placeholder: "jsmith"
+                username: {
+                    label: 'Username',
+                    type: 'text',
+                    placeholder: 'jsmith'
                 },
                 password: {
-                    label: "Password",
-                    type: "password"
+                    label: 'Password',
+                    type: 'password'
                 }
             },
-            async authorize () {
+            async authorize (credentials) {
+                const { username, password } = credentials;
                 try {
-                    const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$endpoints$2f$index$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["endpoints"].auth.login();
+                    const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$endpoints$2f$index$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["endpoints"].auth.login(username, password);
                     if (response.status === __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$helpers$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["HTTP_STATUS_CODES"].OK && response?.data) {
                         return {
-                            id: response.data?.data.id || "1",
+                            id: response.data?.data.id || '1',
                             accessToken: response.data?.data.accessToken,
                             username: response.data?.data.username
                         };
                     }
                     return null;
                 } catch (error) {
-                    throw new Error("Login failed");
+                    throw new Error('Login failed');
                 }
             }
         })
     ],
     pages: {
-        signIn: "/login",
-        error: "/login"
+        signIn: '/login',
+        error: '/login'
     },
     session: {
-        strategy: "jwt"
+        strategy: 'jwt'
     },
     secret: process.env.NEXTAUTH_SECRET,
     callbacks: {

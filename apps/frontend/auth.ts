@@ -1,37 +1,39 @@
-import NextAuth from "next-auth"
-import Credentials from "next-auth/providers/credentials"
-import { endpoints } from "./shared/lib/endpoints";
-import { HTTP_STATUS_CODES } from "./shared/lib/helpers";
+import NextAuth from 'next-auth';
+import Credentials from 'next-auth/providers/credentials';
+import { endpoints } from './shared/lib/endpoints';
+import { HTTP_STATUS_CODES } from './shared/lib/helpers';
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     Credentials({
-      name: "Credentials",
-      credentials:  { email: { label: "Email", type: "text", placeholder: "jsmith" },
-        password: { label: "Password", type: "password" }
+      name: 'Credentials',
+      credentials: {
+        username: { label: 'Username', type: 'text', placeholder: 'jsmith' },
+        password: { label: 'Password', type: 'password' },
       },
-      async authorize() {
+      async authorize(credentials) {
+        const { username, password } = credentials;
         try {
-          const response = await endpoints.auth.login();
-          if(response.status === HTTP_STATUS_CODES.OK && response?.data) {
+          const response = await endpoints.auth.login(username, password);
+          if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
             return {
-              id: response.data?.data.id || "1", 
+              id: response.data?.data.id || '1',
               accessToken: response.data?.data.accessToken,
               username: response.data?.data.username,
-            }
+            };
           }
           return null;
         } catch (error) {
-          throw new Error("Login failed");
+          throw new Error('Login failed');
         }
-      }
+      },
     }),
   ],
   pages: {
-    signIn: "/login",
-    error: "/login",
+    signIn: '/login',
+    error: '/login',
   },
   session: {
-    strategy: "jwt",
+    strategy: 'jwt',
   },
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
@@ -50,4 +52,4 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       return session;
     },
   },
-})
+});

@@ -1,19 +1,19 @@
-import * as z from "zod";
+import * as z from 'zod';
 
 export const getLoginSchema = (t: (key: string) => string) => {
   return z.object({
-    email: z.string().email({ 
-      message: t('errorsScreen.emailInvalid') 
+    username: z.string().email({
+      message: t('errorsScreen.emailInvalid'),
     }),
-    password: z.string().min(1, { 
-      message: t('errorsScreen.passwordRequired') 
-    })
+    password: z.string().min(1, {
+      message: t('errorsScreen.passwordRequired'),
+    }),
   });
 };
 
 export const LoginSchema = z.object({
-  email: z.string().email(),
-  password: z.string().min(1)
+  username: z.string().email(),
+  password: z.string().min(1),
 });
 
 export type FormSchema = z.infer<typeof LoginSchema>;

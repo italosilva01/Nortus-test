@@ -19,7 +19,7 @@ router.get('/', (_req, res) => {
   });
 });
 router.post('/login', async (req, res) => {
-  console.log('login backend');
+  console.log('login backend AAA');
   const authController = new AuthController();
   await authController.login(req, res);
 });

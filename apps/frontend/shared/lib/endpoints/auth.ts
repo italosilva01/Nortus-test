@@ -1,9 +1,9 @@
-import api from "@/shared/lib/api";
+import api from '@/shared/lib/api';
 
 export const authEndpoints = {
-  login: async () => {
+  login: async (username: string, password: string) => {
     try {
-      return await api.get('/login.json');
+      return await api.post('/login', { username, password });
     } catch {
       throw new Error('Login request failed');
     }
@@ -28,5 +28,5 @@ export const authEndpoints = {
     } catch {
       throw new Error('Ticket management data request failed');
     }
-  }
-}
+  },
+};
