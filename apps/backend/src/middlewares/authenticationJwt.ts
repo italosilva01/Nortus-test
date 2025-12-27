@@ -1,26 +1,29 @@
-import { NextFunction } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 
-const secret = process.env.JWT_SECRET;
+// Validar se o JWT_SECRET está definido
 
-export function authenticateToken(
+export const authenticateToken = (
   req: Request,
   res: Response,
   next: NextFunction
-) {
+): void => {
+  const secret = process.env.JWT_SECRET;
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
 
   if (!token) {
-    return res.status(401).json({ message: 'Token missing' });
+    res.status(401).json({ message: 'Token missing' });
+    return;
   }
 
   jwt.verify(token, secret, (err, decoded) => {
     if (err) {
-      return res.status(403).json({ message: 'Invalid or expired token' });
+      res.status(403).json({ message: 'Invalid or expired token' });
+      return;
     }
 
     req.user = decoded;
     next();
   });
-}
+};

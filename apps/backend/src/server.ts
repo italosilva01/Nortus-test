@@ -7,6 +7,8 @@ dotenv.config();
 const app = express();
 const port = 3001;
 
+const secret = process.env.JWT_SECRET;
+
 app.use(express.json());
 app.listen(port, () => {
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
@@ -32,6 +34,7 @@ app.get('/health', (_req, res) => {
 // Rota raiz
 app.get('/', (_req, res) => {
   res.json({
+    secret: secret,
     message: '🚀 Bem-vindo à API Nortus',
     version: '1.0.0',
     documentation: '/api',

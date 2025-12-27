@@ -454,7 +454,7 @@ const { handlers, signIn, signOut, auth } = (0, __TURBOPACK__imported__module__$
     },
     secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
-        async jwt ({ token, user }) {
+        async jwt ({ token, uer }) {
             if (user) {
                 token.id = user.id;
                 token.accessToken = user.accessToken;
