@@ -1,10 +1,13 @@
 import { Router } from 'express';
 import { AuthController } from '../controllers/authController';
+import dashboardRouter from './dashboard.routes';
 import ticketsRouter from './tickets.routes';
 const router = Router();
 
 // Registrar rotas
 router.use('/tickets', ticketsRouter);
+
+router.use('/dashboard', dashboardRouter);
 
 // Rota raiz da API
 router.get('/', (_req, res) => {
@@ -19,11 +22,10 @@ router.get('/', (_req, res) => {
   });
 });
 router.post('/login', async (req, res) => {
-  console.log('login backend AAA');
   const authController = new AuthController();
   await authController.login(req, res);
 });
 
-router.get
+router.get;
 
 export default router;

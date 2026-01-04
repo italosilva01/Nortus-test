@@ -37,7 +37,6 @@ export class AuthController {
       this.secret as string,
       { expiresIn: '15m' }
     );
-
     const payloadResponse = {
       data: {
         accessToken: token,

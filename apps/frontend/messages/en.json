@@ -75,8 +75,10 @@
     "LoginPage": {
         "title": "Login",
         "description": "Enter your credentials to access your account.",
-        "email": "Enter your email, CPF or passport.",
+        "username": "Username",
+        "usernamePlaceholder": "Enter your username",
         "password": "Password",
+        "passwordPlaceholder": "Enter your password",
         "remember": "Remember me",
         "forgot": "Forgot your password?",
         "enter": "Log In",

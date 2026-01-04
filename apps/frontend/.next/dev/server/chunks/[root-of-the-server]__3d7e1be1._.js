@@ -549,10 +549,8 @@ const { handlers, signIn, signOut, auth } = (0, __TURBOPACK__imported__module__$
             },
             async authorize (credentials) {
                 const { username, password } = credentials;
-                console.log('credentials', credentials);
                 try {
                     const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$endpoints$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["endpoints"].auth.login(username, password);
-                    console.log('response', response);
                     if (response.status === __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$helpers$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["HTTP_STATUS_CODES"].OK && response?.data) {
                         return {
                             id: response.data?.data.id || '1',
@@ -576,7 +574,7 @@ const { handlers, signIn, signOut, auth } = (0, __TURBOPACK__imported__module__$
     },
     secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
-        async jwt ({ token, user }) {
+        async jwt ({ token, uer }) {
             if (user) {
                 token.id = user.id;
                 token.accessToken = user.accessToken;

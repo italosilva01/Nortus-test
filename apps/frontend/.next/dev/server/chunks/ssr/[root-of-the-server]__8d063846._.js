@@ -111,7 +111,7 @@ const authEndpoints = {
     },
     getDashboardData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].get('/dash.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
         } catch  {
             throw new Error('Dashboard data request failed');
         }
@@ -514,7 +514,8 @@ const { handlers, signIn, signOut, auth } = (0, __TURBOPACK__imported__module__$
     },
     secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
-        async jwt ({ token, uer }) {
+        async jwt ({ token, user }) {
+            console.log('user', user);
             if (user) {
                 token.id = user.id;
                 token.accessToken = user.accessToken;
@@ -551,6 +552,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 const handleLogin = async (data)=>{
     try {
+        console.log('data', data);
         await (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$auth$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["signIn"])('credentials', {
             username: data.username,
             password: data.password,

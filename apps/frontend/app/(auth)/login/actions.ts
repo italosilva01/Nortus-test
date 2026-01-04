@@ -7,6 +7,7 @@ import { redirect } from 'next/navigation';
 
 export const handleLogin = async (data: FormSchema) => {
   try {
+    console.log('data', data);
     await signIn('credentials', {
       username: data.username,
       password: data.password,

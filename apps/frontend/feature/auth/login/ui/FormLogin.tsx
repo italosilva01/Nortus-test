@@ -75,14 +75,15 @@ export const FormLogin = () => {
         >
           <FormInput
             type="text"
-            placeholder="Usuário"
+            placeholder={t('usernamePlaceholder')}
             label={t('username')}
             error={errors.username?.message}
             {...register('username')}
           />
           <FormInput
             type="password"
-            placeholder="Senha"
+            placeholder={t('passwordPlaceholder')}
+            label={t('password')}
             error={errors.password?.message}
             {...register('password')}
           />
@@ -94,14 +95,14 @@ export const FormLogin = () => {
               />
               <Label
                 htmlFor="terms"
-                className="text-white xl:text-[1rem] 2xl:!text-[1.125rem] !line-height-[1.5906rem] ml-4 !letter-spacing-0.13px font-space-grotesk"
+                className="text-white xl:text-[1rem] 2xl:text-[1.125rem]! !line-height-[1.5906rem] ml-4 !letter-spacing-0.13px font-space-grotesk"
               >
                 {t('remember')}
               </Label>
             </div>
             <Link
               href="/forgot-password"
-              className="font-space-grotesk font-medium xl:text-[1rem] 2xl:!text-[1.125rem] !line-height-[1.5938rem] !letter-spacing-0.13px text-app-primary mr-5"
+              className="font-space-grotesk font-medium xl:text-[1rem] 2xl:text-[1.125rem]! !line-height-[1.5938rem] !letter-spacing-0.13px text-app-primary mr-5"
             >
               {t('forgot')}
             </Link>
@@ -109,7 +110,7 @@ export const FormLogin = () => {
           <Button
             type="submit"
             size="lg"
-            className="w-full xl:h-[3.25rem 2xl:h-17 rounded-[1.25rem] border-[.0794rem] !text-button-solid border-outline-solid xl:!text-[1rem] 2xl:text-[18px] xl:mt-[1.125rem] 2xl:mt-6"
+            className="w-full xl:h-[3.25rem 2xl:h-17 rounded-[1.25rem] border-[.0794rem] text-button-solid! border-outline-solid xl:text-[1rem]! 2xl:text-[18px] xl:mt-4.5 2xl:mt-6"
             variant="default"
           >
             {t('enter')}

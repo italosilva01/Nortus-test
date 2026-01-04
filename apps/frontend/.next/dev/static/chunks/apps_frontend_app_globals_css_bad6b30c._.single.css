@@ -1572,6 +1572,10 @@
     color: var(--color-black);
   }
 
+  .text-button-solid\! {
+    color: var(--text-button-solid) !important;
+  }
+
   .text-card-foreground {
     color: var(--card-foreground);
   }
@@ -2381,6 +2385,12 @@
   }
 
   @media (min-width: 80rem) {
+    .xl\:mt-4\.5 {
+      margin-top: calc(var(--spacing) * 4.5);
+    }
+  }
+
+  @media (min-width: 80rem) {
     .xl\:mt-30 {
       margin-top: calc(var(--spacing) * 30);
     }
@@ -2584,6 +2594,12 @@
   }
 
   @media (min-width: 80rem) {
+    .xl\:text-\[1rem\]\! {
+      font-size: 1rem !important;
+    }
+  }
+
+  @media (min-width: 80rem) {
     .xl\:text-\[24px\] {
       font-size: 24px;
     }
@@ -2770,6 +2786,12 @@
 
   @media (min-width: 96rem) {
     .\32 xl\:\!text-\[1\.125rem\] {
+      font-size: 1.125rem !important;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .\32 xl\:text-\[1\.125rem\]\! {
       font-size: 1.125rem !important;
     }
   }

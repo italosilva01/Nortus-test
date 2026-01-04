@@ -555,7 +555,7 @@ const authEndpoints = {
     },
     getDashboardData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get('/dash.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
         } catch  {
             throw new Error('Dashboard data request failed');
         }

@@ -10,7 +10,7 @@ export const authEndpoints = {
   },
   getDashboardData: async () => {
     try {
-      return await api.get('/dash.json');
+      return await api.get('/dashboard');
     } catch {
       throw new Error('Dashboard data request failed');
     }

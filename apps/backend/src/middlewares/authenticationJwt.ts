@@ -11,7 +11,6 @@ export const authenticateToken = (
   const secret = process.env.JWT_SECRET;
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
-
   if (!token) {
     res.status(401).json({ message: 'Token missing' });
     return;
