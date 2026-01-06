@@ -12,8 +12,9 @@ import { useEffect } from 'react';
 export default function Home() {
   const { data, isLoading } = useDashboardStore();
   const t = useTranslations();
-  
+
   useEffect(() => {
+    console.log('useEffect');
     useDashboardStore.getState().fetchDashboardData();
   }, []);
 
@@ -35,7 +36,7 @@ export default function Home() {
   if (!data) {
     return (
       <div className="flex min-h-screen items-center justify-center">
-        <p className="text-lg">{t("DashboardPage.noDataAvailable")}</p>
+        <p className="text-lg">{t('DashboardPage.noDataAvailable')}</p>
       </div>
     );
   }
@@ -53,4 +54,3 @@ export default function Home() {
     </div>
   );
 }
-

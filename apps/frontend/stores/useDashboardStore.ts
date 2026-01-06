@@ -1,7 +1,11 @@
-import { create } from 'zustand';
-import { DashboardData, DashboardFilters, Client } from '@/shared/types/dashboard';
 import { endpoints } from '@/shared/lib/endpoints';
 import { HTTP_STATUS_CODES } from '@/shared/lib/helpers';
+import {
+  Client,
+  DashboardData,
+  DashboardFilters,
+} from '@/shared/types/dashboard';
+import { create } from 'zustand';
 
 interface DashboardStore {
   data: DashboardData | null;
@@ -15,7 +19,7 @@ interface DashboardStore {
   setFilter: (filterType: keyof DashboardFilters, value: string) => void;
   resetFilters: () => void;
   fetchDashboardData: () => Promise<void>;
-  
+
   getFilteredClients: () => Client[];
 }
 
@@ -45,6 +49,7 @@ export const useDashboardStore = create<DashboardStore>((set, get) => ({
   fetchDashboardData: async () => {
     set({ isLoading: true, error: null });
     try {
+      console.log('fetchDashboardData');
       const response = await endpoints.auth.getDashboardData();
       if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
         set({ data: response.data, isLoading: false });
@@ -52,7 +57,8 @@ export const useDashboardStore = create<DashboardStore>((set, get) => ({
         set({ error: 'Falha ao buscar dados do dashboard', isLoading: false });
       }
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Erro desconhecido';
+      const errorMessage =
+        error instanceof Error ? error.message : 'Erro desconhecido';
       set({ error: errorMessage, isLoading: false });
     }
   },
@@ -63,14 +69,16 @@ export const useDashboardStore = create<DashboardStore>((set, get) => ({
 
     return data.activeClients.data.filter((client) => {
       const matchStatus =
-        selectedFilters.status === 'Todos' || client.status === selectedFilters.status;
+        selectedFilters.status === 'Todos' ||
+        client.status === selectedFilters.status;
       const matchSecureType =
-        selectedFilters.secureType === 'Todos' || client.secureType === selectedFilters.secureType;
+        selectedFilters.secureType === 'Todos' ||
+        client.secureType === selectedFilters.secureType;
       const matchLocation =
-        selectedFilters.location === 'Todos' || client.location === selectedFilters.location;
+        selectedFilters.location === 'Todos' ||
+        client.location === selectedFilters.location;
 
       return matchStatus && matchSecureType && matchLocation;
     });
   },
 }));
-

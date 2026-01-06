@@ -104,7 +104,7 @@ const GraphEvolution = () => {
           onKpiClick={handleKpiClick}
         />
       }
-      className="border border-red-500 max-h-[376px]"
+      className="max-h-[376px]"
     >
       <div
         id="chart"

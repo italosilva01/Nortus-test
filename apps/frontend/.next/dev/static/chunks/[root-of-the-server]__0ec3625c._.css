@@ -736,6 +736,10 @@
     margin-top: 24px;
   }
 
+  .mt-\[56px\] {
+    margin-top: 56px;
+  }
+
   .mr-0\.5 {
     margin-right: calc(var(--spacing) * .5);
   }
@@ -1748,10 +1752,6 @@
     white-space: nowrap;
   }
 
-  .\!text-button-solid {
-    color: var(--text-button-solid) !important;
-  }
-
   .text-app-green-600 {
     color: var(--app-green-600);
   }
@@ -2589,12 +2589,6 @@
   }
 
   @media (min-width: 80rem) {
-    .xl\:mt-\[1\.125rem\] {
-      margin-top: 1.125rem;
-    }
-  }
-
-  @media (min-width: 80rem) {
     .xl\:mb-16 {
       margin-bottom: calc(var(--spacing) * 16);
     }
@@ -2770,12 +2764,6 @@
     .xl\:text-lg {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-
-  @media (min-width: 80rem) {
-    .xl\:\!text-\[1rem\] {
-      font-size: 1rem !important;
     }
   }
 
@@ -2973,12 +2961,6 @@
     .\32 xl\:text-xl {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
-
-  @media (min-width: 96rem) {
-    .\32 xl\:\!text-\[1\.125rem\] {
-      font-size: 1.125rem !important;
     }
   }
 

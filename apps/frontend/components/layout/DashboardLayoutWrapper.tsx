@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { usePathname } from "next/navigation";
-import { Header } from "./Header";
-import { Sidebar } from "./Sidebar";
+import { usePathname } from 'next/navigation';
+import { Header } from './Header';
+import { Sidebar } from './Sidebar';
 
-const authRoutes = ["/login"];
+const authRoutes = ['/login'];
 
 export const DashboardLayoutWrapper = ({
   children,
@@ -22,13 +22,12 @@ export const DashboardLayoutWrapper = ({
   return (
     <div className="flex w-full overflow-hidden bg-app-bg-dark relative">
       <Sidebar />
-        <Header />
+      <Header />
       <div className="flex flex-1 flex-col overflow-hidden mt-[5.5rem]">
-        <main className="flex-1 overflow-y-auto mx-auto w-full max-w-[1370px]">
+        <main className="flex-1 overflow-y-auto mx-auto w-full max-w-[1370px] mt-[56px]">
           {children};
         </main>
       </div>
     </div>
   );
 };
-
