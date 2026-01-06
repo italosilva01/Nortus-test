@@ -14,7 +14,6 @@ export default function Home() {
   const t = useTranslations();
 
   useEffect(() => {
-    console.log('useEffect');
     useDashboardStore.getState().fetchDashboardData();
   }, []);
 

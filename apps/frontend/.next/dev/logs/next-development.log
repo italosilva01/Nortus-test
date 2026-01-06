@@ -175,3 +175,4 @@
 [00:13:40.399] Browser LOG     --------------------------------
 [00:13:40.399] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
 [00:13:40.399] Browser LOG     --------------------------------
+[00:14:08.665] Server  LOG      ✓ Compiled in 24ms
