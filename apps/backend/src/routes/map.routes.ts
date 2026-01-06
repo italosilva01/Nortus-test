@@ -6,15 +6,16 @@ import { authenticateToken } from '../middlewares/authenticationJwt';
 const router = Router();
 
 router.get('/', authenticateToken, (req: Request, res: Response) => {
-  console.log('bateu aqui');
-  const dashboardData = fs.readFileSync(
-    path.join(__dirname, '..', 'dash.json'),
+  const mapData = fs.readFileSync(
+    path.join(__dirname, '..', 'map.json'),
     'utf8'
   );
 
-  res.json(JSON.parse(dashboardData));
+  res.json(JSON.parse(mapData));
 });
 
-
-
 export default router;
+
+
+
+

@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { AuthController } from '../controllers/authController';
 import dashboardRouter from './dashboard.routes';
+import mapRouter from './map.routes';
 import ticketsRouter from './tickets.routes';
 const router = Router();
 
@@ -8,6 +9,8 @@ const router = Router();
 router.use('/tickets', ticketsRouter);
 
 router.use('/dashboard', dashboardRouter);
+
+router.use('/map', mapRouter);
 
 // Rota raiz da API
 router.get('/', (_req, res) => {
@@ -18,6 +21,7 @@ router.get('/', (_req, res) => {
       health: '/api/health',
       tickets: '/api/tickets',
       dashboard: '/api/dashboard',
+      map: '/api/map',
     },
   });
 });

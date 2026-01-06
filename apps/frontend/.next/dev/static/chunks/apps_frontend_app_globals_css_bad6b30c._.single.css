@@ -1190,10 +1190,6 @@
     border-color: var(--outline-solid);
   }
 
-  .border-red-500 {
-    border-color: var(--color-red-500);
-  }
-
   .bg-\[\#FFFFFF0D\]\/85 {
     background-color: #ffffff0b;
     background-color: lab(100% -.0000298023 .0000119209 / .0433333);

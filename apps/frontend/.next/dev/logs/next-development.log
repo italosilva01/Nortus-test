@@ -1,178 +1,179 @@
-[00:00:01.244] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.360] Server  LOG      ✓ Ready in 1093ms
-[00:00:03.015] Server  LOG     isLoggedIn
-[00:00:06.094] Server  LOG     isLoggedIn
-[00:00:07.639] Browser LOG     useEffect
-[00:00:07.640] Browser LOG     fetchDashboardData
-[00:00:07.640] Browser LOG     getDashboardData
-[00:00:08.792] Browser LOG     --------------------------------
-[00:00:08.792] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzU2NTExNiwiZXhwIjoxNzY3NTY2MDE2fQ._G7MN2xBoXN0Zb-NdEvIDkgGjc-Viww8a56G5ASJhUw","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:08.792] Browser LOG     --------------------------------
-[00:00:24.328] Server  LOG     isLoggedIn
-[00:00:24.335] Server  LOG     isLoggedIn
-[00:00:25.578] Server  LOG     isLoggedIn
-[00:00:25.583] Server  LOG     isLoggedIn
-[00:00:27.057] Browser WARN    Image with src "http://localhost:3000/_next/static/media/NortusLogo.8a6b77e2.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:33.709] Server  LOG     isLoggedIn
-[00:00:33.718] Server  LOG     data {}
-[00:00:33.752] Server  LOG     isLoggedIn
-[00:00:33.812] Server  LOG     isLoggedIn
-[00:00:34.077] Browser LOG     useEffect
-[00:00:34.077] Browser LOG     fetchDashboardData
-[00:00:34.077] Browser LOG     getDashboardData
-[00:00:34.077] Browser LOG     [2;38;2;124;124;124m%s[0m useEffect
-[00:00:34.077] Browser LOG     [2;38;2;124;124;124m%s[0m fetchDashboardData
-[00:00:34.077] Browser LOG     [2;38;2;124;124;124m%s[0m getDashboardData
-[00:00:34.282] Browser LOG     --------------------------------
-[00:00:34.282] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:34.282] Browser LOG     --------------------------------
-[00:00:34.282] Browser LOG     --------------------------------
-[00:00:34.282] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:34.282] Browser LOG     --------------------------------
-[00:00:34.474] Browser LOG     --------------------------------
-[00:00:34.474] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:34.474] Browser LOG     --------------------------------
-[00:00:34.474] Browser LOG     --------------------------------
-[00:00:34.474] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:34.474] Browser LOG     --------------------------------
-[00:00:34.474] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.474] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:48.489] Server  LOG     isLoggedIn
-[00:00:49.351] Browser LOG     --------------------------------
-[00:00:49.351] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/ticket-management.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:49.351] Browser LOG     --------------------------------
-[00:00:49.351] Browser LOG     --------------------------------
-[00:00:49.351] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/ticket-management.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:49.351] Browser LOG     --------------------------------
-[00:00:50.713] Server  LOG     isLoggedIn
-[00:00:51.094] Browser LOG     useEffect
-[00:00:51.094] Browser LOG     fetchDashboardData
-[00:00:51.094] Browser LOG     getDashboardData
-[00:00:51.094] Browser LOG     [2;38;2;124;124;124m%s[0m useEffect
-[00:00:51.094] Browser LOG     [2;38;2;124;124;124m%s[0m fetchDashboardData
-[00:00:51.094] Browser LOG     [2;38;2;124;124;124m%s[0m getDashboardData
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     --------------------------------
-[00:00:51.094] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:00:51.094] Browser LOG     --------------------------------
-[00:09:31.097] Server  LOG     isLoggedIn
-[00:10:04.890] Server  LOG      ✓ Compiled in 40ms
-[00:10:06.814] Server  LOG      ✓ Compiled in 69ms
-[00:10:17.570] Server  LOG      ✓ Compiled in 25ms
-[00:10:25.089] Server  LOG      ✓ Compiled in 23ms
-[00:10:31.305] Server  LOG      ✓ Compiled in 22ms
-[00:10:34.628] Server  LOG      ✓ Compiled in 25ms
-[00:10:48.674] Server  LOG      ✓ Compiled in 22ms
-[00:10:51.672] Server  LOG     isLoggedIn
-[00:10:51.999] Browser LOG     --------------------------------
-[00:10:51.999] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/ticket-management.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:10:51.999] Browser LOG     --------------------------------
-[00:10:51.999] Browser LOG     --------------------------------
-[00:10:51.999] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/ticket-management.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:10:51.999] Browser LOG     --------------------------------
-[00:10:53.406] Server  LOG     isLoggedIn
-[00:10:53.850] Browser LOG     useEffect
-[00:10:53.850] Browser LOG     fetchDashboardData
-[00:10:53.850] Browser LOG     getDashboardData
-[00:10:53.850] Browser LOG     [2;38;2;124;124;124m%s[0m useEffect
-[00:10:53.850] Browser LOG     [2;38;2;124;124;124m%s[0m fetchDashboardData
-[00:10:53.850] Browser LOG     [2;38;2;124;124;124m%s[0m getDashboardData
-[00:10:53.850] Browser LOG     --------------------------------
-[00:10:53.850] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:10:53.850] Browser LOG     --------------------------------
-[00:10:53.850] Browser LOG     --------------------------------
-[00:10:53.850] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:10:53.850] Browser LOG     --------------------------------
-[00:10:53.850] Browser LOG     --------------------------------
-[00:10:53.850] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:10:53.850] Browser LOG     --------------------------------
-[00:10:53.850] Browser LOG     --------------------------------
-[00:10:53.850] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:10:53.850] Browser LOG     --------------------------------
-[00:10:53.851] Browser LOG     --------------------------------
-[00:10:53.851] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:10:53.851] Browser LOG     --------------------------------
-[00:10:53.851] Browser LOG     --------------------------------
-[00:10:53.851] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:10:53.851] Browser LOG     --------------------------------
-[00:12:18.155] Server  LOG      ✓ Compiled in 23ms
-[00:12:23.747] Server  LOG     isLoggedIn
-[00:13:05.869] Server  LOG     isLoggedIn
-[00:13:06.137] Browser LOG     --------------------------------
-[00:13:06.137] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/ticket-management.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:06.137] Browser LOG     --------------------------------
-[00:13:06.137] Browser LOG     --------------------------------
-[00:13:06.137] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/ticket-management.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:06.137] Browser LOG     --------------------------------
-[00:13:06.909] Server  LOG     isLoggedIn
-[00:13:07.422] Browser LOG     useEffect
-[00:13:07.422] Browser LOG     fetchDashboardData
-[00:13:07.422] Browser LOG     getDashboardData
-[00:13:07.422] Browser LOG     [2;38;2;124;124;124m%s[0m useEffect
-[00:13:07.422] Browser LOG     [2;38;2;124;124;124m%s[0m fetchDashboardData
-[00:13:07.422] Browser LOG     [2;38;2;124;124;124m%s[0m getDashboardData
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:07.422] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:07.422] Browser LOG     --------------------------------
-[00:13:38.950] Server  LOG     isLoggedIn
-[00:13:39.208] Browser LOG     --------------------------------
-[00:13:39.208] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/ticket-management.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:39.208] Browser LOG     --------------------------------
-[00:13:39.208] Browser LOG     --------------------------------
-[00:13:39.208] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/ticket-management.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:39.208] Browser LOG     --------------------------------
-[00:13:39.984] Server  LOG     isLoggedIn
-[00:13:40.286] Browser LOG     useEffect
-[00:13:40.286] Browser LOG     fetchDashboardData
-[00:13:40.286] Browser LOG     getDashboardData
-[00:13:40.286] Browser LOG     [2;38;2;124;124;124m%s[0m useEffect
-[00:13:40.286] Browser LOG     [2;38;2;124;124;124m%s[0m fetchDashboardData
-[00:13:40.286] Browser LOG     [2;38;2;124;124;124m%s[0m getDashboardData
-[00:13:40.286] Browser LOG     --------------------------------
-[00:13:40.286] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:40.286] Browser LOG     --------------------------------
-[00:13:40.287] Browser LOG     --------------------------------
-[00:13:40.287] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:40.287] Browser LOG     --------------------------------
-[00:13:40.399] Browser LOG     --------------------------------
-[00:13:40.399] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:40.399] Browser LOG     --------------------------------
-[00:13:40.399] Browser LOG     --------------------------------
-[00:13:40.399] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:40.399] Browser LOG     --------------------------------
-[00:13:40.399] Browser LOG     --------------------------------
-[00:13:40.399] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:40.399] Browser LOG     --------------------------------
-[00:13:40.399] Browser LOG     --------------------------------
-[00:13:40.399] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
-[00:13:40.399] Browser LOG     --------------------------------
-[00:14:08.665] Server  LOG      ✓ Compiled in 24ms
+[00:00:01.023] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:01.131] Server  LOG      ✓ Ready in 903ms
+[00:00:29.075] Server  LOG     isLoggedIn
+[00:00:30.285] Server  LOG     isLoggedIn
+[00:00:32.079] Server  LOG     isLoggedIn
+[00:00:33.647] Browser LOG     fetchDashboardData
+[00:00:33.647] Browser LOG     getDashboardData
+[00:00:34.833] Browser LOG     --------------------------------
+[00:00:34.833] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyMzc0NSwiZXhwIjoxNzY3NzI0NjQ1fQ.6LZ-TsbICXkIIK0Qs5-9dlhWz-6uaKfKCuWkpyaWqdo","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:00:34.834] Browser LOG     --------------------------------
+[00:00:46.059] Server  LOG     isLoggedIn
+[00:00:46.070] Server  LOG     isLoggedIn
+[00:00:47.289] Server  LOG     isLoggedIn
+[00:00:47.293] Server  LOG     isLoggedIn
+[00:00:56.998] Server  LOG     isLoggedIn
+[00:00:57.009] Server  LOG     data {}
+[00:00:57.050] Server  LOG     isLoggedIn
+[00:00:57.113] Server  LOG     isLoggedIn
+[00:00:57.403] Browser LOG     fetchDashboardData
+[00:00:57.403] Browser LOG     getDashboardData
+[00:00:57.403] Browser LOG     [2;38;2;124;124;124m%s[0m fetchDashboardData
+[00:00:57.403] Browser LOG     [2;38;2;124;124;124m%s[0m getDashboardData
+[00:00:57.729] Browser LOG     --------------------------------
+[00:00:57.729] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:00:57.729] Browser LOG     --------------------------------
+[00:00:57.729] Browser LOG     --------------------------------
+[00:00:57.729] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:00:57.729] Browser LOG     --------------------------------
+[00:00:57.729] Browser LOG     --------------------------------
+[00:00:57.729] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:00:57.729] Browser LOG     --------------------------------
+[00:00:57.729] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:57.729] Browser LOG     --------------------------------
+[00:00:57.729] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:00:57.729] Browser LOG     --------------------------------
+[00:00:57.729] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:38.975] Server  LOG     isLoggedIn
+[00:02:39.078] Server  LOG     isLoggedIn
+[00:02:40.617] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/fron...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+                            className="inter_fe8b9d92-module__LINzvG__variable montserrat_a6b8e55e-module__JnHUVq__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:02:40.617] Browser LOG     fetchDashboardData
+[00:02:40.617] Browser LOG     getDashboardData
+[00:02:40.755] Browser LOG     --------------------------------
+[00:02:40.755] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:02:40.755] Browser LOG     --------------------------------
+[00:02:40.892] Browser LOG     --------------------------------
+[00:02:40.892] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:02:40.892] Browser LOG     --------------------------------
+[00:02:40.892] Browser LOG     --------------------------------
+[00:02:40.892] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map.json","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:02:40.892] Browser LOG     --------------------------------
+[00:02:40.892] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:40.892] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:56.072] Server  LOG      ✓ Compiled in 38ms
+[00:13:56.078] Server  LOG     isLoggedIn
+[00:14:27.463] Server  LOG     isLoggedIn
+[00:14:27.743] Server  LOG     isLoggedIn
+[00:14:29.235] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/fron...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+                            className="inter_fe8b9d92-module__LINzvG__variable montserrat_a6b8e55e-module__JnHUVq__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:14:29.235] Browser LOG     fetchDashboardData
+[00:14:29.235] Browser LOG     getDashboardData
+[00:14:29.500] Browser LOG     --------------------------------
+[00:14:29.500] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:29.500] Browser LOG     --------------------------------
+[00:14:29.500] Browser LOG     --------------------------------
+[00:14:29.500] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:29.500] Browser LOG     --------------------------------
+[00:14:29.500] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:29.500] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:29.500] Browser LOG     --------------------------------
+[00:14:29.500] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:29.500] Browser LOG     --------------------------------
+[00:14:35.869] Server  LOG     isLoggedIn
+[00:14:36.992] Browser LOG     fetchDashboardData
+[00:14:36.992] Browser LOG     getDashboardData
+[00:14:36.992] Browser LOG     --------------------------------
+[00:14:36.992] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:36.992] Browser LOG     --------------------------------
+[00:14:36.992] Browser LOG     --------------------------------
+[00:14:36.992] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:36.992] Browser LOG     --------------------------------
+[00:14:36.992] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:36.992] Browser LOG     --------------------------------
+[00:14:36.992] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:36.992] Browser LOG     --------------------------------
+[00:14:36.992] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:40.117] Server  LOG     isLoggedIn
+[00:14:40.471] Server  LOG     isLoggedIn
+[00:14:42.429] Server  LOG     isLoggedIn
+[00:14:42.745] Browser LOG     fetchDashboardData
+[00:14:42.745] Browser LOG     getDashboardData
+[00:14:42.745] Browser LOG     [2;38;2;124;124;124m%s[0m fetchDashboardData
+[00:14:42.745] Browser LOG     [2;38;2;124;124;124m%s[0m getDashboardData
+[00:14:42.745] Browser LOG     --------------------------------
+[00:14:42.745] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:42.745] Browser LOG     --------------------------------
+[00:14:42.745] Browser LOG     --------------------------------
+[00:14:42.745] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/dashboard","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:42.745] Browser LOG     --------------------------------
+[00:14:42.745] Browser LOG     --------------------------------
+[00:14:42.745] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:42.745] Browser LOG     --------------------------------
+[00:14:42.745] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:42.745] Browser LOG     --------------------------------
+[00:14:42.745] Browser LOG     config {"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:3001/api","env":{},"headers":{"Accept":"application/json, text/plain, */*","Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTc2NzcyNjA1NCwiZXhwIjoxNzY3NzI2OTU0fQ.t5kyxgdQJq1lTcCw8bLXTWrtTzmpPIF_mQWx3WguG-E","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/map","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"}
+[00:14:42.745] Browser LOG     --------------------------------
+[00:14:42.745] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:12.070] Server  LOG      ✓ Compiled in 29ms
+[00:15:12.074] Server  LOG     isLoggedIn
