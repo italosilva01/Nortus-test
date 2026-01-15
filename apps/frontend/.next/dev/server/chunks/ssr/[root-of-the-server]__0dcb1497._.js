@@ -268,34 +268,34 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2
 const MENU_ITEMS = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$dashboard$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$dashboard$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "dashboard",
-        href: "/"
+        label: 'dashboard',
+        href: '/'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$tickets$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$tickets$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "ticketsManagement",
-        href: "/ticketsManagement"
+        label: 'ticketsManagement',
+        href: '/ticketsManagement'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$message$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$message$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "reports",
-        href: "/reports"
+        label: 'reports',
+        href: '/reports'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$person$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$person$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "users",
-        href: "/chat"
+        label: 'users',
+        href: '/chat'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$calcIcon$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$calcIcon$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "calculator",
-        href: "/calculator"
+        label: 'calculator',
+        href: '/calculator'
     }
 ];
 const ROUTE_MAP = {
-    "/": "dashboard",
-    "/ticketsManagement": "ticketsManagement",
-    "/chat": "chat"
+    '/': 'dashboard',
+    '/ticketsManagement': 'ticketsManagement',
+    '/chat': 'chat'
 };
 const KPI_BUTTONS = [
     {
@@ -592,6 +592,7 @@ api.interceptors.request.use(async (config)=>{
     const session = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$30_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2d$auth$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getSession"])();
     if (session?.user?.accessToken) {
         config.headers.Authorization = `Bearer ${session.user.accessToken}`;
+    //config.headers.Authorization = `Bearer 1234567890`;
     }
     console.log('--------------------------------');
     console.log('config', config);
@@ -622,6 +623,15 @@ const authEndpoints = {
             throw new Error('Login request failed');
         }
     },
+    refreshToken: async (refreshToken)=>{
+        try {
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].post('/refresh-token', {
+                refreshToken
+            });
+        } catch  {
+            throw new Error('Refresh token request failed');
+        }
+    },
     getDashboardData: async ()=>{
         try {
             return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
@@ -638,7 +648,7 @@ const authEndpoints = {
     },
     getTicketManagementData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/ticket-management.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/tickets');
         } catch  {
             throw new Error('Ticket management data request failed');
         }

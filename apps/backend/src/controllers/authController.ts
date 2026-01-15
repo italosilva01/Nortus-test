@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { loginSchema } from '../schemas/loginSchema';
-const dbTest = [
+import { HTTP } from '../utils/httpsCoders';
+export const dbTest = [
   {
     id: 1,
     username: 'Valeria.gonzalez+7476@eightroom.com',
@@ -21,7 +22,6 @@ export class AuthController {
     try {
       loginSchema.parse({ username, password });
     } catch (error: any) {
-      console.log('error', error);
       return res.status(400).json({ message: error.errors[0].message });
     }
     // Falta a logica de buscar o usuario no banco de dados
@@ -30,16 +30,30 @@ export class AuthController {
       (user) => user.username === username && user.password === password
     );
     if (!user) {
-      return res.status(401).json({ message: 'Invalid email or password' });
+      return res
+        .status(HTTP.UNAUTHORIZED)
+        .json({ message: 'Invalid email or password' });
     }
-    const token = jwt.sign(
-      { id: user.id, role: user.role, name: user.name },
+    const payloadTokens = {
+      id: user.id,
+      role: user.role,
+      name: user.name,
+    };
+    const token = jwt.sign(payloadTokens, this.secret as string, {
+      expiresIn: '15m',
+    });
+
+    const refreshToken = jwt.sign(
+      { ...payloadTokens, type: 'refresh' },
       this.secret as string,
-      { expiresIn: '15m' }
+      {
+        expiresIn: '7d',
+      }
     );
     const payloadResponse = {
       data: {
         accessToken: token,
+        refreshToken: refreshToken,
         username: user.name,
       },
     };

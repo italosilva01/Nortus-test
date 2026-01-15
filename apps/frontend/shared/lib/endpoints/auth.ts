@@ -8,6 +8,13 @@ export const authEndpoints = {
       throw new Error('Login request failed');
     }
   },
+  refreshToken: async (refreshToken: string) => {
+    try {
+      return await api.post('/refresh-token', { refreshToken });
+    } catch {
+      throw new Error('Refresh token request failed');
+    }
+  },
   getDashboardData: async () => {
     try {
       return await api.get('/dashboard');
@@ -24,7 +31,7 @@ export const authEndpoints = {
   },
   getTicketManagementData: async () => {
     try {
-      return await api.get('/ticket-management.json');
+      return await api.get('/tickets');
     } catch {
       throw new Error('Ticket management data request failed');
     }

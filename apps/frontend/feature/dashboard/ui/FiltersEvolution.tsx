@@ -18,10 +18,10 @@ export const FiltersEvolution = ({
           key={kpi.id}
           onClick={() => onKpiClick(kpi.value)}
           className={cn(
-            'rounded-full px-3 py-5: text-xs font-montserrat font-semibold line-height-16 whitespace-nowrap letter-spacing-0 transition-colors',
+            'rounded-full px-3 py-5: text-xs font-montserrat font-semibold line-height-16 whitespace-nowrap letter-spacing-0 transition-colors ',
             selectedKpi === kpi.value
-              ? 'bg-cyan ring-2 ring-cyan'
-              : 'bg-app-dark-blue-200 hover:bg-app-dark-blue-250'
+              ? 'bg-[rgb(56,181,204)] ring-2 ring-cyan'
+              : 'bg-app-dark-blue-200 hover:bg-app-dark-blue-250 transition-colors'
           )}
         >
           {kpi.label}

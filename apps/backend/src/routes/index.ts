@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { AuthController } from '../controllers/authController';
+import { RefreshTokenController } from '../refreshTokenContoller';
 import dashboardRouter from './dashboard.routes';
 import mapRouter from './map.routes';
 import ticketsRouter from './tickets.routes';
@@ -7,9 +8,7 @@ const router = Router();
 
 // Registrar rotas
 router.use('/tickets', ticketsRouter);
-
 router.use('/dashboard', dashboardRouter);
-
 router.use('/map', mapRouter);
 
 // Rota raiz da API
@@ -30,6 +29,9 @@ router.post('/login', async (req, res) => {
   await authController.login(req, res);
 });
 
-router.get;
+router.post('/refresh-token', async (req, res) => {
+  const refreshTokenController = new RefreshTokenController();
+  await refreshTokenController.refreshToken(req, res);
+});
 
 export default router;

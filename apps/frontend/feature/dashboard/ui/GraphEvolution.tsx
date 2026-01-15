@@ -121,7 +121,7 @@ const GraphEvolution = () => {
             </Typography>
           </div>
         ) : (
-          <div className="w-full h-full flex-1">
+          <div className="w-full  h-full border border-red-500 relative">
             <ReactApexChart
               options={chartState.options}
               series={chartState.series}

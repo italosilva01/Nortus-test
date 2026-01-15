@@ -12,19 +12,20 @@ const api = axios.create({
 // Interceptor para adicionar o token automaticamente em todas as requisições
 api.interceptors.request.use(
   async (config) => {
-    if(config.url?.includes('login')) {
+    if (config.url?.includes('login')) {
       return config;
     }
     const session = await getSession();
-    
+
     if (session?.user?.accessToken) {
       config.headers.Authorization = `Bearer ${session.user.accessToken}`;
+      //config.headers.Authorization = `Bearer 1234567890`;
     }
 
     console.log('--------------------------------');
     console.log('config', config);
     console.log('--------------------------------');
-    
+
     return config;
   },
   (error) => {

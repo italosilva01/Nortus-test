@@ -157,6 +157,7 @@ api.interceptors.request.use(async (config)=>{
     const session = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$30_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2d$auth$2f$react$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["getSession"])();
     if (session?.user?.accessToken) {
         config.headers.Authorization = `Bearer ${session.user.accessToken}`;
+    //config.headers.Authorization = `Bearer 1234567890`;
     }
     console.log('--------------------------------');
     console.log('config', config);
@@ -187,6 +188,15 @@ const authEndpoints = {
             throw new Error('Login request failed');
         }
     },
+    refreshToken: async (refreshToken)=>{
+        try {
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].post('/refresh-token', {
+                refreshToken
+            });
+        } catch  {
+            throw new Error('Refresh token request failed');
+        }
+    },
     getDashboardData: async ()=>{
         try {
             return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
@@ -203,7 +213,7 @@ const authEndpoints = {
     },
     getTicketManagementData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].get('/ticket-management.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].get('/tickets');
         } catch  {
             throw new Error('Ticket management data request failed');
         }
@@ -441,34 +451,34 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2
 const MENU_ITEMS = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$dashboard$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$dashboard$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$route$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "dashboard",
-        href: "/"
+        label: 'dashboard',
+        href: '/'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$tickets$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$tickets$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$route$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "ticketsManagement",
-        href: "/ticketsManagement"
+        label: 'ticketsManagement',
+        href: '/ticketsManagement'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$message$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$message$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$route$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "reports",
-        href: "/reports"
+        label: 'reports',
+        href: '/reports'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$person$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$person$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$route$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "users",
-        href: "/chat"
+        label: 'users',
+        href: '/chat'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$calcIcon$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$calcIcon$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$route$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "calculator",
-        href: "/calculator"
+        label: 'calculator',
+        href: '/calculator'
     }
 ];
 const ROUTE_MAP = {
-    "/": "dashboard",
-    "/ticketsManagement": "ticketsManagement",
-    "/chat": "chat"
+    '/': 'dashboard',
+    '/ticketsManagement': 'ticketsManagement',
+    '/chat': 'chat'
 };
 const KPI_BUTTONS = [
     {
@@ -545,7 +555,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$30_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2d$auth$2f$providers$2f$credentials$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next-auth@5.0.0-beta.30_next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0__react@19.2.0/node_modules/next-auth/providers/credentials.js [app-route] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$auth$2b$core$40$0$2e$41$2e$0$2f$node_modules$2f40$auth$2f$core$2f$providers$2f$credentials$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/@auth+core@0.41.0/node_modules/@auth/core/providers/credentials.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$endpoints$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/endpoints/index.ts [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$endpoints$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/endpoints/auth.ts [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$helpers$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/helpers.ts [app-route] (ecmascript)");
+;
 ;
 ;
 ;
@@ -571,9 +583,10 @@ const { handlers, signIn, signOut, auth } = (0, __TURBOPACK__imported__module__$
                     const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$endpoints$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["endpoints"].auth.login(username, password);
                     if (response.status === __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$helpers$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["HTTP_STATUS_CODES"].OK && response?.data) {
                         return {
-                            id: response.data?.data.id || '1',
-                            accessToken: response.data?.data.accessToken,
-                            username: response.data?.data.username
+                            id: response.data?.data?.id || '1',
+                            accessToken: response.data?.data?.accessToken,
+                            username: response.data?.data?.username,
+                            refreshToken: response.data?.data?.refreshToken
                         };
                     }
                     return null;
@@ -593,17 +606,42 @@ const { handlers, signIn, signOut, auth } = (0, __TURBOPACK__imported__module__$
     secret: process.env.NEXTAUTH_SECRET,
     callbacks: {
         async jwt ({ token, user }) {
+            console.log('user', user);
             if (user) {
                 token.id = user.id;
                 token.accessToken = user.accessToken;
                 token.username = user.username;
+                token.refreshToken = user.refreshToken;
+                return token;
+            } else if (Date.now() < token.exp * 1000) {
+                console.log('1');
+                return token;
+            } else {
+                console.log('2');
+                console.log('token.refreshToken', token.refreshToken);
+                if (!token.refreshToken) throw new TypeError('Missing refresh token');
+                try {
+                    const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$endpoints$2f$auth$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["authEndpoints"].refreshToken(token.refreshToken);
+                    console.log('response', response);
+                    if (response.status !== __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$helpers$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["HTTP_STATUS_CODES"].OK) throw new TypeError('Failed to refresh token');
+                    const newTokens = response.data;
+                    console.log('atualizado token', newTokens);
+                    return {
+                        ...token,
+                        accessToken: newTokens.accessToken,
+                        exp: Math.floor(Date.now() / 1000 + newTokens.exp),
+                        refreshToken: newTokens.refreshToken ? newTokens.refreshToken : token.refreshToken
+                    };
+                } catch (error) {
+                    throw new TypeError('Failed to refresh token');
+                }
             }
-            return token;
         },
         async session ({ session, token }) {
             session.user.id = token.id;
             session.user.accessToken = token.accessToken;
             session.user.username = token.username;
+            session.user.refreshToken = token.refreshToken;
             return session;
         }
     }

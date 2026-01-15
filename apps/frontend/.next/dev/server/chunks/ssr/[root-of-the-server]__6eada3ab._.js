@@ -1357,7 +1357,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$componen
 ;
 const PanelBig = ({ classNameTitle, title, children, filtersChildren, className, contentClassName })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$custom$2f$Panel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Panel"], {
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("py-0 w-full h-full flex flex-col max-w-[680px] xl:max-w-[780px] 2xl:max-w-[852px]", className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('py-0 w-full h-full flex flex-col max-w-[680px] xl:max-w-[780px] 2xl:max-w-[852px]', className),
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                 className: "flex pt-6 px-4 lg:px-6",
@@ -1367,39 +1367,39 @@ const PanelBig = ({ classNameTitle, title, children, filtersChildren, className,
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$custom$2f$Typography$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Typography"], {
                             fontFamily: "montserrat",
                             fontWeight: "normal",
-                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("text-xl lg:text-2xl font-bold truncate", classNameTitle),
+                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('text-xl lg:text-2xl font-bold truncate', classNameTitle),
                             fontColor: "surface-solid",
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/apps/frontend/components/ui/custom/PanelBig.tsx",
-                            lineNumber: 21,
-                            columnNumber: 21
+                            lineNumber: 32,
+                            columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         filtersChildren
                     ]
                 }, void 0, true, {
                     fileName: "[project]/apps/frontend/components/ui/custom/PanelBig.tsx",
-                    lineNumber: 20,
-                    columnNumber: 17
+                    lineNumber: 31,
+                    columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/components/ui/custom/PanelBig.tsx",
-                lineNumber: 19,
-                columnNumber: 13
+                lineNumber: 30,
+                columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
-                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("flex flex-col px-4 lg:px-6 flex-1 w-full h-full", contentClassName),
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('flex flex-col px-4 lg:px-6 flex-1 w-full h-full', contentClassName),
                 children: children
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/components/ui/custom/PanelBig.tsx",
-                lineNumber: 27,
-                columnNumber: 13
+                lineNumber: 46,
+                columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/apps/frontend/components/ui/custom/PanelBig.tsx",
-        lineNumber: 18,
-        columnNumber: 9
+        lineNumber: 24,
+        columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
 }),
