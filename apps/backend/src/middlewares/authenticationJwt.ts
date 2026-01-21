@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
+import { HTTP } from '../utils/constants';
 
 // Validar se o JWT_SECRET está definido
 
@@ -16,9 +17,9 @@ export const authenticateToken = (
     return;
   }
 
-  jwt.verify(token, secret, (err, decoded) => {
+  jwt.verify(token, secret as string, (err, decoded) => {
     if (err) {
-      res.status(403).json({ message: 'Invalid or expired token' });
+      res.status(403).json({ message: 'Invalid or expired token ITALO' });
       return;
     }
 

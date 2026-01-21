@@ -11,8 +11,8 @@ export const authEndpoints = {
   refreshToken: async (refreshToken: string) => {
     try {
       return await api.post('/refresh-token', { refreshToken });
-    } catch {
-      throw new Error('Refresh token request failed');
+    } catch (error) {
+      throw new Error('Refresh token request failed error: ' + error);
     }
   },
   getDashboardData: async () => {

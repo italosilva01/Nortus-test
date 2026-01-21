@@ -557,7 +557,6 @@ const useDashboardStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$no
                 error: null
             });
             try {
-                console.log('fetchDashboardData');
                 const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$endpoints$2f$index$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["endpoints"].auth.getDashboardData();
                 if (response.status === __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$helpers$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["HTTP_STATUS_CODES"].OK && response?.data) {
                     set({

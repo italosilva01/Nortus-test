@@ -5,3 +5,7 @@ export const HTTP = {
   INTERNAL_SERVER_ERROR: 500,
   OK: 200,
 };
+export const JWT_EXPIRES_IN ={
+  ACCESS_TOKEN: '15m',
+  REFRESH_TOKEN: '7d',
+};

@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { dbTest } from './controllers/authController';
-import { HTTP } from './utils/httpsCoders';
+import { HTTP, JWT_EXPIRES_IN } from './utils/constants';
 
 interface DecodedToken {
   id: number;
@@ -13,6 +13,7 @@ export class RefreshTokenController {
   secret = process.env.JWT_SECRET;
 
   async refreshToken(req: Request, res: Response) {
+  
     const { refreshToken } = req.body;
     if (!refreshToken) {
       return res
@@ -28,6 +29,7 @@ export class RefreshTokenController {
       if (decoded.type !== 'refresh') {
         throw new Error();
       }
+
       // Verificar se existe no store
       //const storedToken = refreshTokensStore.find(
       //  rt => rt.token === refreshToken && rt.userId === decoded.id
@@ -50,15 +52,13 @@ export class RefreshTokenController {
         { id: user.id, role: user.role, name: user.name },
         this.secret as string,
         {
-          expiresIn: '15m',
+          expiresIn: JWT_EXPIRES_IN.ACCESS_TOKEN,
         }
       );
 
       return res.status(HTTP.OK).json({
-        data: {
-          accessToken: newAccessToken,
-          username: user.name,
-        },
+        accessToken: newAccessToken,
+        username: user.name,
       });
     } catch (error) {
       return res

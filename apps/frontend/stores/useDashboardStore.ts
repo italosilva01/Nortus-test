@@ -49,7 +49,6 @@ export const useDashboardStore = create<DashboardStore>((set, get) => ({
   fetchDashboardData: async () => {
     set({ isLoading: true, error: null });
     try {
-      console.log('fetchDashboardData');
       const response = await endpoints.auth.getDashboardData();
       if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
         set({ data: response.data, isLoading: false });

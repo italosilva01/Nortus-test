@@ -530,21 +530,25 @@ const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pn
         'Content-Type': 'application/json'
     }
 });
-// Interceptor para adicionar o token automaticamente em todas as requisições
 api.interceptors.request.use(async (config)=>{
-    if (config.url?.includes('login')) {
+    // Não adiciona token nas rotas de login e refresh-token
+    if (config.url?.includes('login') || config.url?.includes('refresh-token')) {
         return config;
     }
-    const session = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$30_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2d$auth$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSession"])();
-    if (session?.user?.accessToken) {
-        config.headers.Authorization = `Bearer ${session.user.accessToken}`;
-    //config.headers.Authorization = `Bearer 1234567890`;
+    // No cliente, busca a sessão
+    if ("TURBOPACK compile-time truthy", 1) {
+        // o getSession está  ?retornando o token acess antigo
+        const session = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$30_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2d$auth$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSession"])();
+        const accessToken = session?.user?.accessToken;
+        if (accessToken) {
+            config.headers.Authorization = `Bearer ${accessToken}`;
+        } else {
+            console.warn('[API Interceptor] AccessToken não encontrado na sessão');
+        }
     }
-    console.log('--------------------------------');
-    console.log('config', config);
-    console.log('--------------------------------');
     return config;
 }, (error)=>{
+    console.error('[API Interceptor] Erro:', error);
     return Promise.reject(error);
 });
 const __TURBOPACK__default__export__ = api;
@@ -577,8 +581,8 @@ const authEndpoints = {
             return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].post('/refresh-token', {
                 refreshToken
             });
-        } catch  {
-            throw new Error('Refresh token request failed');
+        } catch (error) {
+            throw new Error('Refresh token request failed error: ' + error);
         }
     },
     getDashboardData: async ()=>{

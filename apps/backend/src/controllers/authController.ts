@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { loginSchema } from '../schemas/loginSchema';
-import { HTTP } from '../utils/httpsCoders';
+import { HTTP, JWT_EXPIRES_IN } from '../utils/constants';
 export const dbTest = [
   {
     id: 1,
@@ -40,22 +40,20 @@ export class AuthController {
       name: user.name,
     };
     const token = jwt.sign(payloadTokens, this.secret as string, {
-      expiresIn: '15m',
+      expiresIn: JWT_EXPIRES_IN.ACCESS_TOKEN,
     });
 
     const refreshToken = jwt.sign(
       { ...payloadTokens, type: 'refresh' },
       this.secret as string,
       {
-        expiresIn: '7d',
+        expiresIn: JWT_EXPIRES_IN.REFRESH_TOKEN,
       }
     );
     const payloadResponse = {
-      data: {
-        accessToken: token,
-        refreshToken: refreshToken,
-        username: user.name,
-      },
+      accessToken: token,
+      refreshToken: refreshToken,
+      username: user.name,
     };
 
     return res.status(200).json(payloadResponse);

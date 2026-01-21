@@ -9,26 +9,30 @@ const api = axios.create({
   },
 });
 
-// Interceptor para adicionar o token automaticamente em todas as requisições
 api.interceptors.request.use(
   async (config) => {
-    if (config.url?.includes('login')) {
+    // Não adiciona token nas rotas de login e refresh-token
+    if (config.url?.includes('login') || config.url?.includes('refresh-token')) {
       return config;
     }
-    const session = await getSession();
 
-    if (session?.user?.accessToken) {
-      config.headers.Authorization = `Bearer ${session.user.accessToken}`;
-      //config.headers.Authorization = `Bearer 1234567890`;
+    // No cliente, busca a sessão
+    if (typeof window !== 'undefined') {
+      // o getSession está  ?retornando o token acess antigo
+      const session = await getSession();
+      const accessToken = session?.user?.accessToken;
+      if (accessToken) {
+        config.headers.Authorization = `Bearer ${accessToken}`;
+      
+      } else {
+        console.warn('[API Interceptor] AccessToken não encontrado na sessão');
+      }
     }
-
-    console.log('--------------------------------');
-    console.log('config', config);
-    console.log('--------------------------------');
 
     return config;
   },
   (error) => {
+    console.error('[API Interceptor] Erro:', error);
     return Promise.reject(error);
   }
 );
