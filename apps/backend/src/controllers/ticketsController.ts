@@ -2,7 +2,15 @@ import ticketsService from "../services/ticketsService";
 import { HTTP } from "../utils/constants";
 
 class TicketsController {
-  
+  getTicketsData = async (req: Request, res: Response): Promise<void> => {
+    try {
+      const ticketsData = await ticketsService.getTicketsData();
+      res.status(HTTP.OK as number).json(ticketsData);
+    } catch (error) {
+      res.status(HTTP.INTERNAL_SERVER_ERROR as number).json({ message: 'error' });
+      return;
+    }
+  }
   createTicket = async (req: Request, res: Response): Promise<void> => {
     try {
       const { client, email, priority, responsible, subject } = req.body;

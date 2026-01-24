@@ -538,3 +538,197 @@ It can also happen if the client has a browser extension installed which messes 
 [03:07:53.800] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
 [03:07:53.800] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
 [03:07:53.800] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:23.498] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:09:23.498] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:09:26.943] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:26.943] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:26.943] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:26.943] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:26.943] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:26.943] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:09:27.315] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:16:26.534] Server  ERROR   [auth][error] JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
+[03:16:26.535] Server  ERROR   [auth][cause]: "TypeError: Failed to refresh token\n    at Object.jwt (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/[root-of-the-server]__3d7e1be1._.js:626:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Module.session (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:4553:27)\n    at async AuthInternal (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:5131:24)\n    at async Auth (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:5370:34)\n    at async AppRouteRouteModule.do (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:37789)\n    at async AppRouteRouteModule.handle (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45045)\n    at async responseGenerator (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16109:38)\n    at async AppRouteRouteModule.handleResponse (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187851)\n    at async handleResponse (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16171:32)\n    at async handler (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16224:13)\n    at async DevServer.renderToResponseWithComponentsImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1413:9)\n    at async DevServer.renderPageComponent (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1465:24)\n    at async DevServer.renderToResponseImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1515:32)\n    at async DevServer.pipeImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1021:25)\n    at async NextNodeServer.handleCatchallRenderRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/next-server.js:394:17)\n    at async DevServer.handleRequestImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:912:17)\n    at async /home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/dev/next-dev-server.js:382:20\n    at async Span.traceAsyncFn (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/trace/trace.js:157:20)\n    at async DevServer.handleRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/dev/next-dev-server.js:378:24)\n    at async invokeRender (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:240:21)\n    at async handleRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:436:24)\n    at async requestHandlerImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:484:13)\n    at async Server.requestListener (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/start-server.js:226:13)"
+[03:16:26.535] Server  ERROR   [auth][details]: "{}"
+[03:19:23.359] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/fron...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+                            className="inter_fe8b9d92-module__LINzvG__variable montserrat_a6b8e55e-module__JnHUVq__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[03:19:23.359] Browser WARN    Image with src "http://localhost:3000/_next/static/media/NortusLogo.8a6b77e2.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:19:27.952] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:19:27.952] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:19:29.937] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:20:20.475] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/ticketsMa..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/fron...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+                            className="inter_fe8b9d92-module__LINzvG__variable montserrat_a6b8e55e-module__JnHUVq__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[03:20:20.512] Server  ERROR   [auth][error] JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
+[03:20:20.512] Server  ERROR   [auth][cause]: "TypeError: Failed to refresh token\n    at Object.jwt (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/[root-of-the-server]__3d7e1be1._.js:626:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Module.session (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:4553:27)\n    at async AuthInternal (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:5131:24)\n    at async Auth (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:5370:34)\n    at async AppRouteRouteModule.do (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:37789)\n    at async AppRouteRouteModule.handle (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45045)\n    at async responseGenerator (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16109:38)\n    at async AppRouteRouteModule.handleResponse (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187851)\n    at async handleResponse (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16171:32)\n    at async handler (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16224:13)\n    at async DevServer.renderToResponseWithComponentsImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1413:9)\n    at async DevServer.renderPageComponent (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1465:24)\n    at async DevServer.renderToResponseImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1515:32)\n    at async DevServer.pipeImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1021:25)\n    at async NextNodeServer.handleCatchallRenderRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/next-server.js:394:17)\n    at async DevServer.handleRequestImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:912:17)\n    at async /home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/dev/next-dev-server.js:382:20\n    at async Span.traceAsyncFn (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/trace/trace.js:157:20)\n    at async DevServer.handleRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/dev/next-dev-server.js:378:24)\n    at async invokeRender (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:240:21)\n    at async handleRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:436:24)\n    at async requestHandlerImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:484:13)\n    at async Server.requestListener (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/start-server.js:226:13)"
+[03:20:20.512] Server  ERROR   [auth][details]: "{}"
+[03:20:20.523] Server  ERROR   [auth][error] JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
+[03:20:20.523] Server  ERROR   [auth][cause]: "TypeError: Failed to refresh token\n    at Object.jwt (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/[root-of-the-server]__3d7e1be1._.js:626:27)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Module.session (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:4553:27)\n    at async AuthInternal (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:5131:24)\n    at async Auth (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:5370:34)\n    at async AppRouteRouteModule.do (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:37789)\n    at async AppRouteRouteModule.handle (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45045)\n    at async responseGenerator (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16109:38)\n    at async AppRouteRouteModule.handleResponse (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187851)\n    at async handleResponse (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16171:32)\n    at async handler (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_89180c90._.js:16224:13)\n    at async DevServer.renderToResponseWithComponentsImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1413:9)\n    at async DevServer.renderPageComponent (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1465:24)\n    at async DevServer.renderToResponseImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1515:32)\n    at async DevServer.pipeImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1021:25)\n    at async NextNodeServer.handleCatchallRenderRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/next-server.js:394:17)\n    at async DevServer.handleRequestImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:912:17)\n    at async /home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/dev/next-dev-server.js:382:20\n    at async Span.traceAsyncFn (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/trace/trace.js:157:20)\n    at async DevServer.handleRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/dev/next-dev-server.js:378:24)\n    at async invokeRender (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:240:21)\n    at async handleRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:436:24)\n    at async requestHandlerImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:484:13)\n    at async Server.requestListener (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/start-server.js:226:13)"
+[03:20:20.523] Server  ERROR   [auth][details]: "{}"
+[03:20:20.941] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:20:20.941] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:20:20.941] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:20:20.941] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:20:20.941] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:20:20.941] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:55.752] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:55.752] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:55.752] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:55.752] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:55.752] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:55.752] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:57.580] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:59.696] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:23:59.696] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.001] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.001] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.532] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.532] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.532] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.533] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.533] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.533] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.533] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:01.533] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:02.284] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:02.284] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:02.284] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:02.284] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:02.284] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:02.284] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.433] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.433] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.433] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.433] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.433] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.433] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.433] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.433] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.655] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.655] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.655] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:03.655] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:04.712] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:04.712] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}
+[03:24:05.395] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `Tags.default` in messages for locale `pt-br`."}

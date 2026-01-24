@@ -4,6 +4,11 @@ import { v4 as uuidv4 } from 'uuid';
 import ticketsRepository from '../repositories/ticketsRepository';
 
  class TicketsService {
+
+  getTicketsData = async () => {
+    const ticketsData = await ticketsRepository.getTicketsData();
+    return ticketsData;
+  }
   
   createTicket = async (client: string, email: string, priority: string, responsible: string, subject: string) => {
     const ticket = {
@@ -17,7 +22,6 @@ import ticketsRepository from '../repositories/ticketsRepository';
       createdAt: new Date().toISOString(),
     };
   
-    console.log('criando ticket', ticket);
     const ticketResponse = fs.readFileSync(
       path.join(__dirname, '..', 'tickets.json'),
       'utf8'
