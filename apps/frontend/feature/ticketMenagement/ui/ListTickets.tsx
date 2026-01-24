@@ -23,6 +23,8 @@ const ListTickets = () => {
     setSelectedResponsible,
     filteredTickets,
   } = useTicketFilters({ tickets: tickets ?? undefined });
+ 
+
 
   return (
     <PanelBig

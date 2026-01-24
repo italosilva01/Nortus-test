@@ -60,10 +60,11 @@ interface TicketManagementStore {
     },
 
     addTicket: (newTicket: Ticket) => {
+      // acho que dá para refatorar a função set
       const currentTickets = get().data?.tickets ?? [];
       const convertedTicket = convertTicketPrioritiesAndStatus([newTicket])[0];
       const updatedTickets = [convertedTicket, ...currentTickets];
-      
+      console.log('convertedTicket', convertedTicket);
       set((state) => ({
         data: state.data ? {
           ...state.data,

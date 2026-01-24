@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { AuthController } from '../controllers/authController';
-import { RefreshTokenController } from '../refreshTokenController';
+import { RefreshTokenController } from '../controllers/refreshTokenController';
 import dashboardRouter from './dashboard.routes';
 import mapRouter from './map.routes';
 import ticketsRouter from './tickets.routes';

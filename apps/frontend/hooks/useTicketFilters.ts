@@ -7,6 +7,7 @@ interface UseTicketFiltersProps {
 }
 
 export const useTicketFilters = ({ tickets }: UseTicketFiltersProps) => {
+  // fazer refactore para usar o useReducer
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPriority, setSelectedPriority] = useState('');
   const [selectedStatus, setSelectedStatus] = useState('');

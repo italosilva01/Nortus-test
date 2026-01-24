@@ -699,6 +699,7 @@ const useTicketManagementStore = (0, __TURBOPACK__imported__module__$5b$project$
             ];
         },
         addTicket: (newTicket)=>{
+            // acho que dá para refatorar a função set
             const currentTickets = get().data?.tickets ?? [];
             const convertedTicket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertTicketPrioritiesAndStatus"])([
                 newTicket
@@ -707,6 +708,7 @@ const useTicketManagementStore = (0, __TURBOPACK__imported__module__$5b$project$
                 convertedTicket,
                 ...currentTickets
             ];
+            console.log('convertedTicket', convertedTicket);
             set((state)=>({
                     data: state.data ? {
                         ...state.data,

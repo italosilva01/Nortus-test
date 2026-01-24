@@ -5,8 +5,16 @@
     "solved": 12,
     "timeAverageHours": 2.5
   },
-  "status": ["Aberto", "Em andamento", "Fechado"],
-  "priorities": ["Urgente", "Média", "Baixa"],
+  "status": [
+    "Aberto",
+    "Em andamento",
+    "Fechado"
+  ],
+  "priorities": [
+    "Urgente",
+    "Média",
+    "Baixa"
+  ],
   "tickets": [
     {
       "id": "TK001",
@@ -257,6 +265,36 @@
       "status": "Em andamento",
       "createdAt": "19/11/2024",
       "responsible": "João Costa"
+    },
+    {
+      "id": "a50e5059-7857-43d1-9421-7036b7cc2be0",
+      "client": "Italo",
+      "email": "italo.silvan87@gmail.com",
+      "priority": "medium",
+      "responsible": "italo lol",
+      "subject": "dwad",
+      "status": "Aberto",
+      "createdAt": "2026-01-24T00:24:33.771Z"
+    },
+    {
+      "id": "1a004f5f-0c2c-4076-a99c-833d66c3777b",
+      "client": "Italo",
+      "email": "italo.silvan87@gmail.com",
+      "priority": "medium",
+      "responsible": "italo lol",
+      "subject": "dwad",
+      "status": "Aberto",
+      "createdAt": "2026-01-24T01:34:28.523Z"
+    },
+    {
+      "id": "9aafebbf-34c2-4f6f-861c-6f1b1b7327fe",
+      "client": "Marcelo",
+      "email": "italo.silvan87@gmail.com",
+      "priority": "medium",
+      "responsible": "italo lol",
+      "subject": "dwad",
+      "status": "Aberto",
+      "createdAt": "2026-01-24T01:34:43.821Z"
     }
   ]
 }
