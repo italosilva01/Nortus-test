@@ -1,0 +1,55 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Next.js: Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/apps/frontend",
+      "runtimeArgs": [
+        "--disable-web-security",
+        "--user-data-dir=${workspaceFolder}/.vscode/chrome-debug-profile"
+      ],
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack://_N_E/*": "${webRoot}/*",
+        "webpack:///./*": "${webRoot}/*",
+        "webpack:///./~/*": "${webRoot}/node_modules/*"
+      },
+      "timeout": 30000
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Next.js: Node",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["dev"],
+      "cwd": "${workspaceFolder}/apps/frontend",
+      "port": 9229,
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Next.js: Chrome (Attach)",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}/apps/frontend",
+      "sourceMaps": true
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Next.js: Full Stack",
+      "configurations": ["Next.js: Node", "Next.js: Chrome"],
+      "stopAll": true,
+      "presentation": {
+        "order": 1
+      }
+    }
+  ]
+}
