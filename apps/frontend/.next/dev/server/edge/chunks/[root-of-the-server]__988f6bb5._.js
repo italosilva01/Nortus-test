@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["chunks/[root-of-the-server]__3aaaf646._.js",
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push(["chunks/[root-of-the-server]__988f6bb5._.js",
 "[externals]/node:buffer [external] (node:buffer, cjs)", ((__turbopack_context__, module, exports) => {
 
 const mod = __turbopack_context__.x("node:buffer", () => require("node:buffer"));
@@ -11,8 +11,47 @@ const mod = __turbopack_context__.x("node:async_hooks", () => require("node:asyn
 
 module.exports = mod;
 }),
-"[project]/apps/frontend/shared/lib/api.ts [middleware-edge] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/apps/frontend/shared/lib/api.config.ts [middleware-edge] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
 
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+const axiosConfig = {
+    baseURL: process.env.NEXT_PUBLIC_API_URL,
+    headers: {
+        'Content-Type': 'application/json'
+    }
+};
+const __TURBOPACK__default__export__ = axiosConfig;
+}),
+"[project]/apps/frontend/shared/lib/api.instance.ts [middleware-edge] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$axios$40$1$2e$13$2e$2$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/axios@1.13.2/node_modules/axios/lib/axios.js [middleware-edge] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$30_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2d$auth$2f$react$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next-auth@5.0.0-beta.30_next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0__react@19.2.0/node_modules/next-auth/react.js [middleware-edge] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$config$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/api.config.ts [middleware-edge] (ecmascript)");
+;
+;
+;
+const axiosInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$axios$40$1$2e$13$2e$2$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].create(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$config$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"]);
+axiosInstance.interceptors.request.use(async (config)=>{
+    if (config.url?.includes('login') || config.url?.includes('refresh-token')) {
+        return config;
+    }
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    return config;
+}, (error)=>{
+    console.error('[API Interceptor] Erro:', error);
+    return Promise.reject(error);
+});
+const __TURBOPACK__default__export__ = axiosInstance;
 }),
 "[project]/apps/frontend/shared/lib/endpoints/auth.ts [middleware-edge] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -21,12 +60,12 @@ __turbopack_context__.s([
     "authEndpoints",
     ()=>authEndpoints
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/api.ts [middleware-edge] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/api.instance.ts [middleware-edge] (ecmascript)");
 ;
 const authEndpoints = {
     login: async (username, password)=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].post('/login', {
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].post('/login', {
                 username,
                 password
             });
@@ -36,7 +75,7 @@ const authEndpoints = {
     },
     refreshToken: async (refreshToken)=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].post('/refresh-token', {
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].post('/refresh-token', {
                 refreshToken
             });
         } catch (error) {
@@ -45,21 +84,21 @@ const authEndpoints = {
     },
     getDashboardData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
         } catch  {
             throw new Error('Dashboard data request failed');
         }
     },
     getCustomerMapData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/map');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/map');
         } catch  {
             throw new Error('Customer map data request failed');
         }
     },
     getTicketManagementData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/tickets');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/tickets');
         } catch  {
             throw new Error('Ticket management data request failed');
         }
@@ -520,4 +559,4 @@ const config = {
 }),
 ]);
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__3aaaf646._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__988f6bb5._.js.map

@@ -6650,3 +6650,2509 @@ Import trace:
 [00:34:37.623] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
 [00:34:37.929] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
 [00:34:37.929] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:16:13.016] Server  LOG      ✓ Compiled in 56ms
+[00:16:27.693] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowdown1.83aabdf3.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:27.693] Browser WARN    Image with src "http://localhost:3000/_next/static/media/arrowup2.0736c204.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:16:27.693] Browser WARN    Image with src "/_next/static/media/arrowdown1.83aabdf3.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:27:37.047] Server  LOG      ✓ Compiled in 161ms
+[00:27:37.152] Server  ERROR   [auth][error] JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
+[00:27:37.153] Server  ERROR   [auth][cause]: TypeError: Failed to refresh token
+    at Object.jwt (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/edge/chunks/[root-of-the-server]__3aaaf646._.js:476:27)
+    at async Module.session (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/edge/chunks/691c0_@auth_core_e17b3cd3._.js:4554:27)
+    at async AuthInternal (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/edge/chunks/691c0_@auth_core_e17b3cd3._.js:5132:24)
+    at async Auth (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/edge/chunks/691c0_@auth_core_e17b3cd3._.js:5371:34)
+    at async handleAuth (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/edge/chunks/node_modules__pnpm_4dbcc2d0._.js:4012:29)
+    at async /home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/edge/chunks/_7519a0da._.js:12830:20
+    at async /home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/edge/chunks/_7519a0da._.js:7285:28
+    at async adapter (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/edge/chunks/_7519a0da._.js:7240:16)
+    at async /home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/web/sandbox/sandbox.js:112:26
+    at async runWithTaggedErrors (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/web/sandbox/sandbox.js:109:9)
+[00:27:37.153] Server  ERROR   [auth][details]: {}
+[00:27:38.514] Server  ERROR   [auth][error] JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror
+[00:27:38.515] Server  ERROR   [auth][cause]: "TypeError: Failed to refresh token\n    at Object.jwt (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/[root-of-the-server]__66932a2c._.js:518:27)\n    at async Module.session (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:4553:27)\n    at async AuthInternal (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:5131:24)\n    at async Auth (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/691c0_@auth_core_843d8dff._.js:5370:34)\n    at async AppRouteRouteModule.do (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:37789)\n    at async AppRouteRouteModule.handle (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:5:45045)\n    at async responseGenerator (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_5711ebe7._.js:16104:38)\n    at async AppRouteRouteModule.handleResponse (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:1:187851)\n    at async handleResponse (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_5711ebe7._.js:16166:32)\n    at async handler (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/apps/frontend/.next/dev/server/chunks/22f75_next_5711ebe7._.js:16219:13)\n    at async DevServer.renderToResponseWithComponentsImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1413:9)\n    at async DevServer.renderPageComponent (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1465:24)\n    at async DevServer.renderToResponseImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1515:32)\n    at async DevServer.pipeImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:1021:25)\n    at async NextNodeServer.handleCatchallRenderRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/next-server.js:394:17)\n    at async DevServer.handleRequestImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/base-server.js:912:17)\n    at async /home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/dev/next-dev-server.js:382:20\n    at async Span.traceAsyncFn (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/trace/trace.js:157:20)\n    at async DevServer.handleRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/dev/next-dev-server.js:378:24)\n    at async invokeRender (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:240:21)\n    at async handleRequest (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:436:24)\n    at async requestHandlerImpl (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/router-server.js:484:13)\n    at async Server.requestListener (/home/italo-nascimento/Documents/my_projects/tests/nortus-dw/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/lib/start-server.js:226:13)"
+[00:27:38.515] Server  ERROR   [auth][details]: "{}"
+[00:27:38.693] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/fron...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-br">
+                          <body
+                            className="inter_fe8b9d92-module__LINzvG__variable montserrat_a6b8e55e-module__JnHUVq__var..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:28:07.024] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  Client Component Browser:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.028] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  Client Component Browser:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.029] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  Client Component Browser:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.030] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  Client Component Browser:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.032] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.033] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.038] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.038] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.039] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.040] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.041] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.042] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.059] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.060] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.061] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.062] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.064] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.065] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.066] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.066] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.067] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.067] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.068] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.068] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.070] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.070] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.070] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.071] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.072] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.072] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.073] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.074] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.075] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.075] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.075] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.076] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.077] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.077] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.078] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.078] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.079] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.079] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.080] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.081] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.082] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.082] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.083] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.083] Server  ERROR    ⨯ ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+
+Import traces:
+  #1 [Server Component]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/app/(auth)/login/page.tsx
+
+  #2 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component Browser]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Client Component SSR]
+    ./apps/frontend/feature/auth/login/ui/FormLogin.tsx [Server Component]
+    ./apps/frontend/app/(auth)/login/page.tsx [Server Component]
+
+  #4 [Client Component Browser]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component Browser]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component Browser]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component Browser]
+    ./apps/frontend/components/layout/Header.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component Browser]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+  #5 [Client Component SSR]:
+    ./apps/frontend/shared/lib/endpoints/auth.ts [Client Component SSR]
+    ./apps/frontend/shared/lib/endpoints/index.ts [Client Component SSR]
+    ./apps/frontend/stores/useTicketManagementStore.ts [Client Component SSR]
+    ./apps/frontend/components/layout/Header.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Client Component SSR]
+    ./apps/frontend/components/layout/DashboardLayoutWrapper.tsx [Server Component]
+    ./apps/frontend/app/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:28:07.090] Server  LOG      ✓ Compiled in 99ms
+[00:28:07.693] Browser ERROR   ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:15.692] Browser ERROR   ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:25.692] Browser ERROR   ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:25.692] Browser ERROR   ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:29.692] Browser ERROR   ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:29.692] Browser ERROR   ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:31.693] Browser ERROR   ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:31.693] Browser ERROR   ./apps/frontend/shared/lib/endpoints/auth.ts:1:1
+Module not found: Can't resolve '@/shared/lib/api'
+> 1 | import api from '@/shared/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export const authEndpoints = {
+  4 |   login: async (username: string, password: string) => {
+
+Import map: aliased to relative './shared/lib/api' inside of [project]/apps/frontend
+
+Import trace:
+  Edge Middleware:
+    ./apps/frontend/shared/lib/endpoints/auth.ts
+    ./apps/frontend/auth.ts
+    ./apps/frontend/middleware.ts
+
+https://nextjs.org/docs/messages/module-not-found
+[00:29:34.064] Server  LOG      ✓ Compiled in 35ms
+[00:29:34.438] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`.
+[00:29:34.921] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:34.921] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:35.136] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:35.136] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:35.136] Browser WARN    Image with src "/_next/static/media/StackedCard.2e024979.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:29:42.922] Server  LOG      ✓ Compiled in 24ms
+[00:29:43.058] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:43.058] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:43.194] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:43.194] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:44.601] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:44.601] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:44.787] Server  ERROR   Error: MISSING_MESSAGE: Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`.
+[00:29:45.275] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:45.275] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:45.275] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:45.275] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:45.359] Browser WARN    Image with src "/_next/static/media/StackedCard.2e024979.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:29:51.271] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:51.271] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:51.394] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:51.394] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:53.264] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:53.264] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:53.394] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:53.394] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:56.620] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:56.620] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:56.751] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:56.751] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:58.767] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:58.767] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:58.898] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
+[00:29:58.898] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `LoginPage.refreshToken` in messages for locale `pt-br`."}
