@@ -14,6 +14,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       async authorize(credentials) {
         const { username, password } = credentials;
         try {
+          console.log('authorize credentials', username, password);
           const response = await endpoints.auth.login(
             username as string,
             password as string
