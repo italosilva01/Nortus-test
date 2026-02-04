@@ -7,6 +7,7 @@ import {
 } from '@/shared/types/dashboard';
 import { useQuery } from '@tanstack/react-query';
 import { create } from 'zustand';
+import { dashbaordDataKey } from '../api/keys';
 
 interface DashboardStore {
   data: DashboardData | null;
@@ -20,7 +21,6 @@ interface DashboardStore {
   setFilter: (filterType: keyof DashboardFilters, value: string) => void;
   resetFilters: () => void;
   fetchDashboardData: () => Promise<void>;
-
   getFilteredClients: () => Client[];
 }
 
@@ -84,7 +84,7 @@ export const useDashboardStore = create<DashboardStore>((set, get) => ({
 }));
 
 export const useDashboardData = () => {
-  const {data,isPending,error} = useQuery({queryKey: ['dashboardData'],queryFn: endpoints.resources.getDashboardData})
+  const {data,isPending,error} = useQuery({queryKey: dashbaordDataKey.all,queryFn: endpoints.resources.getDashboardData})
   
   console.log(data,isPending,error)
   return {data,isPending,error}
