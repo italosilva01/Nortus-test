@@ -5,19 +5,15 @@ import GraphEvolution from '@/feature/dashboard/ui/GraphEvolution';
 import MapSegments from '@/feature/dashboard/ui/MapSegments';
 import { ResumePerformance } from '@/feature/dashboard/ui/ResumePerformance';
 import { SkeletonResumePanelPerformance } from '@/feature/dashboard/ui/SkeletonResumePanelPerformance';
-import { useDashboardStore } from '@/stores/useDashboardStore';
 import { useTranslations } from 'next-intl';
-import { useEffect } from 'react';
+import { useDashboardData } from '../stores/useDashboardStore';
 
 export default function Home() {
-  const { data, isLoading } = useDashboardStore();
+  const { data, isPending } = useDashboardData();
   const t = useTranslations();
 
-  useEffect(() => {
-    useDashboardStore.getState().fetchDashboardData();
-  }, []);
-
-  if (isLoading) {
+  
+  if (isPending ) {
     return (
       <div className="flex flex-col gap-6">
         <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">

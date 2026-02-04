@@ -5,6 +5,7 @@ import {
   DashboardData,
   DashboardFilters,
 } from '@/shared/types/dashboard';
+import { useQuery } from '@tanstack/react-query';
 import { create } from 'zustand';
 
 interface DashboardStore {
@@ -81,3 +82,10 @@ export const useDashboardStore = create<DashboardStore>((set, get) => ({
     });
   },
 }));
+
+export const useDashboardData = () => {
+  const {data,isPending,error} = useQuery({queryKey: ['dashboardData'],queryFn: endpoints.resources.getDashboardData})
+  
+  console.log(data,isPending,error)
+  return {data,isPending,error}
+}

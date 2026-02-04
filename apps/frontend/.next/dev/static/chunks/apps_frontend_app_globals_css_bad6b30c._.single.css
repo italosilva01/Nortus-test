@@ -537,8 +537,8 @@
     margin-top: calc(var(--spacing) * 10);
   }
 
-  .mt-\[5\.5rem\] {
-    margin-top: 5.5rem;
+  .mt-22 {
+    margin-top: calc(var(--spacing) * 22);
   }
 
   .mt-\[24px\] {
@@ -2623,6 +2623,12 @@
   @media (min-width: 80rem) {
     .xl\:text-\[24px\] {
       font-size: 24px;
+    }
+  }
+
+  @media (min-width: 96rem) {
+    .\32 xl\:mx-auto {
+      margin-inline: auto;
     }
   }
 

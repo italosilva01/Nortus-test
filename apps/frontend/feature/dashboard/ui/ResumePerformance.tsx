@@ -2,12 +2,12 @@ import { PanelPerformance } from "@/components/ui/custom/PanelPerformance"
 import arrowDownIcon from "@/public/perfomance/arrowdown1.svg"
 import arrowUpIcon from "@/public/perfomance/arrowup2.svg"
 import { formatCurrency, formatVariation } from "@/shared/lib/utils"
-import { useDashboardStore } from "@/stores/useDashboardStore"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
+import { useDashboardData } from "../../../stores/useDashboardStore"
 
 export const ResumePerformance = () => {
-    const { data } = useDashboardStore()
+    const { data } = useDashboardData()
     const t = useTranslations()
     if (!data) {
         return null

@@ -16,8 +16,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Resolver } from 'react-hook-form';
 import { useForm } from 'react-hook-form';
-import { authEndpoints } from '../../../../shared/lib/endpoints/auth';
-import { HTTP_STATUS_CODES } from '../../../../shared/lib/helpers';
 
 export const FormLogin = () => {
   const t = useTranslations('LoginPage');
@@ -36,17 +34,6 @@ export const FormLogin = () => {
     register,
     formState: { errors },
   } = form;
-
-  const handleRefreshToken = async () => {
-    const response = await authEndpoints.refreshToken('1234567890');
-    if (response.status !== HTTP_STATUS_CODES.OK)
-      throw new TypeError('Failed to refresh token');
-    const newTokens = response.data as {
-      accessToken: string;
-      exp: number;
-      refreshToken?: string;
-    };
-  };
 
   return (
     <div className="flex flex-col items-start bg-app-bg-dark h-max py-[50px] pl-7">
@@ -127,17 +114,6 @@ export const FormLogin = () => {
             variant="default"
           >
             {t('enter')}
-          </Button>
-          <Button
-            type="button"
-            onClick={() => {
-              handleRefreshToken();
-            }}
-            size="lg"
-            className="w-full xl:h-[3.25rem 2xl:h-17 rounded-[1.25rem] border-[.0794rem] text-button-solid! border-outline-solid xl:text-[1rem]! 2xl:text-[18px] xl:mt-4.5 2xl:mt-6"
-            variant="default"
-          >
-            {t('refreshToken')}
           </Button>
         </form>
       </div>

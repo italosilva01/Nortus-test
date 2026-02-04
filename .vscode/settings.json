@@ -31,6 +31,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "cursor.cpp.disabledLanguages": ["*"],
+  "github.copilot.enable": {
+    "*": false
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -70,7 +74,7 @@
   ],
   
   // Sugestões inline
-  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.enabled": false,
   
   // Auto save
   "files.autoSave": "afterDelay",

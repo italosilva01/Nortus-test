@@ -9,14 +9,10 @@ import {
   getTrendName,
 } from '@/shared/lib/utils';
 import { KpisTrend } from '@/shared/types/dashboard';
-import { useDashboardStore } from '@/stores/useDashboardStore';
+import { useDashboardData } from '@/stores/useDashboardStore';
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
 import { useMemo, useState } from 'react';
-
-const ReactApexChart = dynamic(() => import('react-apexcharts'), {
-  ssr: false,
-});
+import ReactApexChart from 'react-apexcharts';
 interface ChartSeries {
   name: string;
   data: number[];
@@ -29,8 +25,9 @@ interface ChartState {
 
 const GraphEvolution = () => {
   const [selectedKpi, setSelectedKpi] = useState<string>('arpu');
-  const { data } = useDashboardStore();
+  const {data} = useDashboardData();
   const kpisTrend = data?.kpisTrend;
+  
   const t = useTranslations();
   const handleKpiClick = (kpiValue: string) => {
     setSelectedKpi(kpiValue);
