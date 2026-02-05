@@ -49,6 +49,21 @@ apps/backend/
 └── .env.example
 ```
 
+## 🔐 Variáveis de ambiente
+
+As variáveis usadas pelo backend estão em `.env`. Copie o exemplo e preencha os valores:
+
+```bash
+cp .env.example .env
+```
+
+| Variável     | Obrigatório        | Descrição                           |
+| ------------ | ------------------ | ----------------------------------- |
+| `PORT`       | Não (default 3001) | Porta do servidor                   |
+| `JWT_SECRET` | Sim                | Chave para JWT (mín. 32 caracteres) |
+
+Opcionais: `JWT_EXPIRES_IN`, `JWT_REFRESH_EXPIRES_IN`. Documentação completa no [README do monorepo](../../README.md#-variáveis-de-ambiente).
+
 ## 📝 Próximos Passos
 
 1. Criar `src/server.ts` - Servidor Express
@@ -77,6 +92,3 @@ GET    /api/dashboard        - Dados do dashboard
 - [TypeScript Docs](https://www.typescriptlang.org/)
 - [Node.js Best Practices](https://github.com/goldbergyoni/nodebestpractices)
 - [REST API Design](https://restfulapi.net/)
-
-
-

@@ -268,34 +268,34 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2
 const MENU_ITEMS = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$dashboard$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$dashboard$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "dashboard",
-        href: "/"
+        label: 'dashboard',
+        href: '/'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$tickets$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$tickets$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "ticketsManagement",
-        href: "/ticketsManagement"
+        label: 'ticketsManagement',
+        href: '/ticketsManagement'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$message$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$message$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "reports",
-        href: "/reports"
+        label: 'reports',
+        href: '/reports'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$person$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$person$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "users",
-        href: "/chat"
+        label: 'users',
+        href: '/chat'
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$calcIcon$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$calcIcon$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: "calculator",
-        href: "/calculator"
+        label: 'calculator',
+        href: '/calculator'
     }
 ];
 const ROUTE_MAP = {
-    "/": "dashboard",
-    "/ticketsManagement": "ticketsManagement",
-    "/chat": "chat"
+    '/': 'dashboard',
+    '/ticketsManagement': 'ticketsManagement',
+    '/chat': 'chat'
 };
 const KPI_BUTTONS = [
     {
@@ -574,12 +574,27 @@ __turbopack_context__.s([
     ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$axios$40$1$2e$13$2e$2$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/axios@1.13.2/node_modules/axios/lib/axios.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$auth$40$5$2e$0$2e$0$2d$beta$2e$30_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2d$auth$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next-auth@5.0.0-beta.30_next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0__react@19.2.0/node_modules/next-auth/react.js [app-ssr] (ecmascript)");
+;
 ;
 const api = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$axios$40$1$2e$13$2e$2$2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].create({
-    baseURL: 'https://loomi.s3.us-east-1.amazonaws.com/mock-api-json/v2',
+    baseURL: ("TURBOPACK compile-time value", "http://localhost:3001/api") ?? "http://localhost:3001/api",
     headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json"
     }
+});
+api.interceptors.request.use(async (config)=>{
+    // Não adiciona token nas rotas de login e refresh-token
+    if (config.url?.includes("login") || config.url?.includes("refresh-token")) {
+        return config;
+    }
+    // No cliente, busca a sessão
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    return config;
+}, (error)=>{
+    console.error("[API Interceptor] Erro:", error);
+    return Promise.reject(error);
 });
 const __TURBOPACK__default__export__ = api;
 }),
@@ -593,30 +608,42 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/api.ts [app-ssr] (ecmascript)");
 ;
 const authEndpoints = {
-    login: async ()=>{
+    login: async (username, password)=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/login.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].post('/login', {
+                username,
+                password
+            });
         } catch  {
             throw new Error('Login request failed');
         }
     },
+    refreshToken: async (refreshToken)=>{
+        try {
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].post('/refresh-token', {
+                refreshToken
+            });
+        } catch (error) {
+            throw new Error('Refresh token request failed error: ' + error);
+        }
+    },
     getDashboardData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/dash.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
         } catch  {
             throw new Error('Dashboard data request failed');
         }
     },
     getCustomerMapData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/map.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/map');
         } catch  {
             throw new Error('Customer map data request failed');
         }
     },
     getTicketManagementData: async ()=>{
         try {
-            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/ticket-management.json');
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get('/tickets');
         } catch  {
             throw new Error('Ticket management data request failed');
         }
@@ -1077,13 +1104,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$layout$2f$Header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/components/layout/Header.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$layout$2f$Sidebar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/components/layout/Sidebar.tsx [app-ssr] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
 ;
 ;
 const authRoutes = [
-    "/login"
+    '/login'
 ];
 const DashboardLayoutWrapper = ({ children })=>{
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
@@ -1104,12 +1131,12 @@ const DashboardLayoutWrapper = ({ children })=>{
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$layout$2f$Header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Header"], {}, void 0, false, {
                 fileName: "[project]/apps/frontend/components/layout/DashboardLayoutWrapper.tsx",
                 lineNumber: 25,
-                columnNumber: 9
+                columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex flex-1 flex-col overflow-hidden mt-[5.5rem]",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                    className: "flex-1 overflow-y-auto mx-auto w-full max-w-[1370px]",
+                    className: "flex-1 overflow-y-auto mx-auto w-full max-w-[1370px] mt-[56px]",
                     children: [
                         children,
                         ";"

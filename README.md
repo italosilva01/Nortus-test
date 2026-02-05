@@ -16,6 +16,7 @@ nortus-dw/
 ## 🛠️ Tecnologias
 
 ### Frontend
+
 - **Next.js 16** - Framework React
 - **TypeScript** - Tipagem estática
 - **TailwindCSS** - Estilização
@@ -25,6 +26,7 @@ nortus-dw/
 - **Next-intl** - Internacionalização
 
 ### Backend
+
 - **Node.js** - Runtime JavaScript
 - **Express** - Framework web
 - **TypeScript** - Tipagem estática
@@ -33,6 +35,7 @@ nortus-dw/
 ## 🚀 Como Executar
 
 ### Pré-requisitos
+
 - Node.js >= 20.0.0
 - pnpm >= 9.0.0
 
@@ -75,6 +78,45 @@ pnpm build:backend
 pnpm start
 ```
 
+## 🔐 Variáveis de ambiente
+
+O projeto usa arquivos `.env` **por aplicação** (frontend e backend). Nunca commite arquivos `.env` com valores reais — use apenas os `.env.example` como modelo e mantenha `.env` no `.gitignore`.
+
+### Configuração inicial
+
+Copie os exemplos para criar seus arquivos locais:
+
+```bash
+cp apps/frontend/.env.example apps/frontend/.env
+cp apps/backend/.env.example apps/backend/.env
+```
+
+Depois edite cada `.env` e preencha os valores (em especial as secrets). Na raiz do projeto existe um [.env.example](.env.example) com a referência consolidada de todas as variáveis.
+
+### Frontend (`apps/frontend/.env`)
+
+| Variável              | Obrigatório | Descrição                                                                      |
+| --------------------- | ----------- | ------------------------------------------------------------------------------ |
+| `NEXTAUTH_SECRET`     | Sim         | Secret para NextAuth (mín. 32 caracteres). Gerar com `openssl rand -base64 32` |
+| `NEXTAUTH_URL`        | Sim         | URL do frontend (ex.: `http://localhost:3000`)                                 |
+| `NEXT_PUBLIC_API_URL` | Sim         | URL base da API do backend (ex.: `http://localhost:3001/api`)                  |
+
+Opcionais (no `.env.example` do frontend): `DATABASE_URL`, variáveis JWT (referência).
+
+### Backend (`apps/backend/.env`)
+
+| Variável     | Obrigatório        | Descrição                                                |
+| ------------ | ------------------ | -------------------------------------------------------- |
+| `PORT`       | Não (default 3001) | Porta do servidor                                        |
+| `JWT_SECRET` | Sim                | Chave para assinatura de tokens JWT (mín. 32 caracteres) |
+
+Opcionais: `JWT_EXPIRES_IN`, `JWT_REFRESH_EXPIRES_IN` (padrões no código: 15m e 7d).
+
+### Segurança
+
+- Não coloque valores reais de secrets no README nem em commits.
+- Confirme que `apps/frontend/.env` e `apps/backend/.env` estão listados no `.gitignore`.
+
 ## 📦 Workspaces
 
 O projeto usa **pnpm workspaces** para gerenciar o monorepo:
@@ -107,6 +149,7 @@ chore: manutenção
 ```
 
 Exemplos:
+
 ```bash
 git commit -m "feat(backend): adiciona endpoint de tickets"
 git commit -m "fix(frontend): corrige cálculo de variação"
