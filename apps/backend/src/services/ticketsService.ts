@@ -1,11 +1,11 @@
 import fs from "fs";
 import path from "path";
-import { v4 as uuidv4 } from "uuid";
 import ticketsRepository from "../repositories/ticketsRepository";
 
 class TicketsService {
   getTicketsData = async () => {
     const ticketsData = await ticketsRepository.getTicketsData();
+    console.log(ticketsData);
     return ticketsData;
   };
 
@@ -14,10 +14,10 @@ class TicketsService {
     email: string,
     priority: string,
     responsible: string,
-    subject: string
+    subject: string,
   ) => {
     const ticket = {
-      id: uuidv4() as string,
+      id: crypto.randomUUID(),
       client,
       email,
       priority,
@@ -29,7 +29,7 @@ class TicketsService {
 
     const ticketResponse = fs.readFileSync(
       path.join(__dirname, "..", "tickets.json"),
-      "utf8"
+      "utf8",
     );
     const ticketResponseData = JSON.parse(ticketResponse);
     const tickets = ticketResponseData.tickets;
