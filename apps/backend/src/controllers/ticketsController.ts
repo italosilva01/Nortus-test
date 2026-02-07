@@ -35,6 +35,24 @@ class TicketsController {
       return;
     }
   };
+  updateTicket = async (req: Request, res: Response): Promise<void> => {
+    try {
+      console.log("req", req);
+      const idTicket = req.params.id;
+      const bodyTicket = req.body;
+      if (!idTicket || !bodyTicket) {
+        res
+          .status(HTTP.BAD_REQUEST as number)
+          .json({ message: "missing some fields" });
+      }
+
+      const ticket = await ticketsService.updateTicket(idTicket, bodyTicket);
+      res.status(HTTP.OK as number).json(ticket);
+    } catch (error) {
+      res.status(HTTP.INTERNAL_SERVER_ERROR as number).json({ message: error });
+      return;
+    }
+  };
 }
 
 export default new TicketsController();

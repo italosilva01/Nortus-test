@@ -8,6 +8,15 @@ class TicketsRepository {
     const ticketsData = fs.readFileSync(filePath, "utf8");
     return JSON.parse(ticketsData);
   };
+  getTicketById = async (id: string) => {
+    const ticketsData = await this.getTicketsData();
+    const ticket = ticketsData.tickets.find((t: Ticket) => t.id === id);
+    if (!ticket) {
+      throw new Error("Ticket not found");
+    }
+    return ticket;
+  };
+  
   create = async (ticket: Ticket) => {
     const ticketsData = await this.getTicketsData();
     const ticketExists = ticketsData.tickets.find(

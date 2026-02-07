@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { Ticket } from "../models/ticket";
 import ticketsRepository from "../repositories/ticketsRepository";
 
 class TicketsService {
@@ -40,6 +41,17 @@ class TicketsService {
       await ticketsRepository.create(newTicketsFile);
     } catch (error) {
       throw new Error("error creating ticket");
+    }
+  };
+  updateTicket = async (id: string, ticket: Ticket) => {
+    try {
+      const ticketExists = await ticketsRepository.getTicketById(id);
+      if (!ticketExists) {
+        throw new Error("ticket not found");
+      }
+      await ticketsRepository.update(ticket);
+    } catch (error) {
+      throw new Error("error updating ticket");
     }
   };
 }

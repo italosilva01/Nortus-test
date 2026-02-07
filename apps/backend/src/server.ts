@@ -9,7 +9,14 @@ const app = express();
 const port = 3001;
 const secret = process.env.JWT_SECRET;
 
-app.use(cors());
+const corsOrigin = {
+  origin: "http://localhost:3000",
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOrigin));
 app.use(express.json());
 app.listen(port, () => {
   console.log("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
