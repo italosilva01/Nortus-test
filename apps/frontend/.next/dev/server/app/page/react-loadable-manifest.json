@@ -2,8 +2,8 @@
   "[project]/node_modules/.pnpm/react-apexcharts@1.8.0_apexcharts@5.3.6_react@19.2.0/node_modules/react-apexcharts/dist/react-apexcharts.min.js [app-client] (ecmascript, next/dynamic entry)": {
     "id": "[project]/node_modules/.pnpm/react-apexcharts@1.8.0_apexcharts@5.3.6_react@19.2.0/node_modules/react-apexcharts/dist/react-apexcharts.min.js [app-client] (ecmascript, next/dynamic entry)",
     "files": [
-      "static/chunks/217cb_react-apexcharts_dist_react-apexcharts_min_e1b0ca69.js",
-      "static/chunks/217cb_react-apexcharts_dist_react-apexcharts_min_bf483d3e.js"
+      "static/chunks/node_modules__pnpm_4ece3c2b._.js",
+      "static/chunks/217cb_react-apexcharts_dist_react-apexcharts_min_a32d4fdd.js"
     ]
   }
 }

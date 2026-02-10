@@ -19,7 +19,7 @@ __turbopack_context__.s([
     ()=>__TURBOPACK__default__export__
 ]);
 const axiosConfig = {
-    baseURL: ("TURBOPACK compile-time value", "http://localhost:3001/api/"),
+    baseURL: ("TURBOPACK compile-time value", "http://localhost:3001/api"),
     headers: {
         'Content-Type': 'application/json'
     }
@@ -115,12 +115,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/api.instance.ts [middleware-edge] (ecmascript)");
 ;
 const resourcesEndpoints = {
-    getDashboardData: async ()=>{
-        const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
-        return response.data;
-    },
-    getMapClientsData: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/map'),
-    getTicketManagementData: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get('/tickets')
+    getMapClientsData: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get("/map"),
+    getTicketManagementData: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"].get("/tickets")
 };
 }),
 "[project]/apps/frontend/shared/lib/endpoints/index.ts [middleware-edge] (ecmascript)", ((__turbopack_context__) => {

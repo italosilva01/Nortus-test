@@ -40,7 +40,10 @@
         "./app/*"
       ],
       "@types/*": [
-        "./types/*"
+        "./shared/types/*"
+      ],
+      "@sharedTypes/*": [
+        "./shared/types/*"
       ],
       "@utils/*": [
         "./utils/*"

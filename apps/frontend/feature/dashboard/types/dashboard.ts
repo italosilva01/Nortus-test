@@ -62,4 +62,3 @@ export interface DashboardFilters {
   secureType: string;
   location: string;
 }
-
