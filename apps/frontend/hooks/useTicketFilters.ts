@@ -1,16 +1,16 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState } from "react";
 
-import { Ticket } from '@/shared/types/ticketManagement';
+import { Ticket } from "@/feature/ticketMenagement/types/ticketManagement";
 
 interface UseTicketFiltersProps {
   tickets?: Ticket[];
 }
 
 export const useTicketFilters = ({ tickets }: UseTicketFiltersProps) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [selectedPriority, setSelectedPriority] = useState('');
-  const [selectedStatus, setSelectedStatus] = useState('');
-  const [selectedResponsible, setSelectedResponsible] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedPriority, setSelectedPriority] = useState("");
+  const [selectedStatus, setSelectedStatus] = useState("");
+  const [selectedResponsible, setSelectedResponsible] = useState("");
 
   const filteredTickets = useMemo(() => {
     if (!tickets) return [];
@@ -21,23 +21,33 @@ export const useTicketFilters = ({ tickets }: UseTicketFiltersProps) => {
         ticket.client.toLowerCase().includes(searchTerm.toLowerCase()) ||
         ticket.email.toLowerCase().includes(searchTerm.toLowerCase());
 
-      const matchesPriority = !selectedPriority || ticket.priority === selectedPriority;
+      const matchesPriority =
+        !selectedPriority || ticket.priority === selectedPriority;
       const matchesStatus = !selectedStatus || ticket.status === selectedStatus;
-      const matchesResponsible = !selectedResponsible || ticket.responsible === selectedResponsible;
+      const matchesResponsible =
+        !selectedResponsible || ticket.responsible === selectedResponsible;
 
-      return matchesSearch && matchesPriority && matchesStatus && matchesResponsible;
+      return (
+        matchesSearch && matchesPriority && matchesStatus && matchesResponsible
+      );
     });
-  }, [tickets, searchTerm, selectedPriority, selectedStatus, selectedResponsible]);
+  }, [
+    tickets,
+    searchTerm,
+    selectedPriority,
+    selectedStatus,
+    selectedResponsible,
+  ]);
 
   const resetFilters = () => {
-    setSearchTerm('');
-    setSelectedPriority('');
-    setSelectedStatus('');
-    setSelectedResponsible('');
+    setSearchTerm("");
+    setSelectedPriority("");
+    setSelectedStatus("");
+    setSelectedResponsible("");
   };
 
   const hasActiveFilters = Boolean(
-    searchTerm || selectedPriority || selectedStatus || selectedResponsible
+    searchTerm || selectedPriority || selectedStatus || selectedResponsible,
   );
 
   return {
@@ -55,4 +65,3 @@ export const useTicketFilters = ({ tickets }: UseTicketFiltersProps) => {
     resetFilters,
   };
 };
-

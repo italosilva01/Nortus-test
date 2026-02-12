@@ -1,19 +1,16 @@
-import { endpoints } from "@/shared/lib/endpoints";
-import { HTTP_STATUS_CODES } from "@/shared/lib/helpers";
+import {
+  Ticket,
+  TicketManagementData,
+} from "@/feature/ticketMenagement/types/ticketManagement";
 import { convertTicketPrioritiesAndStatus } from "@/shared/lib/utils";
-import { Ticket, TicketManagementData } from "@/shared/types/ticketManagement";
 import { create } from "zustand";
 
 interface TicketManagementStore {
   data: TicketManagementData | null;
-  isLoading: boolean;
-  error: string | null;
   isOpenModalCreateTicket: boolean;
   openCreateTicketModal: () => void;
   closeCreateTicketModal: () => void;
   setDataTicketManagement: (data: TicketManagementData) => void;
-  setLoading: (loading: boolean) => void;
-  fetchTicketManagementData: () => Promise<void>;
   getUniqueResponsibles: () => string[];
   addTicket: (newTicket: Ticket) => void;
   updateTicket: (updatedTicket: Ticket) => void;
@@ -22,49 +19,17 @@ interface TicketManagementStore {
 export const useTicketManagementStore = create<TicketManagementStore>(
   (set, get) => ({
     data: null,
-    isLoading: false,
-    error: null,
     isOpenModalCreateTicket: false,
     openCreateTicketModal: () => set({ isOpenModalCreateTicket: true }),
     closeCreateTicketModal: () => set({ isOpenModalCreateTicket: false }),
-    setDataTicketManagement: (data) => set({ data, error: null }),
-    setLoading: (isLoading) => set({ isLoading }),
-    // TODO: Fazer refatoração para usar o useQuery do react-query
-    fetchTicketManagementData: async () => {
-      set({ isLoading: true, error: null });
-      try {
-        const response = await endpoints.auth.getTicketManagementData();
-        if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
-          const responseData = response.data as TicketManagementData;
-          const convertedTickets = convertTicketPrioritiesAndStatus(
-            responseData.tickets,
-          );
-
-          set({
-            data: {
-              ...responseData,
-              tickets: convertedTickets,
-            },
-            isLoading: false,
-          });
-        } else {
-          set({
-            error: "Falha ao buscar dados de gerenciamento de tickets",
-            isLoading: false,
-          });
-        }
-      } catch (error) {
-        const errorMessage =
-          error instanceof Error ? error.message : "Erro desconhecido";
-        set({ error: errorMessage, isLoading: false });
-      }
-    },
+    setDataTicketManagement: (data) => set({ data }),
 
     getUniqueResponsibles: () => {
       const tickets = get().data?.tickets;
       if (!tickets) return [];
       return [...new Set(tickets.map((ticket: Ticket) => ticket.responsible))];
     },
+    // TODO: Fazer refatoração para usar react-query
 
     addTicket: (newTicket: Ticket) => {
       const currentTickets = get().data?.tickets ?? [];
