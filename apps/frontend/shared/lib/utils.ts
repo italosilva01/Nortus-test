@@ -31,15 +31,7 @@ export const formatVariation = (variation: number, t: (key: string) => string) =
   return `${sign}${variation}% ${t("DashboardPage.kpis.variation")}`;
 };
 
-export function mapPriorityToTagVariant(priority: string): 'medium' | 'low' | 'urgent' | 'default' {
-  const mapping: Record<string, 'medium' | 'low' | 'urgent' | 'default'> = {
-    'Média': 'medium',
-    'Baixa': 'low',
-    'Urgente': 'urgent',
-    'Alta': 'urgent',
-  };
-  return mapping[priority] || 'default';
-}
+
 
 export function mapStatusToTagVariant(status: string): 'open' | 'inProgress' | 'solved' | 'default' {
   const mapping: Record<string, 'open' | 'inProgress' | 'solved' | 'default'> = {

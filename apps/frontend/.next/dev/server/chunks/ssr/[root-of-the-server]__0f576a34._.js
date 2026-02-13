@@ -67,19 +67,11 @@ __turbopack_context__.s([
     ()=>formatNumberWithK,
     "formatVariation",
     ()=>formatVariation,
-    "getTrendData",
-    ()=>getTrendData,
-    "getTrendName",
-    ()=>getTrendName,
-    "mapPriorityToTagVariant",
-    ()=>mapPriorityToTagVariant,
     "mapStatusToTagVariant",
     ()=>mapStatusToTagVariant
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$clsx$40$2$2e$1$2e$1$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$tailwind$2d$merge$40$3$2e$4$2e$0$2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/tailwind-merge@3.4.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$helpers$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/helpers.ts [app-rsc] (ecmascript)");
-;
 ;
 ;
 function cn(...inputs) {
@@ -109,29 +101,6 @@ const formatVariation = (variation, t)=>{
     const sign = variation > 0 ? '+' : '';
     return `${sign}${variation}% ${t("DashboardPage.kpis.variation")}`;
 };
-const getTrendData = (kpisTrend, selectedKpi)=>{
-    if (!kpisTrend) return [];
-    const trendMap = {
-        retention: kpisTrend.retentionTrend?.data,
-        conversion: kpisTrend.conversionTrend?.data,
-        churn: kpisTrend.churnTrend?.data,
-        arpu: kpisTrend.arpuTrend?.data
-    };
-    return trendMap[selectedKpi] || [];
-};
-const getTrendName = (selectedKpi)=>{
-    const kpiLabel = __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$helpers$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["KPI_BUTTONS"].find((kpi)=>kpi.value === selectedKpi)?.label;
-    return kpiLabel || 'KPI';
-};
-function mapPriorityToTagVariant(priority) {
-    const mapping = {
-        'Média': 'medium',
-        'Baixa': 'low',
-        'Urgente': 'urgent',
-        'Alta': 'urgent'
-    };
-    return mapping[priority] || 'default';
-}
 function mapStatusToTagVariant(status) {
     const mapping = {
         'Aberto': 'open',

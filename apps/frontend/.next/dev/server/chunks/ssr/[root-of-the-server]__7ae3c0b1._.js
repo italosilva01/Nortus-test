@@ -175,12 +175,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/api.instance.ts [app-rsc] (ecmascript)");
 ;
 const resourcesEndpoints = {
-    getDashboardData: async ()=>{
-        const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].get('/dashboard');
-        return response.data;
-    },
-    getMapClientsData: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].get('/map'),
-    getTicketManagementData: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].get('/tickets')
+    getMapClientsData: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].get("/map"),
+    getTicketManagementData: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].get("/tickets")
 };
 }),
 "[project]/apps/frontend/shared/lib/endpoints/index.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
@@ -417,55 +413,55 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2
 const MENU_ITEMS = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$dashboard$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$dashboard$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: 'dashboard',
-        href: '/'
+        label: "dashboard",
+        href: "/"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$tickets$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$tickets$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: 'ticketsManagement',
-        href: '/ticketsManagement'
+        label: "ticketsManagement",
+        href: "/ticketsManagement"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$message$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$message$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: 'reports',
-        href: '/reports'
+        label: "reports",
+        href: "/reports"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$person$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$person$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: 'users',
-        href: '/chat'
+        label: "users",
+        href: "/chat"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$calcIcon$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$sideBar$2f$calcIcon$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
-        label: 'calculator',
-        href: '/calculator'
+        label: "calculator",
+        href: "/calculator"
     }
 ];
 const ROUTE_MAP = {
-    '/': 'dashboard',
-    '/ticketsManagement': 'ticketsManagement',
-    '/chat': 'chat'
+    "/": "dashboard",
+    "/ticketsManagement": "ticketsManagement",
+    "/chat": "chat"
 };
 const KPI_BUTTONS = [
     {
-        id: 'retention',
-        label: 'Retenção',
-        value: 'retention'
+        id: "retention",
+        label: "Retenção",
+        value: "retention"
     },
     {
-        id: 'conversion',
-        label: 'Conversão',
-        value: 'conversion'
+        id: "conversion",
+        label: "Conversão",
+        value: "conversion"
     },
     {
-        id: 'churn',
-        label: 'Churn',
-        value: 'churn'
+        id: "churn",
+        label: "Churn",
+        value: "churn"
     },
     {
-        id: 'arpu',
-        label: 'ARPU',
-        value: 'arpu'
+        id: "arpu",
+        label: "ARPU",
+        value: "arpu"
     }
 ];
 const HTTP_STATUS_CODES = {
@@ -479,27 +475,27 @@ const HTTP_STATUS_CODES = {
     INTERNAL_SERVER_ERROR: 500
 };
 const MAP_SEGMENTS_COLORS = {
-    primary: '#006EF9',
-    light: '#77DFFD',
-    medium: '#0E81A5',
-    dark: '#00449A',
-    accent: '#53A9F9'
+    primary: "#006EF9",
+    light: "#77DFFD",
+    medium: "#0E81A5",
+    dark: "#00449A",
+    accent: "#53A9F9"
 };
 const PANELS_MAP = [
     {
-        key: 'open',
+        key: "open",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$ticketManegement$2f$ticketOpenIcon$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$ticketManegement$2f$ticketOpenIcon$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
-        key: 'inProgress',
+        key: "inProgress",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$ticketManegement$2f$inProgress$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$ticketManegement$2f$inProgress$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
-        key: 'solved',
+        key: "solved",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$ticketManegement$2f$doneTodayIcon$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$ticketManegement$2f$doneTodayIcon$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     },
     {
-        key: 'timeAverageHours',
+        key: "timeAverageHours",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$ticketManegement$2f$timeMedian$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$icons$2f$ticketManegement$2f$timeMedian$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"]
     }
 ];

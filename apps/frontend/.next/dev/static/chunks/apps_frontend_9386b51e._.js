@@ -55,8 +55,6 @@ __turbopack_context__.s([
     ()=>formatNumberWithK,
     "formatVariation",
     ()=>formatVariation,
-    "mapPriorityToTagVariant",
-    ()=>mapPriorityToTagVariant,
     "mapStatusToTagVariant",
     ()=>mapStatusToTagVariant
 ]);
@@ -91,15 +89,6 @@ const formatVariation = (variation, t)=>{
     const sign = variation > 0 ? '+' : '';
     return `${sign}${variation}% ${t("DashboardPage.kpis.variation")}`;
 };
-function mapPriorityToTagVariant(priority) {
-    const mapping = {
-        'Média': 'medium',
-        'Baixa': 'low',
-        'Urgente': 'urgent',
-        'Alta': 'urgent'
-    };
-    return mapping[priority] || 'default';
-}
 function mapStatusToTagVariant(status) {
     const mapping = {
         'Aberto': 'open',
@@ -499,9 +488,7 @@ __turbopack_context__.s([
     "useTicketManagementStore",
     ()=>useTicketManagementStore
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/shared/lib/utils.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$zustand$40$5$2e$0$2e$8_$40$types$2b$react$40$19$2e$2$2e$4_react$40$19$2e$2$2e$0_use$2d$sync$2d$external$2d$store$40$1$2e$6$2e$0_react$40$19$2e$2$2e$0_$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/zustand@5.0.8_@types+react@19.2.4_react@19.2.0_use-sync-external-store@1.6.0_react@19.2.0_/node_modules/zustand/esm/react.mjs [app-client] (ecmascript)");
-;
 ;
 const useTicketManagementStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$zustand$40$5$2e$0$2e$8_$40$types$2b$react$40$19$2e$2$2e$4_react$40$19$2e$2$2e$0_use$2d$sync$2d$external$2d$store$40$1$2e$6$2e$0_react$40$19$2e$2$2e$0_$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])((set, get)=>({
         data: null,
@@ -521,36 +508,6 @@ const useTicketManagementStore = (0, __TURBOPACK__imported__module__$5b$project$
             return [
                 ...new Set(tickets.map((ticket)=>ticket.responsible))
             ];
-        },
-        // TODO: Fazer refatoração para usar react-query
-        addTicket: (newTicket)=>{
-            const currentTickets = get().data?.tickets ?? [];
-            const convertedTicket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertTicketPrioritiesAndStatus"])([
-                newTicket
-            ])[0];
-            const updatedTickets = [
-                convertedTicket,
-                ...currentTickets
-            ];
-            set((state)=>({
-                    data: state.data ? {
-                        ...state.data,
-                        tickets: updatedTickets
-                    } : null
-                }));
-        },
-        updateTicket: (updatedTicket)=>{
-            const currentTickets = get().data?.tickets ?? [];
-            const updatedTickets = currentTickets.map((ticket)=>ticket.id === updatedTicket.id ? {
-                    ...updatedTicket
-                } : ticket);
-            const convertedTickets = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertTicketPrioritiesAndStatus"])(updatedTickets);
-            set((state)=>({
-                    data: state.data ? {
-                        ...state.data,
-                        tickets: convertedTickets
-                    } : null
-                }));
         }
     }));
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {

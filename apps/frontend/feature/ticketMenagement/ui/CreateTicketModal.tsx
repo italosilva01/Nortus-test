@@ -7,6 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { useTicketManagementData } from "@/feature/ticketMenagement/queries/useTicketMenagementData";
 import { useTicketManagementStore } from "@/feature/ticketMenagement/stories/useTicketManagementStore";
 import FormCreateTicket from "@/feature/ticketMenagement/ui/FormCreateTicket";
 import { useTranslations } from "next-intl";
@@ -15,8 +16,9 @@ import { toast } from "sonner";
 import { v4 as uuidv4 } from "uuid";
 const CreateTicketModal = () => {
   const t = useTranslations("TicketsManagementPage");
-  const { isOpenModalCreateTicket, closeCreateTicketModal, addTicket } =
+  const { isOpenModalCreateTicket, closeCreateTicketModal } =
     useTicketManagementStore();
+  const { createTicketMutation } = useTicketManagementData();
 
   const handleOpenChange = (open: boolean) => {
     if (!open) {
@@ -24,8 +26,9 @@ const CreateTicketModal = () => {
     }
   };
 
-  const handleSubmit = (data: FieldValues) => {
-    addTicket({
+  const handleSubmit = async (data: FieldValues) => {
+    const newTicketBody = {
+      // TODO: when add BD, remove uuidv4() as string
       id: uuidv4() as string,
       status: "Aberto",
       client: data.nameClient,
@@ -34,10 +37,19 @@ const CreateTicketModal = () => {
       responsible: data.responsible,
       subject: data.subject,
       createdAt: new Date().toLocaleDateString("pt-BR"),
-    });
+    };
 
-    toast.success(t("createTicket.success"));
-    closeCreateTicketModal();
+    createTicketMutation.mutate(newTicketBody, {
+      onSuccess: () => {
+        toast.success(t("createTicket.success"));
+      },
+      onError: () => {
+        toast.error(t("createTicket.error"));
+      },
+      onSettled: () => {
+        closeCreateTicketModal();
+      },
+    });
   };
 
   return (

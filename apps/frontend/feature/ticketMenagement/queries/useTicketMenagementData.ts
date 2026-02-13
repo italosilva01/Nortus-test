@@ -1,18 +1,74 @@
 import axiosInstance from "@lib/api.instance";
-import { useQuery } from "@tanstack/react-query";
-import { TicketManagementData } from "../types/ticketManagement";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import { toast } from "sonner";
+import { mapStatusToTagVariant } from "../../../shared/lib/utils";
+import { mapPriorityToTagVariant } from "../helpers";
+import { Ticket, TicketManagementData } from "../types/ticketManagement";
 import { ticketsManagementKeys } from "./keys";
 
 const getTicketManagementData = async (): Promise<TicketManagementData> => {
   const response = await axiosInstance.get<TicketManagementData>("/tickets");
+  if (response.data && Array.isArray(response.data.tickets)) {
+    response.data.tickets = response.data.tickets.map((ticket) => ({
+      ...ticket,
+      priority: mapPriorityToTagVariant(ticket.priority),
+      status: mapStatusToTagVariant(ticket.status),
+    }));
+  }
   return response.data;
 };
 
+const createTicket = async (newTicket: Ticket): Promise<Ticket> => {
+  const response = await axiosInstance.post<Ticket>("/tickets", newTicket);
+  return response.data;
+};
+
+const updateTicket = async (ticket: Ticket): Promise<Ticket> => {
+  const response = await axiosInstance.put<Ticket>(
+    `/tickets/${ticket.id}`,
+    ticket,
+  );
+  return response.data;
+};
+
+const deleteTicket = async (id: string): Promise<void> => {
+  await axiosInstance.delete(`/tickets/${id}`);
+};
+
 export const useTicketManagementData = () => {
+  // TODO: add select option to the query to get specify scope of data
   const { data, isPending, error } = useQuery({
     queryKey: ticketsManagementKeys.allTickets,
     queryFn: getTicketManagementData,
   });
 
-  return { data, isPending, error };
+  const updateTicketMutation = useMutation({
+    mutationFn: updateTicket,
+    onSuccess: () => {
+      toast.success("Ticket updated successfully");
+    },
+  });
+
+  const createTicketMutation = useMutation({
+    mutationFn: createTicket,
+    onSuccess: () => {
+      toast.success("Ticket created successfully");
+    },
+  });
+
+  const deleteTicketMutation = useMutation({
+    mutationFn: deleteTicket,
+    onSuccess: () => {
+      toast.success("Ticket deleted successfully");
+    },
+  });
+
+  return {
+    data,
+    isPending,
+    error,
+    updateTicketMutation,
+    createTicketMutation,
+    deleteTicketMutation,
+  };
 };
