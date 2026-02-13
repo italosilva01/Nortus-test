@@ -35,11 +35,13 @@ const deleteTicket = async (id: string): Promise<void> => {
   await axiosInstance.delete(`/tickets/${id}`);
 };
 
-export const useTicketManagementData = () => {
-  // TODO: add select option to the query to get specify scope of data
+export const useTicketManagementData = (
+  select?: (data: TicketManagementData) => TicketManagementData,
+) => {
   const { data, isPending, error } = useQuery({
     queryKey: ticketsManagementKeys.allTickets,
     queryFn: getTicketManagementData,
+    select,
   });
 
   const updateTicketMutation = useMutation({

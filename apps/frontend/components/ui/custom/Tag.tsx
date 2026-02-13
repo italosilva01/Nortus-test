@@ -1,15 +1,10 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 
-export type TagVariants =
-  | "medium"
-  | "low"
-  | "open"
-  | "inProgress"
-  | "solved"
-  | "urgent"
-  | "secondary"
-  | "default";
+type PriorityVariants = "medium" | "low" | "urgent" | "default";
+type StatusVariants = "open" | "inProgress" | "solved" | "default";
+
+type TagVariants = PriorityVariants | StatusVariants;
 
 interface TagProps extends React.HTMLAttributes<HTMLSpanElement> {
   variant: TagVariants;
@@ -26,7 +21,6 @@ const TagVariantsClasses: Record<
   inProgress: { classname: "bg-app-accent truncate", name: "inProgress" },
   solved: { classname: "bg-app-accent", name: "solved" },
   urgent: { classname: "bg-red-500 text-white", name: "urgent" },
-  secondary: { classname: "bg-app-accent", name: "secondary" },
   default: { classname: "bg-muted", name: "default" },
 };
 

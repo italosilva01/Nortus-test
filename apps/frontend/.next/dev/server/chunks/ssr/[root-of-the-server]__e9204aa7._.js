@@ -205,11 +205,12 @@ const updateTicket = async (ticket)=>{
 const deleteTicket = async (id)=>{
     await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].delete(`/tickets/${id}`);
 };
-const useTicketManagementData = ()=>{
+const useTicketManagementData = (select)=>{
     // TODO: add select option to the query to get specify scope of data
     const { data, isPending, error } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tanstack$2b$react$2d$query$40$5$2e$90$2e$20_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useQuery"])({
         queryKey: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$ticketMenagement$2f$queries$2f$keys$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ticketsManagementKeys"].allTickets,
-        queryFn: getTicketManagementData
+        queryFn: getTicketManagementData,
+        select
     });
     const updateTicketMutation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tanstack$2b$react$2d$query$40$5$2e$90$2e$20_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useMutation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMutation"])({
         mutationFn: updateTicket,
@@ -1916,10 +1917,6 @@ const TagVariantsClasses = {
         classname: "bg-red-500 text-white",
         name: "urgent"
     },
-    secondary: {
-        classname: "bg-app-accent",
-        name: "secondary"
-    },
     default: {
         classname: "bg-muted",
         name: "default"
@@ -1938,7 +1935,7 @@ const Tag = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_m
         children: t(variantName)
     }, void 0, false, {
         fileName: "[project]/apps/frontend/components/ui/custom/Tag.tsx",
-        lineNumber: 40,
+        lineNumber: 34,
         columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
@@ -2197,61 +2194,11 @@ const TableTickets = ({ tickets })=>{
 };
 const __TURBOPACK__default__export__ = TableTickets;
 }),
-"[project]/apps/frontend/feature/ticketMenagement/ui/ListTickets.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
+"[project]/apps/frontend/feature/ticketMenagement/ui/ListTickets.tsx [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-__turbopack_context__.s([
-    "default",
-    ()=>__TURBOPACK__default__export__
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$intl$40$4$2e$5$2e$2_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19_d1892fe332521af2ba7b5b9f43adf8de$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next-intl@4.5.2_next@16.0.10_@babel+core@7.28.5_react-dom@19.2.0_react@19.2.0__react@19_d1892fe332521af2ba7b5b9f43adf8de/node_modules/next-intl/dist/esm/development/react-client/index.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$custom$2f$PanelBig$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/components/ui/custom/PanelBig.tsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$ticketMenagement$2f$queries$2f$useTicketMenagementData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/feature/ticketMenagement/queries/useTicketMenagementData.ts [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$ticketMenagement$2f$ui$2f$TableTickets$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/frontend/feature/ticketMenagement/ui/TableTickets.tsx [app-ssr] (ecmascript)");
-"use client";
-;
-;
-;
-;
-;
-const ListTickets = ()=>{
-    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$intl$40$4$2e$5$2e$2_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19_d1892fe332521af2ba7b5b9f43adf8de$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTranslations"])("TicketsManagementPage");
-    //const tickets = useTicketManagementStore((state) => state.data?.tickets);
-    const { data: tickets } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$ticketMenagement$2f$queries$2f$useTicketMenagementData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useTicketManagementData"])();
-    console.log("tickets", tickets);
-    {
-    /* 
-  const {
-   searchTerm,
-   setSearchTerm,
-   selectedPriority,
-   setSelectedPriority,
-   selectedStatus,
-   setSelectedStatus,
-   selectedResponsible,
-   setSelectedResponsible,
-   filteredTickets,
-  } = useTicketFilters({ tickets: tickets ?? undefined });
-*/ }
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$custom$2f$PanelBig$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PanelBig"], {
-        title: t("listTickets.title"),
-        className: "size-full max-w-full xl:max-w-full 2xl:max-w-full flex flex-col gap-4",
-        contentClassName: "flex flex-col gap-4",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$ticketMenagement$2f$ui$2f$TableTickets$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-            tickets: tickets?.tickets ?? []
-        }, void 0, false, {
-            fileName: "[project]/apps/frontend/feature/ticketMenagement/ui/ListTickets.tsx",
-            lineNumber: 46,
-            columnNumber: 7
-        }, ("TURBOPACK compile-time value", void 0))
-    }, void 0, false, {
-        fileName: "[project]/apps/frontend/feature/ticketMenagement/ui/ListTickets.tsx",
-        lineNumber: 30,
-        columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
-};
-const __TURBOPACK__default__export__ = ListTickets;
+const e = new Error("Could not parse module '[project]/apps/frontend/feature/ticketMenagement/ui/ListTickets.tsx'\n\nExpression expected");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
 }),
 "[project]/apps/frontend/feature/ticketMenagement/ui/PanelTotal.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";

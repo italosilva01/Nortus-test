@@ -4,11 +4,9 @@ import { useTranslations } from "next-intl";
 import { Combobox } from "@/components/ui/combobox";
 import { Input } from "@/components/ui/input";
 import { useTicketManagementStore } from "@/feature/ticketMenagement/stories/useTicketManagementStore";
-import {
-  mapPriorityToTagVariant,
-  mapStatusToTagVariant,
-} from "@/shared/lib/utils";
+import { mapStatusToTagVariant } from "@/shared/lib/utils";
 import { useMemo } from "react";
+import { mapPriorityToTagVariant } from "../helpers";
 
 interface FiltersTicketsProps {
   searchTerm: string;
