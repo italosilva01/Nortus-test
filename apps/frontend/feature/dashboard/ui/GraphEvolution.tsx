@@ -29,8 +29,7 @@ interface ChartState {
 
 const GraphEvolution = () => {
   const [selectedKpi, setSelectedKpi] = useState<string>("arpu");
-  const { data } = useDashboardData();
-  const kpisTrend = data?.kpisTrend;
+  const { data: kpisTrend } = useDashboardData((data) => data.kpisTrend);
 
   const t = useTranslations();
   const handleKpiClick = (kpiValue: string) => {

@@ -119,11 +119,12 @@ const getDashboardData = async ()=>{
     const response = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$api$2e$instance$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get("/dashboard");
     return response.data;
 };
-const useDashboardData = ()=>{
+const useDashboardData = (select)=>{
     _s();
     const { data, isPending, error } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tanstack$2b$react$2d$query$40$5$2e$90$2e$20_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"])({
         queryKey: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$dashboard$2f$queries$2f$keys$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["dashboardDataKey"].all,
-        queryFn: getDashboardData
+        queryFn: getDashboardData,
+        select
     });
     return {
         data,
@@ -858,8 +859,9 @@ _c = ReactApexChart;
 const GraphEvolution = ()=>{
     _s();
     const [selectedKpi, setSelectedKpi] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("arpu");
-    const { data } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$dashboard$2f$queries$2f$useDataboardData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDashboardData"])();
-    const kpisTrend = data?.kpisTrend;
+    const { data: kpisTrend } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$dashboard$2f$queries$2f$useDataboardData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDashboardData"])({
+        "GraphEvolution.useDashboardData": (data)=>data.kpisTrend
+    }["GraphEvolution.useDashboardData"]);
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$intl$40$4$2e$5$2e$2_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19_d1892fe332521af2ba7b5b9f43adf8de$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
     const handleKpiClick = (kpiValue)=>{
         setSelectedKpi(kpiValue);
@@ -936,7 +938,7 @@ const GraphEvolution = ()=>{
             onKpiClick: handleKpiClick
         }, void 0, false, {
             fileName: "[project]/apps/frontend/feature/dashboard/ui/GraphEvolution.tsx",
-            lineNumber: 103,
+            lineNumber: 102,
             columnNumber: 9
         }, void 0),
         className: "max-h-[376px]",
@@ -952,12 +954,12 @@ const GraphEvolution = ()=>{
                     children: "Carregando dados..."
                 }, void 0, false, {
                     fileName: "[project]/apps/frontend/feature/dashboard/ui/GraphEvolution.tsx",
-                    lineNumber: 116,
+                    lineNumber: 115,
                     columnNumber: 13
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/feature/dashboard/ui/GraphEvolution.tsx",
-                lineNumber: 115,
+                lineNumber: 114,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full  h-full border border-red-500 relative",
@@ -969,26 +971,26 @@ const GraphEvolution = ()=>{
                     width: "100%"
                 }, void 0, false, {
                     fileName: "[project]/apps/frontend/feature/dashboard/ui/GraphEvolution.tsx",
-                    lineNumber: 126,
+                    lineNumber: 125,
                     columnNumber: 13
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/feature/dashboard/ui/GraphEvolution.tsx",
-                lineNumber: 125,
+                lineNumber: 124,
                 columnNumber: 11
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/apps/frontend/feature/dashboard/ui/GraphEvolution.tsx",
-            lineNumber: 110,
+            lineNumber: 109,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/apps/frontend/feature/dashboard/ui/GraphEvolution.tsx",
-        lineNumber: 100,
+        lineNumber: 99,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(GraphEvolution, "nOa49uVR5ChprJessbWhWWLK/38=", false, function() {
+_s(GraphEvolution, "yY8/53+IK6NEcQN47/KQ2uFApS8=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$dashboard$2f$queries$2f$useDataboardData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDashboardData"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$intl$40$4$2e$5$2e$2_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19_d1892fe332521af2ba7b5b9f43adf8de$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
@@ -1434,19 +1436,18 @@ var _s = __turbopack_context__.k.signature();
 ;
 const ResumePerformance = ()=>{
     _s();
-    const { data } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$dashboard$2f$queries$2f$useDataboardData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDashboardData"])();
+    const { data: kpisResume } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$dashboard$2f$queries$2f$useDataboardData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDashboardData"])({
+        "ResumePerformance.useDashboardData": (data)=>data.kpisResume
+    }["ResumePerformance.useDashboardData"]);
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$intl$40$4$2e$5$2e$2_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19_d1892fe332521af2ba7b5b9f43adf8de$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])();
-    if (!data) {
-        return null;
-    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "grid grid-cols-2 grid-rows-2 gap-6 w-full xl:w-max h-min",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$custom$2f$PanelPerformance$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PanelPerformance"], {
                 title: t("DashboardPage.kpis.arpu"),
-                value: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCurrency"])(data.kpisResume.arpu.valor),
-                diffLastMonth: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatVariation"])(data.kpisResume.arpu.variacao, t),
-                positive: data.kpisResume.arpu.valor > 0,
+                value: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCurrency"])(kpisResume?.arpu?.valor ?? 0),
+                diffLastMonth: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatVariation"])(kpisResume?.arpu?.variacao ?? 0, t),
+                positive: (kpisResume?.arpu?.valor ?? 0) > 0,
                 iconChildren: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$perfomance$2f$arrowup2$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$perfomance$2f$arrowup2$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
                     alt: "arrow up icon",
@@ -1454,39 +1455,39 @@ const ResumePerformance = ()=>{
                     height: 68
                 }, void 0, false, {
                     fileName: "[project]/apps/frontend/feature/dashboard/ui/ResumePerformance.tsx",
-                    lineNumber: 23,
+                    lineNumber: 21,
                     columnNumber: 11
                 }, void 0)
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/feature/dashboard/ui/ResumePerformance.tsx",
-                lineNumber: 17,
+                lineNumber: 15,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$custom$2f$PanelPerformance$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PanelPerformance"], {
                 title: t("DashboardPage.kpis.conversion"),
-                value: `${data.kpisResume.conversion.valor}%`,
-                diffLastMonth: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatVariation"])(data.kpisResume.conversion.variacao, t),
-                positive: data.kpisResume.conversion.valor > 0
+                value: `${kpisResume?.conversion?.valor ?? 0}%`,
+                diffLastMonth: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatVariation"])(kpisResume?.conversion?.variacao ?? 0, t),
+                positive: (kpisResume?.conversion?.valor ?? 0) > 0
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/feature/dashboard/ui/ResumePerformance.tsx",
-                lineNumber: 26,
+                lineNumber: 24,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$custom$2f$PanelPerformance$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PanelPerformance"], {
                 title: t("DashboardPage.kpis.retention"),
-                value: `${data.kpisResume.retention.valor}%`,
-                diffLastMonth: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatVariation"])(data.kpisResume.retention.variacao, t),
-                positive: data.kpisResume.retention.valor > 0
+                value: `${kpisResume?.retention?.valor ?? 0}%`,
+                diffLastMonth: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatVariation"])(kpisResume?.retention?.variacao ?? 0, t),
+                positive: (kpisResume?.retention?.valor ?? 0) > 0
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/feature/dashboard/ui/ResumePerformance.tsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$components$2f$ui$2f$custom$2f$PanelPerformance$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PanelPerformance"], {
                 title: t("DashboardPage.kpis.churn"),
-                value: `${data.kpisResume.churn.valor}%`,
-                diffLastMonth: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatVariation"])(data.kpisResume.churn.variacao, t),
-                positive: data.kpisResume.churn.valor < 0,
+                value: `${kpisResume?.churn?.valor ?? 0}%`,
+                diffLastMonth: (0, __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatVariation"])(kpisResume?.churn?.variacao ?? 0, t),
+                positive: (kpisResume?.churn?.valor ?? 0) < 0,
                 iconChildren: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$public$2f$perfomance$2f$arrowdown1$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$apps$2f$frontend$2f$public$2f$perfomance$2f$arrowdown1$2e$svg__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
                     alt: "arrow down icon",
@@ -1494,23 +1495,23 @@ const ResumePerformance = ()=>{
                     height: 83
                 }, void 0, false, {
                     fileName: "[project]/apps/frontend/feature/dashboard/ui/ResumePerformance.tsx",
-                    lineNumber: 44,
+                    lineNumber: 45,
                     columnNumber: 11
                 }, void 0),
                 iconClassName: "-right-2"
             }, void 0, false, {
                 fileName: "[project]/apps/frontend/feature/dashboard/ui/ResumePerformance.tsx",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/apps/frontend/feature/dashboard/ui/ResumePerformance.tsx",
-        lineNumber: 16,
+        lineNumber: 14,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(ResumePerformance, "WWv9XZbfIzK/wC5YZ1+eEsNjQUU=", false, function() {
+_s(ResumePerformance, "LCotUHwHKJBW+kbUhpsNOJXGGwg=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$frontend$2f$feature$2f$dashboard$2f$queries$2f$useDataboardData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useDashboardData"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$2d$intl$40$4$2e$5$2e$2_next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19_d1892fe332521af2ba7b5b9f43adf8de$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]

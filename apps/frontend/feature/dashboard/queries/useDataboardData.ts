@@ -8,10 +8,13 @@ const getDashboardData = async (): Promise<DashboardData> => {
   return response.data;
 };
 
-export const useDashboardData = () => {
+export const useDashboardData = <TData = DashboardData>(
+  select?: (data: DashboardData) => TData,
+) => {
   const { data, isPending, error } = useQuery({
     queryKey: dashboardDataKey.all,
     queryFn: getDashboardData,
+    select,
   });
 
   return { data, isPending, error };
