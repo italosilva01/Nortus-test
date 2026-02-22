@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -24,31 +20,14 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "@lib/*": [
-        "./shared/lib/*"
-      ],
-      "@components/*": [
-        "./components/*"
-      ],
-      "@feature/*": [
-        "./feature/*"
-      ],
-      "@app/*": [
-        "./app/*"
-      ],
-      "@types/*": [
-        "./types/*"
-      ],
-      "@utils/*": [
-        "./utils/*"
-      ],
-      "@stores/*": [
-        "./stores/*"
-      ],
-      
+      "@/*": ["./*"],
+      "@lib/*": ["./shared/lib/*"],
+      "@components/*": ["./components/*"],
+      "@feature/*": ["./feature/*"],
+      "@app/*": ["./app/*"],
+      "@types/*": ["./types/*"],
+      "@utils/*": ["./utils/*"],
+      "@stores/*": ["./stores/*"]
     }
   },
   "include": [
@@ -57,9 +36,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "../packages/shared/types/ticket.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

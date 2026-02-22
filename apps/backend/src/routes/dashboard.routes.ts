@@ -1,17 +1,11 @@
-import { Router } from 'express';
-import fs from 'fs';
-import path from 'path';
-import { authenticateToken } from '../middlewares/authenticationJwt';
+import { Request, Response, Router } from "express";
+import dashboardController from "../controllers/dashboardController";
+import { authenticateToken } from "../middlewares/authenticationJwt";
 
 const router = Router();
 
-router.get('/', authenticateToken, (req: Request, res: Response) => {
-  const dashboardData = fs.readFileSync(
-    path.join(__dirname, '..', 'dash.json'),
-    'utf8'
-  );
-
-  res.json(JSON.parse(dashboardData));
+router.get("/", authenticateToken, async (req: Request, res: Response) => {
+  await dashboardController.getDashboardData(req, res);
 });
 
 export default router;

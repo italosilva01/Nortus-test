@@ -1,21 +1,15 @@
-import { Router } from 'express';
-import fs from 'fs';
-import path from 'path';
-import { authenticateToken } from '../middlewares/authenticationJwt';
+import { Router } from "express";
+import mapClientsController from "../controllers/mapClientsController";
+import { authenticateToken } from "../middlewares/authenticationJwt";
 
 const router = Router();
 
-router.get('/', authenticateToken, (req: Request, res: Response) => {
-  const mapData = fs.readFileSync(
-    path.join(__dirname, '..', 'map.json'),
-    'utf8'
-  );
-
-  res.json(JSON.parse(mapData));
-});
+router.get(
+  "/",
+  authenticateToken,
+  async (req: Request, res: Response): Promise<void> => {
+    await mapClientsController.getMapClientsData(req, res);
+  }
+);
 
 export default router;
-
-
-
-

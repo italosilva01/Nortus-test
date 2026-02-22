@@ -24,14 +24,12 @@
       "env": {
         "__NEXT_BUILD_ID": "development",
         "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "rwLJKEvl/vpR1UOyYsUyzVM8n1lPVWRkA+7BPDsfJeE=",
-        "__NEXT_PREVIEW_MODE_ID": "f198236a943f12a25c017432d02095eb",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "a1e9473fa0c92828a004b86aec6310c5b595dce16bad2ceb36f45d748e6e941d",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "2f7dac5fe8dbb1d4bb7554b4c5a3ab89acf9b7eff5da6b89c7dbd36aca911dcf"
+        "__NEXT_PREVIEW_MODE_ID": "0a908f6156096ff0c0433e2bbaf5068f",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "4a37c20da6ff7697eb6827f25ed70e891a7d7c62cb53cc5d2f2e2590af44bada",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "ca672b26a75cb7e640f3d11312844c058b2ce3e728acdc164dfbb6b6126e9671"
       }
     }
   },
-  "sortedMiddleware": [
-    "/"
-  ],
+  "sortedMiddleware": ["/"],
   "functions": {}
 }

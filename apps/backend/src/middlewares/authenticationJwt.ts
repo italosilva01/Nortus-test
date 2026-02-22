@@ -22,8 +22,7 @@ export const authenticateToken = (
       res.status(403).json({ message: 'Invalid or expired token ITALO' });
       return;
     }
-
-    req.user = decoded;
+    (req as any).user = decoded;
     next();
   });
 };
