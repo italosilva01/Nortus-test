@@ -1,5 +1,5 @@
 import axiosInstance from "@lib/api.instance";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { mapStatusToTagVariant } from "../../../shared/lib/utils";
 import { mapPriorityToTagVariant } from "../helpers";
@@ -38,6 +38,8 @@ const deleteTicket = async (id: string): Promise<void> => {
 export const useTicketManagementData = (
   select?: (data: TicketManagementData) => TicketManagementData,
 ) => {
+  const queryClient = useQueryClient();
+
   const { data, isPending, error } = useQuery({
     queryKey: ticketsManagementKeys.allTickets,
     queryFn: getTicketManagementData,
@@ -48,6 +50,9 @@ export const useTicketManagementData = (
     mutationFn: updateTicket,
     onSuccess: () => {
       toast.success("Ticket updated successfully");
+      queryClient.invalidateQueries({
+        queryKey: ticketsManagementKeys.allTickets,
+      });
     },
   });
 
@@ -55,6 +60,9 @@ export const useTicketManagementData = (
     mutationFn: createTicket,
     onSuccess: () => {
       toast.success("Ticket created successfully");
+      queryClient.invalidateQueries({
+        queryKey: ticketsManagementKeys.allTickets,
+      });
     },
   });
 
@@ -62,6 +70,9 @@ export const useTicketManagementData = (
     mutationFn: deleteTicket,
     onSuccess: () => {
       toast.success("Ticket deleted successfully");
+      queryClient.invalidateQueries({
+        queryKey: ticketsManagementKeys.allTickets,
+      });
     },
   });
 
