@@ -1,16 +1,18 @@
-'use client';
+"use client";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
-import { PanelBig } from '@/components/ui/custom/PanelBig';
-import FiltersTickets from '@/feature/ticketMenagement/ui/FiltersTickets';
-import { useTicketFilters } from '@/hooks/useTicketFilters';
-import { useTicketManagementStore } from '@/stores/useTicketManagementStore';
-import TableTickets from './TableTickets';
+import { PanelBig } from "@/components/ui/custom/PanelBig";
+import { useTicketFilters } from "../../../hooks/useTicketFilters";
+import { useTicketManagementData } from "../queries/useTicketMenagementData";
+import FiltersTickets from "./FiltersTickets";
+import TableTickets from "./TableTickets";
 
 const ListTickets = () => {
-  const t = useTranslations('TicketsManagementPage');
-  const tickets = useTicketManagementStore((state) => state.data?.tickets);
+  const t = useTranslations("TicketsManagementPage");
+  const { data } = useTicketManagementData();
+  const tickets = data?.tickets ?? [];
+  console.log("tickets", tickets);
 
   const {
     searchTerm,
@@ -21,14 +23,10 @@ const ListTickets = () => {
     setSelectedStatus,
     selectedResponsible,
     setSelectedResponsible,
-    filteredTickets,
-  } = useTicketFilters({ tickets: tickets ?? undefined });
- 
-
-
+  } = useTicketFilters({ tickets });
   return (
     <PanelBig
-      title={t('listTickets.title')}
+      title={t("listTickets.title")}
       className="size-full max-w-full xl:max-w-full 2xl:max-w-full flex flex-col gap-4"
       contentClassName="flex flex-col gap-4"
     >
@@ -40,10 +38,11 @@ const ListTickets = () => {
         selectedPriority={selectedPriority}
         onPriorityChange={setSelectedPriority}
         selectedResponsible={selectedResponsible}
-        onResponsibleChange={setSelectedResponsible}      
+        onResponsibleChange={setSelectedResponsible}
       />
-      <TableTickets tickets={filteredTickets} />
-     </PanelBig>
+
+      <TableTickets tickets={tickets ?? []} />
+    </PanelBig>
   );
 };
 

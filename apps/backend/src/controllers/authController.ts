@@ -19,6 +19,7 @@ export class AuthController {
 
   async login(req: Request, res: Response) {
     const { username, password } = req.body;
+    console.log('aqui');
     try {
       loginSchema.parse({ username, password });
     } catch (error: any) {
@@ -29,6 +30,7 @@ export class AuthController {
     const user = dbTest.find(
       (user) => user.username === username && user.password === password
     );
+    console.log('user', user);
     if (!user) {
       return res
         .status(HTTP.UNAUTHORIZED)

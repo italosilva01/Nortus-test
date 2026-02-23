@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import { PanelBig } from '@/components/ui/custom/PanelBig';
-import { Typography } from '@/components/ui/custom/Typography';
-import { FiltersEvolution } from '@/feature/dashboard/ui/FiltersEvolution';
+import { PanelBig } from "@/components/ui/custom/PanelBig";
+import { Typography } from "@/components/ui/custom/Typography";
 import {
-  formatNumberWithK,
   getTrendData,
   getTrendName,
-} from '@/shared/lib/utils';
-import { KpisTrend } from '@/shared/types/dashboard';
-import { useDashboardStore } from '@/stores/useDashboardStore';
-import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
-import { useMemo, useState } from 'react';
-
-const ReactApexChart = dynamic(() => import('react-apexcharts'), {
+} from "@/feature/dashboard/lib/trend-utils";
+import { useDashboardData } from "@/feature/dashboard/queries/useDataboardData";
+import { KpisTrend } from "@/feature/dashboard/types";
+import { FiltersEvolution } from "@/feature/dashboard/ui/FiltersEvolution";
+import { formatNumberWithK } from "@/shared/lib/utils";
+import type ApexCharts from "apexcharts";
+import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
+import { useMemo, useState } from "react";
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
 interface ChartSeries {
@@ -28,9 +28,9 @@ interface ChartState {
 }
 
 const GraphEvolution = () => {
-  const [selectedKpi, setSelectedKpi] = useState<string>('arpu');
-  const { data } = useDashboardStore();
-  const kpisTrend = data?.kpisTrend;
+  const [selectedKpi, setSelectedKpi] = useState<string>("arpu");
+  const { data: kpisTrend } = useDashboardData((data) => data.kpisTrend);
+
   const t = useTranslations();
   const handleKpiClick = (kpiValue: string) => {
     setSelectedKpi(kpiValue);
@@ -47,7 +47,7 @@ const GraphEvolution = () => {
       options: {
         chart: {
           height: 350,
-          type: 'area',
+          type: "area",
           toolbar: {
             show: false,
           },
@@ -56,11 +56,11 @@ const GraphEvolution = () => {
           enabled: false,
         },
         stroke: {
-          curve: 'smooth',
+          curve: "smooth",
           width: 2,
         },
         fill: {
-          type: 'gradient',
+          type: "gradient",
           gradient: {
             shadeIntensity: 1,
             opacityFrom: 0.7,
@@ -72,8 +72,8 @@ const GraphEvolution = () => {
           labels: {
             show: true,
             style: {
-              fontSize: '12px',
-              colors: '#ffffff',
+              fontSize: "12px",
+              colors: "#ffffff",
             },
           },
         },
@@ -82,13 +82,13 @@ const GraphEvolution = () => {
             show: true,
             formatter: (val: number) => formatNumberWithK(val),
             style: {
-              colors: '#ffffff',
+              colors: "#ffffff",
             },
           },
         },
         tooltip: {
           x: {
-            format: 'MMM',
+            format: "MMM",
           },
         },
       },
@@ -97,7 +97,7 @@ const GraphEvolution = () => {
 
   return (
     <PanelBig
-      title={t('DashboardPage.evolutionOfKpis')}
+      title={t("DashboardPage.evolutionOfKpis")}
       filtersChildren={
         <FiltersEvolution
           selectedKpi={selectedKpi}

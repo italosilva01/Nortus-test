@@ -1,20 +1,19 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
-import TableTicketsRow from '@/feature/ticketMenagement/ui/TableTicketsRow';
-import { Ticket } from '@/shared/types/ticketManagement';
+import { Ticket } from "@/feature/ticketMenagement/types/ticketManagement";
+import TableTicketsRow from "@/feature/ticketMenagement/ui/TableTicketsRow";
 
 interface TableTicketsProps {
   tickets: Ticket[];
 }
 
 const TableTickets = ({ tickets }: TableTicketsProps) => {
-
-  const t = useTranslations('TicketsManagementPage');
+  const t = useTranslations("TicketsManagementPage");
 
   if (!tickets || tickets.length === 0) {
     return (
       <div className="w-full text-center py-8 h-96 flex items-center justify-center text-white">
-        {t('listTickets.noTickets')}
+        {t("listTickets.noTickets")}
       </div>
     );
   }
@@ -26,13 +25,27 @@ const TableTickets = ({ tickets }: TableTicketsProps) => {
           <thead className="sticky top-0 z-10 bg-app-dark-blue-300">
             <tr>
               <th className="px-4 py-2">ID</th>
-              <th className="px-4 py-2">{t('listTickets.priority') || 'Prioridade'}</th>
-              <th className="px-4 py-2">{t('listTickets.client') || 'Cliente'}</th>
-              <th className="px-4 py-2">{t('listTickets.subject') || 'Assunto'}</th>
-              <th className="px-4 py-2">{t('listTickets.status') || 'Status'}</th>
-              <th className="px-4 py-2">{t('listTickets.createdAt') || 'Criado em'}</th>
-              <th className="px-4 py-2">{t('listTickets.responsible') || 'Responsável'}</th>
-              <th className="px-4 py-2">{t('listTickets.actions') || 'Ações'}</th>
+              <th className="px-4 py-2">
+                {t("listTickets.priority") || "Prioridade"}
+              </th>
+              <th className="px-4 py-2">
+                {t("listTickets.client") || "Cliente"}
+              </th>
+              <th className="px-4 py-2">
+                {t("listTickets.subject") || "Assunto"}
+              </th>
+              <th className="px-4 py-2">
+                {t("listTickets.status") || "Status"}
+              </th>
+              <th className="px-4 py-2">
+                {t("listTickets.createdAt") || "Criado em"}
+              </th>
+              <th className="px-4 py-2">
+                {t("listTickets.responsible") || "Responsável"}
+              </th>
+              <th className="px-4 py-2">
+                {t("listTickets.actions") || "Ações"}
+              </th>
             </tr>
           </thead>
           <tbody>

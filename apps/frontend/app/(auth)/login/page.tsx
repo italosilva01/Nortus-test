@@ -11,7 +11,7 @@ export default async function LoginPage() {
     }
 
     return (
-        <main className="flex gap-11 xl:gap-[60px] justify-between items-start mx-[65px] xl:my-5 my-6 2xl:max-w-[1920px]">
+        <main className="flex gap-11 xl:gap-[60px] justify-between items-start mx-[65px] xl:my-5 my-6 2xl:max-w-[1920px] 2xl:mx-auto">
             <FormLogin />
             <PanelChangeLanguage />
         </main>

@@ -1,23 +1,17 @@
-'use client';
-import { Skeleton } from '@/components/ui/skeleton';
-import CustomerMapRegion from '@/feature/dashboard/ui/CustomerMapRegion';
-import GraphEvolution from '@/feature/dashboard/ui/GraphEvolution';
-import MapSegments from '@/feature/dashboard/ui/MapSegments';
-import { ResumePerformance } from '@/feature/dashboard/ui/ResumePerformance';
-import { SkeletonResumePanelPerformance } from '@/feature/dashboard/ui/SkeletonResumePanelPerformance';
-import { useDashboardStore } from '@/stores/useDashboardStore';
-import { useTranslations } from 'next-intl';
-import { useEffect } from 'react';
-
+"use client";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useDashboardData } from "@/feature/dashboard/queries/useDataboardData";
+import CustomerMapRegion from "@/feature/dashboard/ui/CustomerMapRegion";
+import GraphEvolution from "@/feature/dashboard/ui/GraphEvolution";
+import MapSegments from "@/feature/dashboard/ui/MapSegments";
+import { ResumePerformance } from "@/feature/dashboard/ui/ResumePerformance";
+import { SkeletonResumePanelPerformance } from "@/feature/dashboard/ui/SkeletonResumePanelPerformance";
+import { useTranslations } from "next-intl";
 export default function Home() {
-  const { data, isLoading } = useDashboardStore();
+  const { data, isPending } = useDashboardData();
   const t = useTranslations();
 
-  useEffect(() => {
-    useDashboardStore.getState().fetchDashboardData();
-  }, []);
-
-  if (isLoading) {
+  if (isPending) {
     return (
       <div className="flex flex-col gap-6">
         <div className="flex flex-col xl:flex-row gap-4 xl:gap-6">
@@ -35,7 +29,7 @@ export default function Home() {
   if (!data) {
     return (
       <div className="flex min-h-screen items-center justify-center">
-        <p className="text-lg">{t('DashboardPage.noDataAvailable')}</p>
+        <p className="text-lg">{t("DashboardPage.noDataAvailable")}</p>
       </div>
     );
   }
