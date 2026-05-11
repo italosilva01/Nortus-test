@@ -7,7 +7,7 @@ import { HTTP } from '../utils/constants';
 export const authenticateToken = (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ): void => {
   const secret = process.env.JWT_SECRET;
   const authHeader = req.headers['authorization'];
@@ -19,7 +19,7 @@ export const authenticateToken = (
 
   jwt.verify(token, secret as string, (err, decoded) => {
     if (err) {
-      res.status(403).json({ message: 'Invalid or expired token ITALO' });
+      res.status(403).json({ message: 'Invalid or expired token' });
       return;
     }
     (req as any).user = decoded;

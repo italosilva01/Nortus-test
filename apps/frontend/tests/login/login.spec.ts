@@ -1,12 +1,18 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test.describe('Login', () => {
   test.describe('when the user is not logged in', () => {
-    test('Try access the dashboard', () => {
-      // o que irei precisar fazer nesses teste ?
-      // 1. acessar a url da dashboard
-      // 2. verificar se a página carrega
-      // 3. verificar se o usuário é redirecionado para a página de login
+    test('Try access the dashboard', async ({ page }) => {
+      await page.goto('http://localhost:3000/dashboard');
+      await expect(page.getByRole('heading', { name: 'Login' })).toBeVisible();
+      await expect(page.url()).toContain('/login');
     });
+  });
+
+  test.describe('when the user is logged in', () => {
+    test.beforeAll(async ({ request }) => {
+      // aqui irei fazer o login do usuário usando o setup de autenticação
+    });
+    test('Try access the dashboard', async ({ page }) => {});
   });
 });

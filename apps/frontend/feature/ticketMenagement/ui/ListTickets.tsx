@@ -1,18 +1,17 @@
-"use client";
+'use client';
 
-import { useTranslations } from "next-intl";
+import { useTranslations } from 'next-intl';
 
-import { PanelBig } from "@/components/ui/custom/PanelBig";
-import { useTicketFilters } from "../../../hooks/useTicketFilters";
-import { useTicketManagementData } from "../queries/useTicketMenagementData";
-import FiltersTickets from "./FiltersTickets";
-import TableTickets from "./TableTickets";
+import { PanelBig } from '@/components/ui/custom/PanelBig';
+import { useTicketFilters } from '../../../hooks/useTicketFilters';
+import { useTicketManagementData } from '../queries/useTicketMenagementData';
+import FiltersTickets from './FiltersTickets';
+import TableTickets from './TableTickets';
 
 const ListTickets = () => {
-  const t = useTranslations("TicketsManagementPage");
+  const t = useTranslations('TicketsManagementPage');
   const { data } = useTicketManagementData();
   const tickets = data?.tickets ?? [];
-  console.log("tickets", tickets);
 
   const {
     searchTerm,
@@ -26,7 +25,7 @@ const ListTickets = () => {
   } = useTicketFilters({ tickets });
   return (
     <PanelBig
-      title={t("listTickets.title")}
+      title={t('listTickets.title')}
       className="size-full max-w-full xl:max-w-full 2xl:max-w-full flex flex-col gap-4"
       contentClassName="flex flex-col gap-4"
     >

@@ -3,6 +3,7 @@ import Credentials from 'next-auth/providers/credentials';
 import { endpoints } from './shared/lib/endpoints';
 import { authEndpoints } from './shared/lib/endpoints/auth';
 import { HTTP_STATUS_CODES } from './shared/lib/helpers';
+
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
     Credentials({
@@ -14,10 +15,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       async authorize(credentials) {
         const { username, password } = credentials;
         try {
-          console.log('authorize credentials', username, password);
           const response = await endpoints.auth.login(
             username as string,
-            password as string
+            password as string,
           );
           if (response.status === HTTP_STATUS_CODES.OK && response?.data) {
             return {
@@ -50,11 +50,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         token.username = user.username;
         token.refreshToken = user.refreshToken;
         return token;
-      } else if (Date.now() < token.exp ) {
-       
+      } else if (Date.now() < token.exp) {
         return token;
       } else {
-       
         if (!token.refreshToken) throw new TypeError('Missing refresh token');
         try {
           const response = await authEndpoints.refreshToken(token.refreshToken);
