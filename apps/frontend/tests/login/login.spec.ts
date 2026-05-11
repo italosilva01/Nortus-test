@@ -13,6 +13,8 @@ test.describe('Login', () => {
     test.beforeAll(async ({ request }) => {
       // aqui irei fazer o login do usuário usando o setup de autenticação
     });
-    test('Try access the dashboard', async ({ page }) => {});
+    test('Try access the dashboard', async ({ page }) => {
+
+    });
   });
 });
