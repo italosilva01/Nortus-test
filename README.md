@@ -95,20 +95,24 @@ Depois edite cada `.env` e preencha os valores (em especial as secrets). Na raiz
 
 ### Frontend (`apps/frontend/.env`)
 
+
 | Variável              | Obrigatório | Descrição                                                                      |
 | --------------------- | ----------- | ------------------------------------------------------------------------------ |
 | `NEXTAUTH_SECRET`     | Sim         | Secret para NextAuth (mín. 32 caracteres). Gerar com `openssl rand -base64 32` |
 | `NEXTAUTH_URL`        | Sim         | URL do frontend (ex.: `http://localhost:3000`)                                 |
 | `NEXT_PUBLIC_API_URL` | Sim         | URL base da API do backend (ex.: `http://localhost:3001/api`)                  |
 
+
 Opcionais (no `.env.example` do frontend): `DATABASE_URL`, variáveis JWT (referência).
 
 ### Backend (`apps/backend/.env`)
+
 
 | Variável     | Obrigatório        | Descrição                                                |
 | ------------ | ------------------ | -------------------------------------------------------- |
 | `PORT`       | Não (default 3001) | Porta do servidor                                        |
 | `JWT_SECRET` | Sim                | Chave para assinatura de tokens JWT (mín. 32 caracteres) |
+
 
 Opcionais: `JWT_EXPIRES_IN`, `JWT_REFRESH_EXPIRES_IN` (padrões no código: 15m e 7d).
 
@@ -163,9 +167,9 @@ git commit -m "docs: atualiza README com instruções"
 
 ## 🔗 URLs Locais
 
-- Frontend: http://localhost:3000
-- Backend: http://localhost:3001
-- Backend Health: http://localhost:3001/api/health
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- Backend: [http://localhost:3001](http://localhost:3001)
+- Backend Health: [http://localhost:3001/api/health](http://localhost:3001/api/health)
 
 ## 👥 Contribuindo
 
