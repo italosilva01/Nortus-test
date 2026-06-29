@@ -9,4 +9,6 @@ model Ticket {
 
   employee   Employee? @relation(fields: [employeeId], references: [id])
   employeeId Int?
+  client Client @relation(fields: [clientId], references: [id])
+  clientId Int
 }
