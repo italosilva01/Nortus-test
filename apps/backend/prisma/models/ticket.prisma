@@ -1,0 +1,12 @@
+model Ticket {
+  id          Int    @id @default(autoincrement())
+  email       String
+  priority    String
+  responsible String
+  subject     String
+  status      String
+  // TODO: Adicionar data de criação da tarefa
+
+  employee   Employee? @relation(fields: [employeeId], references: [id])
+  employeeId Int?
+}
