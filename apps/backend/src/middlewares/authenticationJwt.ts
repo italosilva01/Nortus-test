@@ -7,11 +7,12 @@ import { HTTP } from '../utils/constants';
 export const authenticateToken = (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ): void => {
   const secret = process.env.JWT_SECRET;
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
+
   if (!token) {
     res.status(HTTP.UNAUTHORIZED).json({ message: 'Token missing' });
     return;

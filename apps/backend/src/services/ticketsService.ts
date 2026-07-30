@@ -5,7 +5,7 @@ import ticketsRepository from '../repositories/ticketsRepository';
 
 class TicketsService {
   getTicketsData = async () => {
-    const ticketsData = await ticketsRepository.getTicketsData();
+    const ticketsData = await ticketsRepository.getAllTicketsData();
     console.log(ticketsData);
     return ticketsData;
   };

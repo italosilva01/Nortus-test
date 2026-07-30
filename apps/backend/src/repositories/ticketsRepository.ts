@@ -2,11 +2,21 @@ import fs from 'fs';
 import path from 'path';
 import { prisma } from '../lib/prisma';
 import { Ticket } from '../models/ticket';
+import db from '../../db.js';
 
 class TicketsRepository {
   getAllTicketsData = async () => {
     const data = await prisma.ticket.findMany();
     return data;
+  };
+
+  getAllTicketsKnex = async () => {
+    try {
+      const data = await db('tickets').select('*');
+      return data;
+    } catch (err) {
+      console.error(err);
+    }
   };
   getTicketById = async (id: number) => {
     const data = await prisma.ticket.findUnique({
