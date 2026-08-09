@@ -5,7 +5,6 @@ import { authenticateToken } from '../middlewares/authenticationJwt';
 const router = Router();
 
 router.get('/', authenticateToken, async (req: Request, res: Response) => {
-  console.log('req', req);
   await ticketsController.getTicketsData(req, res);
 });
 

@@ -38,7 +38,6 @@ class TicketsController {
   };
   updateTicket = async (req: Request, res: Response): Promise<void> => {
     try {
-      console.log('req', req);
       const idTicket = req.params.id;
       const bodyTicket = req.body;
       if (!idTicket || !bodyTicket) {

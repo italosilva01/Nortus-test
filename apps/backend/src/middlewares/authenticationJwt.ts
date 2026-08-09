@@ -20,7 +20,7 @@ export const authenticateToken = (
 
   jwt.verify(token, secret as string, (err, decoded) => {
     if (err) {
-      res.status(403).json({ message: 'Invalid or expired token ITALO' });
+      res.status(403).json({ message: 'Invalid or expired token' });
       return;
     }
     (req as any).user = decoded;

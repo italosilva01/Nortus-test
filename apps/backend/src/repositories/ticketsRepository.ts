@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import db from '../../db.js';
 import { prisma } from '../lib/prisma';
 import { Ticket } from '../models/ticket';
-import db from '../../db.js';
 
 class TicketsRepository {
   getAllTicketsData = async () => {
@@ -12,7 +12,7 @@ class TicketsRepository {
 
   getAllTicketsKnex = async () => {
     try {
-      const data = await db('tickets').select('*');
+      const data = await db('Ticket').select('*');
       return data;
     } catch (err) {
       console.error(err);
